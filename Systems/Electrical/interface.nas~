@@ -1,0 +1,30 @@
+var elec_interface = {
+	
+	init : func { 
+		me.UPDATE_INTERVAL = 0.001; 
+		me.loopid = 0;		
+		me.reset(); 
+	},
+	update : func {
+
+		
+		
+	}, # Update Fuction end
+
+	reset : func {
+		me.loopid += 1;
+		me._loop_(me.loopid);
+	},
+
+	_loop_ : func(id) {
+		id == me.loopid or return;
+		me.update();
+		settimer(func { me._loop_(id); }, me.UPDATE_INTERVAL);
+	}
+
+};
+###
+# END fcs_loop var
+###
+
+elec_interface.init();

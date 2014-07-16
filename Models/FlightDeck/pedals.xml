@@ -1,0 +1,19 @@
+﻿<?xml version = '1.0' encoding = 'UTF-8' ?>
+
+ <!-- 
+ Model file Copyright Toryx 2014
+ Distributed under the terms of the GNU General Public License v2
+ 
+ XML and Systems Copyright Muraleedharan 2014
+ Distributed under the terms of the GNU General Public License v2 for $FGDATA
+ Distributed under the terms of the CC-BY-NC License for theOmegaHangars
+ -->
+
+<PropertyList>
+	<path>fd_pedals.ac</path>
+	
+	<!-- Animations -->
+	
+	
+	
+</PropertyList>
