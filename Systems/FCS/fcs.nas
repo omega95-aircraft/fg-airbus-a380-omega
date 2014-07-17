@@ -34,6 +34,10 @@ var DEG2RAD = 0.0174532925;
 var fcs_tree = "/fdm/jsbsim/fcs/";
 var input = "/controls/flight/";
 
+setprop("/fdm/jsbsim/fcs/aileron-ob-droop",0);
+setprop("/fdm/jsbsim/fcs/aileron-md-droop",0);
+setprop("/fdm/jsbsim/fcs/aileron-ib-droop",0);
+
 var fcs = {
 	
 	init : func { 

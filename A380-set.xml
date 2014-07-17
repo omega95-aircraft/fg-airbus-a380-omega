@@ -132,7 +132,7 @@
       <internal type="bool">true</internal>
       <config>
         <x-offset-m type="double">-0.54</x-offset-m>
-        <y-offset-m type="double">-1.60</y-offset-m>  <!-- -1.55 -->
+        <y-offset-m type="double">-1.597</y-offset-m>  <!-- -1.55 -->
         <z-offset-m type="double">-19.53</z-offset-m>
         <pitch-offset-deg>-5.73</pitch-offset-deg>
         <default-field-of-view-deg type="double">90.0</default-field-of-view-deg>
@@ -164,7 +164,7 @@
       <config>
         <from-model type="bool">true</from-model>
         <x-offset-m type="double">0.54</x-offset-m>
-        <y-offset-m type="double">-1.60</y-offset-m>  <!-- -1.55 -->
+        <y-offset-m type="double">-1.597</y-offset-m>  <!-- -1.55 -->
         <z-offset-m type="double">-19.53</z-offset-m>
         <pitch-offset-deg>-5.73</pitch-offset-deg>
         <default-field-of-view-deg type="double">90.0</default-field-of-view-deg>
@@ -1038,6 +1038,9 @@
     	<file>Aircraft/A380/Models/Instruments/ND/nd.nas</file>
     	<file>Aircraft/A380/Models/Instruments/ND/vsd.nas</file>
     </nd>
+    <hud>
+    	<file>Aircraft/A380/Models/Instruments/HUD/hud.nas</file>
+    </hud>
 	<electrical>
 		<file>Aircraft/A380/Systems/Electrical/empty_vectors.nas</file>
 		<file>Aircraft/A380/Systems/Electrical/supplier.nas</file>

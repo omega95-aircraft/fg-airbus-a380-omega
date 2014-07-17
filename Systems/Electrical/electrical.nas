@@ -38,17 +38,17 @@ var electrical = {
 					bus.new("emer-bus", "DC", ["ram-air-turbine"])];
 								
 			outputs = [output.new("avionics", 12, 4, ["dc-bus", "emer-bus", "ac-bus-3"]), 
-				output.new("comm0", 12, 8, ["dc-bus", "ac-bus3"]),
-				output.new("efis", 18, 8, ["dc-bus", "ac-bus3"]),
-				output.new("comm1", 12, 8, ["dc-bus", "ac-bus4"]),
-				output.new("anti-icing", 24, 2, ["ac-bus1", "ac-bus4"]), 
-				output.new("ext-lts", 24, 12, ["ac-bus2", "ac-bus3"]), 
-				output.new("nav0", 16, 8, ["dc-bus", "ac-bus3"]),
-				output.new("nav1", 16, 8, ["dc-bus", "ac-bus4"]),
-				output.new("adf", 12, 6, ["dc-bus", "ac-bus3"]),
-				output.new("dme", 12, 6, ["dc-bus", "ac-bus3"]),
+				output.new("comm0", 12, 8, ["dc-bus", "ac-bus-3"]),
+				output.new("efis", 18, 8, ["dc-bus", "ac-bus-3"]),
+				output.new("comm1", 12, 8, ["dc-bus", "ac-bus-4"]),
+				output.new("anti-icing", 24, 2, ["ac-bus-1", "ac-bus-4"]), 
+				output.new("ext-lts", 24, 12, ["ac-bus-2", "ac-bus-3"]), 
+				output.new("nav0", 16, 8, ["dc-bus", "ac-bus-3"]),
+				output.new("nav1", 16, 8, ["dc-bus", "ac-bus-4"]),
+				output.new("adf", 12, 6, ["dc-bus", "ac-bus-3"]),
+				output.new("dme", 12, 6, ["dc-bus", "ac-bus-3"]),
 				output.new("eng-starter", 110, 20, ["ac-bus-2", "ac-bus-3"]),
-				output.new("integ-lts", 12, 1, ["dc-bus", "ac-bus1"])];
+				output.new("integ-lts", 12, 1, ["dc-bus", "ac-bus-1"])];
 				
 			busties = [bustie.new("ac-bus-tie", ["ac-bus-1","ac-bus-2","ac-bus-3","ac-bus-4"], "/controls/electric/contact/bus_tie")];
             
