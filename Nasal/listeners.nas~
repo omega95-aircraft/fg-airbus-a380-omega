@@ -417,7 +417,10 @@ setlistener("/controls/anti-ice/engine[3]/inlet-heat", func(n) {
 
 # Gear Animation Helpers
 var compr = func(n) {
-	return (getprop("/fdm/jsbsim/gear/unit["~n~"]/compression-ft"));
+	var cmpr = getprop("/fdm/jsbsim/gear/unit["~n~"]/compression-ft");
+	if(cmpr > 5) {
+		return 5;
+	}
 }
 
 var WOW = func(n) {
@@ -502,10 +505,12 @@ var comp_tilt = {
     },
     	update : func {
     	
-    	gear_helpers.mlg_tilt("mlg_fl",5,1,-376,-372,-382, 31, "pitch-up");
-    	gear_helpers.mlg_tilt("mlg_fr",6,2,-376,-372,-382, 31, "pitch-up");
-    	gear_helpers.mlg_tilt("mlg_rl",3,7,-359,-351,-355, 61, "pitch-down");
-    	gear_helpers.mlg_tilt("mlg_rr",4,8,-359,-351,-355, 61, "pitch-down");
+    	if ((getprop("/sim/replay/time") == 0) or (getprop("/sim/replay/time") == nil)) {
+			gear_helpers.mlg_tilt("mlg_fl",5,1,-376,-372,-382, 31, "pitch-up");
+			gear_helpers.mlg_tilt("mlg_fr",6,2,-376,-372,-382, 31, "pitch-up");
+			gear_helpers.mlg_tilt("mlg_rl",3,7,-366,-351,-359, 61, "pitch-down");
+			gear_helpers.mlg_tilt("mlg_rr",4,8,-366,-351,-359, 61, "pitch-down");
+		}
     	
 	},
 
@@ -532,6 +537,24 @@ setlistener("sim/signals/fdm-initialized", func {
 	setprop("/controls/electric/contact/batt_2", 0);
 	setprop("/controls/electric/contact/bus_tie", 0);
 	comp_tilt.init();
+});
+
+#FIXME - Remove when canvas ND is ready
+
+setlistener("/instrumentation/efis[0]/mfd/airbus-display-mode", func(n) {
+	setprop("/instrumentation/efis[0]/nd/airbus-display-mode", n.getValue());
+});
+
+setlistener("/instrumentation/efis[1]/mfd/airbus-display-mode", func(n) {
+	setprop("/instrumentation/efis[1]/nd/airbus-display-mode", n.getValue());
+});
+
+setlistener("/instrumentation/efis[0]/inputs/range-nm", func(n) {
+	setprop("/instrumentation/efis[0]/nd/display-range", n.getValue());
+});
+
+setlistener("/instrumentation/efis[1]/inputs/range-nm", func(n) {
+	setprop("/instrumentation/efis[1]/nd/display-range", n.getValue());
 });
 
 settimer(init_controls, 0);

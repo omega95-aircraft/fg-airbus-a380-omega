@@ -17,6 +17,16 @@ This file selects the instrumentation modules that should be available.
         <name>adf</name>
         <number>1</number>
     </adf>
+    
+	<dme>
+		<name>dme</name>
+		<number>0</number>
+	</dme>
+
+	<dme>
+		<name>dme</name>
+		<number>1</number>
+	</dme>
 
     <airspeed-indicator>
         <name>airspeed-indicator</name>
@@ -146,5 +156,22 @@ This file selects the instrumentation modules that should be available.
     <name>radar-altimeter</name>
     <number>0</number>
   </radar-altimeter>
+  
+	<navigation-display>
+		<name>nd</name>
+		<number>0</number>        
+		<symbols include="nav-display-capt.xml"/>
+	</navigation-display>
+	
+	<navigation-display>
+		<name>nd</name>
+		<number>1</number>        
+		<symbols include="nav-display-fo.xml"/>
+	</navigation-display>
+	
+	<groundradar>
+		<name>groundradar</name>
+		<range-source>instrumentation/groundradar/range</range-source>
+	</groundradar>
   
 </PropertyList>

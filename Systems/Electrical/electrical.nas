@@ -39,6 +39,7 @@ var electrical = {
 								
 			outputs = [output.new("avionics", 12, 4, ["dc-bus", "emer-bus", "ac-bus-3"]), 
 				output.new("comm0", 12, 8, ["dc-bus", "ac-bus3"]),
+				output.new("efis", 18, 8, ["dc-bus", "ac-bus3"]),
 				output.new("comm1", 12, 8, ["dc-bus", "ac-bus4"]),
 				output.new("anti-icing", 24, 2, ["ac-bus1", "ac-bus4"]), 
 				output.new("ext-lts", 24, 12, ["ac-bus2", "ac-bus3"]), 

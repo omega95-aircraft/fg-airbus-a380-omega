@@ -263,7 +263,7 @@
         </condition>
     </animation>
     
-    <animation>
+    <!-- animation>
 		<type>pick</type>
 		<object-name>nd.l</object-name>
 		<action>
@@ -287,7 +287,7 @@
 				<script>nd.showNd("fo");</script>
 			</binding>
 		</action>
-	</animation>
+	</animation -->
 	
 	<animation>
 		<type>pick</type>

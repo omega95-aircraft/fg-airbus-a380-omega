@@ -79,7 +79,15 @@ var fcs = {
 		
 		me.reset(); 
 	},
-
+	approach_target: func(val, tgt, step) {
+		if(tgt > val + step) {
+			return val + step;
+		} elsif(tgt < val - step) {
+			return val - step;
+		} else {
+			return tgt;
+		}
+	},
 	get_state : func{
 		me.pitch = getprop("/orientation/pitch-deg");
 		me.bank = getprop("/orientation/roll-deg");
@@ -305,10 +313,15 @@ var fcs = {
 		
 		# Control Aileron Droop
 		var flaps = getprop("/fdm/jsbsim/fcs/flap-pos-deg");
-		if(flaps > 15) {
-			setprop("/fdm/jsbsim/fcs/aileron-ob-droop", (flaps - 15)*0.01745);
-			setprop("/fdm/jsbsim/fcs/aileron-md-droop", (flaps - 15)*0.01745);
-			setprop("/fdm/jsbsim/fcs/aileron-ib-droop", (flaps - 15)*0.01745);
+		if(flaps > 16) {
+			var droop = (flaps - 16)*0.01745;
+			if(getprop("/gear/gear[1]/wow")) {
+				droop = (16 - flaps)*0.03;
+			}
+			var newDroopPos = me.approach_target(getprop("/fdm/jsbsim/fcs/aileron-ob-droop"), droop, 0.04);
+			setprop("/fdm/jsbsim/fcs/aileron-ob-droop", newDroopPos);
+			setprop("/fdm/jsbsim/fcs/aileron-md-droop", newDroopPos);
+			setprop("/fdm/jsbsim/fcs/aileron-ib-droop", newDroopPos);
 		}
 		
 		# Pressurize Control Surface Actuators

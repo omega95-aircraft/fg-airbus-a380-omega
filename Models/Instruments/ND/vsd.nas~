@@ -251,7 +251,7 @@ var vsd = {
 			me.cstr.setColor(me.cstr_color)
 				   .moveTo(233,294+me.new_markerPos)
 				   .setStrokeLineWidth(2)
-				   .setStrokeDashArray([10, 10, 10, 10, 10])
+				   .setStrokeDashArray([10, 10, 10, 10, 10]);
 				   .show();
 			forindex(var i; cstrAlts) {
 				me.cstr.vertTo(cstrAlts[i].cstr).horizTo(cstrAlts[i].range);

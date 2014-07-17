@@ -200,6 +200,118 @@
     <instrument-options>
     	<canvas-popup-enable type="bool">true</canvas-popup-enable>
     </instrument-options>
+    
+    <flight-recorder>
+			<replay-config type="int">0</replay-config>
+			<config n="0" include="/Aircraft/Generic/flightrecorder/generic-jet.xml">
+				<name type="string">A380 Flight Recorder</name>
+				<!-- Custom properties -->
+				<!-- Wheel Rollspeed -->
+				<signal>
+				   <type>float</type>
+				   <property type="string">/gear/gear[3]/rollspeed-ms</property>
+				</signal>
+				<signal>
+				   <type>float</type>
+				   <property type="string">/gear/gear[4]/rollspeed-ms</property>
+				</signal>
+				<signal>
+				   <type>float</type>
+				   <property type="string">/gear/gear[5]/rollspeed-ms</property>
+				</signal>
+				<signal>
+				   <type>float</type>
+				   <property type="string">/gear/gear[6]/rollspeed-ms</property>
+				</signal>
+				<signal>
+				   <type>float</type>
+				   <property type="string">/gear/gear[7]/rollspeed-ms</property>
+				</signal>
+				<signal>
+				   <type>float</type>
+				   <property type="string">/gear/gear[8]/rollspeed-ms</property>
+				</signal>
+				<!-- Wheel compression and tilt -->
+				<signal>
+					<type>float</type>
+					<property type="string">/fdm/jsbsim/gear/unit/compression-ft</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/gear/mlg_fl/c_bar</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/gear/mlg_fr/c_bar</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/gear/mlg_rl/c_bar</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/gear/mlg_rr/c_bar</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/gear/mlg_fl/tilt_deg</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/gear/mlg_fr/tilt_deg</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/gear/mlg_rl/tilt_deg</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/gear/mlg_rr/tilt_deg</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<!-- Engine Reverse Thrust -->
+				<signal>
+					<type>float</type>
+					<property type="string">/engines/engine[1]/reverser-pos-norm</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/engines/engine[2]/reverser-pos-norm</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<!-- Wingflex -->
+				<signal>
+					<type>float</type>
+					<property type="string">/aircraft/wingflex</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<!-- Tyre smoke -->
+				<signal>
+					<type>float</type>
+					<property type="string">/aircraft/tyresmoke/nose</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/aircraft/tyresmoke/left</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/aircraft/tyresmoke/right</property>
+					<interpolation>linear</interpolation>
+				</signal>
+			</config>
+		</flight-recorder>
   </sim>
   
   <!-- Initialize Fly-by-wire Properties -->
@@ -779,6 +891,8 @@
                 <wpt type="bool">false</wpt>
                 <terr type="bool">false</terr>
                 <traf type="bool">false</traf>
+                <lh-vor-adf type="int">0</lh-vor-adf>
+                <rh-vor-adf type="int">0</rh-vor-adf>
                 <range-nm type="int">10</range-nm>
                 <nd-centered type="bool">true</nd-centered>
             </inputs>
@@ -798,6 +912,8 @@
                 <wpt type="bool">false</wpt>
                 <terr type="bool">false</terr>
                 <traf type="bool">false</traf>
+                <lh-vor-adf type="int">0</lh-vor-adf>
+                <rh-vor-adf type="int">0</rh-vor-adf>
                 <range-nm type="int">10</range-nm>
                 <nd-centered type="bool">false</nd-centered>
             </inputs>
@@ -920,6 +1036,7 @@
     </a380>
     <nd>
     	<file>Aircraft/A380/Models/Instruments/ND/nd.nas</file>
+    	<file>Aircraft/A380/Models/Instruments/ND/vsd.nas</file>
     </nd>
 	<electrical>
 		<file>Aircraft/A380/Systems/Electrical/empty_vectors.nas</file>
