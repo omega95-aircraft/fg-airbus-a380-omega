@@ -1,5 +1,5 @@
 # [Airbus] Vertical Situation Display
-# Narendran Muraleedharan (c) 2014
+# Narendran M (c) 2014
 
 # Scroll to the end of the file for object instantiations
 
@@ -65,7 +65,7 @@ var myProps = {
 	num_wpts:			'/autopilot/route-manager/route/num',
 	altitude_ind:		'/instrumentation/altimeter/indicated-altitude-ft',
 	heading_ind:		'/instrumentation/heading-indicator/indicated-heading-deg',
-	ap_altitude_set:	'/flight-management/fcu-values/alt', # '/autopilot/settings/target-altitude-ft',
+	ap_altitude_set:	'/autopilot/settings/target-altitude-ft',
 	vertSpd_ind:		'/velocities/vertical-speed-fps'
 };
 
@@ -81,15 +81,22 @@ var get_elevation = func (lat, lon) {
 ################################### VSD CLASS ##################################
 
 var vsd = {
-	terrain_color: 	[0.44, 0.19, 0.09, 0.5], # A brownish color
-	path_color: 	[0, 1, 0, 1], # Bright Green
-	cstr_color: 	[1, 0, 1, 1], # Bright Green
+	terrain_color: 	[0.44, 0.19, 0.09, 0.5], 	# A brownish color
+	path_color: 	[0, 1, 0, 1],				# Bright Green
+	cstr_color: 	[1, 0, 1, 1],				# Bright Green
+	elev_pts: 21,								# Number of elevation data points
+	# Just some variables required by the update() function
 	elev_profile: [],
 	lastalt:0,
 	lastaltset:0,
 	alt_ceil: 10000,
 	altitude: 0,
 	peak: 0,
+	# Contants dependent on SVG file
+	alt_ceil_px: 181,							# Pixel length of vertical axis
+	max_range_px: 710,							# Pixel length of horizontal axis
+	terr_offset: 22,							# Offset between start of terrain polygon y and bottom_left corner
+	bottom_left: {x:233, y:294},				# {x:x,y:y_max - y} of bottom-left corner of plot area - looks like canvas starts it's y axis from the top going down
 	# sym_names: ["aircraft_marker", "speed_arrow", "text_range1", "text_range2", "text_range3", "text_range4", "text_alt1", "text_alt2", "altitude_set"],
 	new: func(efis_id, obj_name, switches, interface_props, svg_path) {
 		var t = {parents:[vsd]};
@@ -110,16 +117,16 @@ var vsd = {
 		t.display.addPlacement({"node": obj_name});
 		
 		# Create canvas group
-		t.group = t.display.createGroup();
-		t.text = t.display.createGroup();
-		t.terrain = t.group.createChild("path");
-		t.path = t.group.createChild("path");
-		t.cstr = t.group.createChild("path");
+		t.group = t.display.createGroup();			# Group for canvas elements and paths
+		t.text = t.display.createGroup();			# Group for waypoints text
+		t.terrain = t.group.createChild("path");	# Terrain Polygon
+		t.path = t.group.createChild("path");		# Flightplan Path
+		t.cstr = t.group.createChild("path");		# Altitude constraints (?)
 		
 		# Load Vertical Situation Display
 		canvas.parsesvg(t.group, svg_path);
 		
-		setsize(t.elev_profile,21);
+		setsize(t.elev_profile,t.elev_pts);
 		
 		# Set cockpit switch listeners
 		# Range Numbers
@@ -148,15 +155,15 @@ var vsd = {
 				t.group.getElementById("altitude_set").show();
 			}
 			# Move Altitude Setting Line
-			t.newSetPos = -181*(t.alt_set/t.alt_ceil);
+			t.newSetPos = -t.alt_ceil_px*(t.alt_set/t.alt_ceil);
 			t.group.getElementById("altitude_set").setTranslation(0,t.newSetPos-t.lastaltset);
 			t.lastaltset = t.newSetPos;
 			t.group.getElementById("tgt_altitude").setText(sprintf("%5.0f",t.alt_set));
 		});
 		
 		# Create 2 empty geo.Coord object for waypoint calculations
-		me.wpt_this = geo.Coord.new();
-		me.wpt_next = geo.Coord.new();
+		t.wpt_this = geo.Coord.new();
+		t.wpt_next = geo.Coord.new();
 
 		return t;
 	},
@@ -179,11 +186,10 @@ var vsd = {
 			}
 		}
 		
-		me.new_markerPos = -181*(me.altitude/me.alt_ceil);
+		me.new_markerPos = -me.alt_ceil_px*(me.altitude/me.alt_ceil);
 		
-		var rangeHdg = [];
-		var cstrAlts = [];
-		var no_path = 1;
+		var rangeHdg = [];		# To change the scan course to get vertical profile along the flight path
+		var cstrAlts = [];		# Get Constraint altitudes for plotting
 		
 		# Vertical Flight Path
 		if(getprop("/instrumentation/efis["~me.efis_id~"]"~me.switches.toggle_waypoints.path) == 1) {
@@ -194,7 +200,7 @@ var vsd = {
 				me.text.removeAllChildren();
 				me.path = me.group.createChild("path");
 				me.path.setColor(me.path_color)
-					   .moveTo(233,294+me.new_markerPos)
+					   .moveTo(me.bottom_left.x,me.bottom_left.y+me.new_markerPos)
 					   .setStrokeLineWidth(2)
 					   .show();
 				me.wpt_this.set_latlon(getprop(me.interface_props.wpt_data.latitude(currWpt)), getprop(me.interface_props.wpt_data.longitude(currWpt)));
@@ -209,16 +215,17 @@ var vsd = {
 						}
 						if(alt > 0) {
 							# Plot it if it's in range!
-							me.path.lineTo(233 + 710*(rteLen/me.range), 294 -181*(alt/me.alt_ceil));
+							me.path.lineTo(me.bottom_left.x + me.max_range_px*(rteLen/me.range), me.bottom_left.y -me.alt_ceil_px*(alt/me.alt_ceil));
 							if(getprop("/instrumentation/efis["~me.efis_id~"]"~me.switches.toggle_constraints.path) == 1) {
-								append(cstrAlts, {range: 233 + 710*(rteLen/me.range),	cstr: 294 -181*(alt/me.alt_ceil)});
+								append(cstrAlts, {range: me.bottom_left.x + me.max_range_px*(rteLen/me.range),	cstr: me.bottom_left.y -me.alt_ceil_px*(alt/me.alt_ceil)});
 							}
 							# Add circle and waypoint ident
+							# FIXME - Figure out the best way of dynamically drawing circles at waypoint OR just load the wpt symbol from an SVG file
 							me.text.createChild("text")
 								   .setAlignment("left-bottom")
 								   .setColor(me.path_color)
 								   .setFontSize(28,1.2)
-								   .setTranslation(245 + 710*(rteLen/me.range), 282 -181*(alt/me.alt_ceil))
+								   .setTranslation(me.bottom_left.x + 12 + me.max_range_px*(rteLen/me.range), me.bottom_left.y - 12 - me.alt_ceil_px*(alt/me.alt_ceil))
 								   .setText(getprop(me.interface_props.wpt_data.ident(id)));
 							if(id<(numWpts-1)) {
 								me.wpt_this.set_latlon(getprop(me.interface_props.wpt_data.latitude(id)), getprop(me.interface_props.wpt_data.longitude(id)));
@@ -226,6 +233,7 @@ var vsd = {
 								append(rangeHdg, {range: rteLen, course: me.wpt_this.course_to(me.wpt_next)});
 								rteLen = rteLen + me.wpt_this.distance_to(me.wpt_next)*M2NM;
 							}
+			# FIXME - This is a little messy, need to clean it up
 						} else {
 							break;
 						}
@@ -249,7 +257,7 @@ var vsd = {
 			me.cstr.del();
 			me.cstr = me.group.createChild("path");
 			me.cstr.setColor(me.cstr_color)
-				   .moveTo(233,294+me.new_markerPos)
+				   .moveTo(me.bottom_left.x,me.bottom_left.y+me.new_markerPos)
 				   .setStrokeLineWidth(2)
 				   .setStrokeDashArray([10, 10, 10, 10, 10])
 				   .show();
@@ -262,18 +270,20 @@ var vsd = {
 		
 			
 		var pos = geo.aircraft_position();
+		
+		# Get terrain profile along the flightplan route if WPT is enabled. If WPT is not enabled, the rangeHdg vector should be empty, so it's just going to get the elevation profile along the indicated aircraft heading
 			
 		me.peak = 0;
 		forindex(var i; me.elev_profile) {
 			var check_hdg = getprop(me.interface_props.heading_ind);
 			foreach(var wpt; rangeHdg) {
-				if(i*(me.range/21) > wpt.range) {
+				if(i*(me.range/me.elev_pts) > wpt.range) {
 					check_hdg = wpt.course;
 				} else {
 					break;
 				}
 			}
-			pos.apply_course_distance(check_hdg,(me.range/21)*1852);
+			pos.apply_course_distance(check_hdg,(me.range/me.elev_pts)*NM2M);
 			var elev = get_elevation(pos.lat(), pos.lon());
 			me.elev_profile[i] = elev;
 			if(elev > me.peak) {
@@ -283,32 +293,32 @@ var vsd = {
 		# Set Altitude Numbers
 		me.terrain.del();
 		me.terrain = me.group.createChild("path");
-		me.terrain.setColorFill(me.terrain_color).moveTo(233,316);
+		me.terrain.setColorFill(me.terrain_color).moveTo(me.bottom_left.x,me.bottom_left.y + me.terr_offset);
 		
 		# Draw Terrain
 		forindex(var i; me.elev_profile) {
-			me.terrain.lineTo(233+(i*35.5), 294 - 181*(me.elev_profile[i]/me.alt_ceil));
+			me.terrain.lineTo(me.bottom_left.x+(i*(me.max_range_px/(me.elev_pts-1))), me.bottom_left.y - me.alt_ceil_px*(me.elev_profile[i]/me.alt_ceil));
 		}
 		
-		me.terrain.lineTo(943,316);
+		me.terrain.lineTo(me.bottom_left.x+me.max_range_px,me.bottom_left.y+me.terr_offset);
 		
 		me.group.getElementById("text_alt1").setText(sprintf("%5.0f",me.alt_ceil/2));
 		me.group.getElementById("text_alt2").setText(sprintf("%5.0f",me.alt_ceil));
 		
-		me.group.getElementById("aircraft_marker").setTranslation(0,me.new_markerPos-me.lastalt);
-		me.group.getElementById("speed_arrow").setTranslation(0,me.new_markerPos-me.lastalt);
-		me.group.getElementById("speed_arrow");
+		me.group.getElementById("aircraft_marker").setTranslation(0,me.new_markerPos-me.lastalt); 
 		
 		var vs_fps = getprop(me.interface_props.vertSpd_ind);
 		if(vs_fps == nil) {
 			vs_fps = 0;
 		}
-		var gs_fps = getprop("/velocities/groundspeed-kt")*1.46667;
+		var gs_fps = getprop("/velocities/groundspeed-kt")*1.46667; # KTS to FPS
 		if(gs_fps > 60) {
 			var fpa = math.atan2(vs_fps, gs_fps);
-			me.group.getElementById("speed_arrow").show();
-			me.group.getElementById("speed_arrow").setCenter(245,294 + me.new_markerPos)
-												  .setRotation(-fpa);			
+			# FIXME - something wrong with the center of the speed arrow
+			me.group.getElementById("speed_arrow").setTranslation(0,me.new_markerPos-me.lastalt)
+												  .setCenter(me.bottom_left.x + 12,me.bottom_left.y + me.new_markerPos)
+												  .setRotation(-fpa)
+												  .show();			
 		} else {
 			me.group.getElementById("speed_arrow").hide();
 		}
