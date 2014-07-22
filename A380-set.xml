@@ -15,8 +15,9 @@
      2009	SHamilton		MFD, STAR/SID, updated PFD, Pre-flight Tutorial
      2010	SHamilton		Electrical system
      2011	SHamilton		added AFS, autobrake
-     
-     2014   NMuraleehdharan	Most old systems removed, new FCS, updated electrical, new Fuel sytem
+     2014	JTapaninen		new flightdeck model, fuselage edits
+     2014	SToryx			XML edits, model edits
+     2014   NMuraleehdharan	Most old systems removed, new FCS, new Electrical system, new fuel system
 
 -->
 
@@ -122,6 +123,10 @@
 		<position-z-m type="float">-0.6061</position-z-m>
 		<jetway-hood-deg type="float">25</jetway-hood-deg>
 	</door>
+	<ramp>
+		<x-m type="float">-18</x-m>
+		<class type="string">0</class>
+    </ramp>
    </model>
 
          

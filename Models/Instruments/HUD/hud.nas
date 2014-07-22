@@ -86,7 +86,7 @@ var hud = {
 		## Vertical Speed Indicator box
 		t.symbols.getElementById("vs_pointer").set("clip", "rect(230,1010,490,977)");
 		
-		me.timer = maketimer(0.05, t, hud.update);
+		t.timer = maketimer(0.05, t, t.update);
 		
 		return t;
 	},
