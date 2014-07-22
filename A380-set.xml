@@ -99,30 +99,29 @@
 	<file type="string">House</file> 
     </livery> 
     <pushback>
-  	<kp type="double">900</kp>
-	<ki type="double">100</ki>  <!-- was 25 -->
-	<kd type="double">0</kd>
-	<target-speed-fps>0</target-speed-fps>
-	<position-norm type="double">0</position-norm>
-     </pushback>
-     <door>
-       <position-x-m type="float">13.136</position-x-m>
-       <position-y-m type="float">5.0626</position-y-m>
-       <position-z-m type="float">2.9947</position-z-m>
-       <jetway-hood-deg type="float">9</jetway-hood-deg>
-     </door>
-     <door>
-       <position-x-m type="float">23.359</position-x-m>
-       <position-y-m type="float">4.928</position-y-m>
-       <position-z-m type="float">3.706</position-z-m>
-       <jetway-hood-deg type="float">9</jetway-hood-deg>
-     </door>
-     <door>
-       <position-x-m type="float">27.978</position-x-m>
-       <position-y-m type="float">7.353</position-y-m>
-       <position-z-m type="float">3.454</position-z-m>
-       <jetway-hood-deg type="float">5</jetway-hood-deg>
-     </door>
+	  	<kp type="double">900</kp>
+		<ki type="double">100</ki>  <!-- was 25 -->
+		<kd type="double">0</kd>
+		<position-norm type="double">0</position-norm>
+    </pushback>
+	<door n="0">
+		<position-x-m type="float">-16.3271</position-x-m>
+		<position-y-m type="float">-2.9479</position-y-m>
+		<position-z-m type="float">-3.6152</position-z-m>
+		<jetway-hood-deg type="float">3</jetway-hood-deg>
+	</door>
+	<door n="1">
+		<position-x-m type="float">-6.2634</position-x-m>
+		<position-y-m type="float">-3.4348</position-y-m>
+		<position-z-m type="float">-3.6401</position-z-m>
+		<jetway-hood-deg type="float">0</jetway-hood-deg>
+	</door>
+	<door n="2">
+		<position-x-m type="float">-1.6562</position-x-m>
+		<position-y-m type="float">-3.0000</position-y-m>
+		<position-z-m type="float">-0.6061</position-z-m>
+		<jetway-hood-deg type="float">25</jetway-hood-deg>
+	</door>
    </model>
 
          
@@ -312,6 +311,54 @@
 				</signal>
 			</config>
 		</flight-recorder>
+		
+		<menubar>
+				<default>
+					<menu n="3">
+						<item n="0">
+				            <label>Autopilot Dialog</label>
+				            <enabled type="bool">false</enabled>
+		                    <binding>
+								<command>nasal</command>
+								<script>
+								<!-- Disabled -->
+								</script>
+		                    </binding>
+		                </item>
+		                <item n="1">
+				            <label>Route Manager</label>
+				            <enabled type="bool">false</enabled>
+		                    <binding>
+								<command>nasal</command>
+								<script>
+									<!-- Disabled -->
+								</script>
+		                    </binding>
+		                </item>
+					</menu>
+					<menu n="100">
+						<label>A380</label>
+						<enabled type="bool">true</enabled>
+						<item>
+							<label>Select Livery</label>
+							<binding>
+								<command>nasal</command>
+								<script>
+								 aircraft.livery.dialog.open();
+								</script>
+							</binding>
+						</item>
+						<item>
+							<name>pushback</name>
+							<label>Pushback</label>
+							<binding>
+								<command>dialog-show</command>
+								<dialog-name>pushback</dialog-name>
+							</binding>
+						</item>
+					</menu>
+				</default>
+		</menubar>
   </sim>
   
   <!-- Initialize Fly-by-wire Properties -->
