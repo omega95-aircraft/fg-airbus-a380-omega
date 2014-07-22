@@ -34,6 +34,33 @@
 	</pid-controller -->
 	
 	<pid-controller>
+		<name>FBW Outboard Elevators Stabilizer</name>
+		<debug type="bool">false</debug>
+		<enable>
+			<prop>/fbw/elev-ob-stable</prop>
+		</enable>
+		<input>
+			<prop>/orientation/pitch-deg</prop>
+		</input>
+		<reference>
+			<prop>/fbw/pitch-hold</prop>
+		</reference>
+		<output>
+			<prop>/fbw/outputs/elev-ob</prop>
+		</output>
+		<config>
+			<Kp>-0.04</Kp>
+			<beta>1</beta>
+			<alpha>0.1</alpha>
+			<gamma>0</gamma>
+			<Ti>10</Ti>
+			<Td>0.00000001</Td>
+			<u_min>-0.5</u_min>
+			<u_max>0.5</u_max>
+		</config>
+	</pid-controller>
+	
+	<pid-controller>
 		<name>FBW Outboard Elevators Control</name>
 		<debug type="bool">false</debug>
 		<enable>
@@ -49,11 +76,38 @@
 			<prop>/fbw/outputs/elev-ob</prop>
 		</output>
 		<config>
-			<Kp>-0.07</Kp>
+			<Kp>-0.06</Kp>
 			<beta>1</beta>
 			<alpha>0.1</alpha>
 			<gamma>0</gamma>
-			<Ti>2</Ti>
+			<Ti>5</Ti>
+			<Td>0.0000000001</Td>
+			<u_min>-1</u_min>
+			<u_max>1</u_max>
+		</config>
+	</pid-controller>
+	
+	<pid-controller>
+		<name>FBW Inboard Elevators Control</name>
+		<debug type="bool">false</debug>
+		<enable>
+			<prop>/fbw/elev-ib-enable</prop>
+		</enable>
+		<input>
+			<prop>/orientation/pitch-rate-degps</prop>
+		</input>
+		<reference>
+			<prop>/fbw/cmd-pitch-rate</prop>
+		</reference>
+		<output>
+			<prop>/fbw/outputs/elev-ib</prop>
+		</output>
+		<config>
+			<Kp>-0.05</Kp>
+			<beta>1</beta>
+			<alpha>0.1</alpha>
+			<gamma>0</gamma>
+			<Ti>5</Ti>
 			<Td>0.0000000001</Td>
 			<u_min>-1</u_min>
 			<u_max>1</u_max>
@@ -76,12 +130,12 @@
 			<prop>/fbw/outputs/alrn-ob</prop>
 		</output>
 		<config>
-			<Kp>0.05</Kp>
+			<Kp>0.035</Kp>
 			<beta>1</beta>
 			<alpha>0.1</alpha>
 			<gamma>0</gamma>
-			<Ti>10</Ti>
-			<Td>0.0000000001</Td>
+			<Ti>2</Ti>
+			<Td>0.00000001</Td>
 			<u_min>-1</u_min>
 			<u_max>1</u_max>
 		</config>
@@ -107,7 +161,7 @@
 			<beta>1</beta>
 			<alpha>0.1</alpha>
 			<gamma>0</gamma>
-			<Ti>0.35</Ti>
+			<Ti>0.65</Ti>
 			<Td>0.0001</Td>
 			<u_min>-1</u_min>
 			<u_max>1</u_max>
@@ -130,11 +184,11 @@
 			<prop>/fbw/outputs/rudder</prop>
 		</output>
 		<config>
-			<Kp>-0.002</Kp>
+			<Kp>-0.02</Kp>
 			<beta>1</beta>
 			<alpha>0.1</alpha>
 			<gamma>0</gamma>
-			<Ti>0.001</Ti>
+			<Ti>0.15</Ti>
 			<Td>0.0001</Td>
 			<u_min>-1</u_min>
 			<u_max>1</u_max>

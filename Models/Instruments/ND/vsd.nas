@@ -316,7 +316,7 @@ var vsd = {
 			var fpa = math.atan2(vs_fps, gs_fps);
 			# FIXME - something wrong with the center of the speed arrow
 			me.group.getElementById("speed_arrow").setTranslation(0,me.new_markerPos-me.lastalt)
-												  .setCenter(me.bottom_left.x + 12,me.bottom_left.y + me.new_markerPos)
+												  .setCenter(me.bottom_left.x + 12,740 + (2*me.new_markerPos))
 												  .setRotation(-fpa)
 												  .show();			
 		} else {

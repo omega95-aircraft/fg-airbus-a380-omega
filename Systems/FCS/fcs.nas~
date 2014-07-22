@@ -35,6 +35,8 @@ var fcs_tree = "/fdm/jsbsim/fcs/";
 var input = "/controls/flight/";
 
 setprop("/fdm/jsbsim/fcs/aileron-ob-droop",0);
+setprop("/fdm/jsbsim/fcs/aileron-md-droop",0);
+setprop("/fdm/jsbsim/fcs/aileron-ib-droop",0);
 
 var fcs = {
 	
@@ -148,7 +150,7 @@ var fcs = {
 		#	me.phase = 1;	
 		# }
 			
-		if (getprop("/gear/gear/wow")) {
+		if(getprop("/gear/gear[1]/wow")) {
 			setprop("/fbw/flight-phase", "Ground Mode");
 			me.phase = 0;
 		} else {
@@ -185,8 +187,8 @@ var fcs = {
 	law_normal : func {
 		# NORMAL LAW - Commands pitch/roll rate
 		
-		setprop("/fbw/cmd-roll-rate", 30*me.stick_roll);
-		setprop("/fbw/cmd-pitch-rate", -15*me.stick_pitch);
+		setprop("/fbw/cmd-roll-rate", 20*me.stick_roll);
+		setprop("/fbw/cmd-pitch-rate", -10*me.stick_pitch);
 		
 		# Only activate roll stabilizer if pilot leaves the stick alone
 		if((abs(me.stick_roll) <= me.dead_band) and (abs(me.roll_rate) <= 1)) {
@@ -207,7 +209,7 @@ var fcs = {
 		me.alrn_rib.move_pos(me.stick_roll);
 		
 		# Yaw Damper
-		setprop("/fbw/cmd-yaw-rate", 6*me.stick_yaw + me.bank/10); # Co-ordinate turns
+		setprop("/fbw/cmd-yaw-rate", 3*me.stick_yaw + me.bank/20); # Co-ordinate turns
 		me.rudder.move_pos(getprop("/fbw/outputs/rudder"));
 		
 		# Roll control spoilers work the same way they do in DIRECT LAW
@@ -227,16 +229,32 @@ var fcs = {
 			me.rsp7.add(0);
 		}
 		
+		if((abs(me.stick_pitch) <= me.dead_band) and (abs(me.pitch_rate) <= 1)) {
+			setprop("/fbw/elev-ob-stable", 1);
+			setprop("/fbw/elev-ob-enable", 0);
+			setprop("/fbw/elev-ib-enable", 0);
+			setprop("/fbw/outputs/elev-ib", me.approach_target(getprop("/fbw/outputs/elev-ib")));
+		} else {
+			setprop("/fbw/elev-ob-enable", 1);
+			setprop("/fbw/elev-ob-stable", 0);
+			setprop("/fbw/elev-ib-enable", 1);
+			setprop("/fbw/pitch-hold", me.pitch);
+		}
+		
 		# Outboard Elevators work to achieve commanded pitch rate [G-Force above 210 KIAS]
-		setprop("/fbw/elev-ob-enable", 1);
 		me.elev_lob.move_pos(getprop("/fbw/outputs/elev-ob"));
 		me.elev_rob.move_pos(getprop("/fbw/outputs/elev-ob"));
-		
-		# Inboard Elevators work the same as in DIRECT LAW
-		me.elev_lib.move_pos(me.stick_pitch);
-		me.elev_rib.move_pos(me.stick_pitch);
+		me.elev_lib.move_pos(getprop("/fbw/outputs/elev-ib"));
+		me.elev_rib.move_pos(getprop("/fbw/outputs/elev-ib"));
 		
 		me.hstb.move_pos(me.pitch_trim); # FBW Output for HSTAB is the pitch trim property
+		
+		# Control Yaw Damper
+		if(getprop("/flight-management/control/ap1-master") == "eng" or getprop("/flight-management/control/ap2-master") == "eng") {
+			setprop("/fbw/yaw-damper", 0);
+		} else {
+			setprop("/fbw/yaw-damper", 1);
+		}
 	},
 	law_direct : func {
 		# DIRECT LAW - Apply Inputs from Side Stick straight to control surfaces without modifications or stabilization
@@ -317,10 +335,11 @@ var fcs = {
 		var flaps = getprop("/fdm/jsbsim/fcs/flap-pos-deg");
 		if(flaps > 16) {
 			var droop = (flaps - 16)*0.01745;
-			if(getprop("/gear/gear[1]/wow")) {
+			if(getprop("/gear/gear[1]/wow") and (getprop("/velocities/groundspeed-kt") > 45) and (flaps > 24)) {
 				droop = (16 - flaps)*0.03;
+				setprop("/controls/flight/speedbrake",1);
 			}
-			var newDroopPos = me.approach_target(getprop("/fdm/jsbsim/fcs/aileron-ob-droop"), droop, 0.04);
+			var newDroopPos = me.approach_target(getprop("/fdm/jsbsim/fcs/aileron-ob-droop"), droop, 0.025);
 			setprop("/fdm/jsbsim/fcs/aileron-ob-droop", newDroopPos);
 			setprop("/fdm/jsbsim/fcs/aileron-md-droop", newDroopPos);
 			setprop("/fdm/jsbsim/fcs/aileron-ib-droop", newDroopPos);

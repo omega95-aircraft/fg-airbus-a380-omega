@@ -749,7 +749,7 @@
 				
 					var alt_prop = "/flight-management/fcu-values/alt";
 				
-					if (41000 > getprop(alt_prop))
+					if (43000 > getprop(alt_prop))
 						setprop(alt_prop, getprop(alt_prop) + step);
 					
 				</script>
@@ -1136,6 +1136,7 @@
 					<property>/flight-management/control/spd-mode</property>
 					<value>ias</value>
 				</equals>
+				<property>/systems/electric/outputs/avionics</property>
 			</and>
 		</condition>
 	</animation>
@@ -1153,23 +1154,7 @@
 					<property>/flight-management/control/spd-mode</property>
 					<value>mach</value>
 				</equals>
-			</and>
-		</condition>
-	</animation>
-	
-	<animation>
-		<type>select</type>
-		<object-name>spd.ind</object-name>
-		<condition>
-			<and>
-				<equals>
-					<property>/flight-management/control/spd-ctrl</property>
-					<value>man-set</value>
-				</equals>
-				<equals>
-					<property>/flight-management/control/spd-mode</property>
-					<value>ias</value>
-				</equals>
+				<property>/systems/electric/outputs/avionics</property>
 			</and>
 		</condition>
 	</animation>
@@ -1182,6 +1167,7 @@
 				<property>/flight-management/control/spd-ctrl</property>
 				<value>fmgc</value>
 			</equals>
+			<property>/systems/electric/outputs/avionics</property>
 		</condition>
 	</animation>
 	
@@ -1193,6 +1179,7 @@
 				<property>/flight-management/control/lat-ctrl</property>
 				<value>fmgc</value>
 			</equals>
+			<property>/systems/electric/outputs/avionics</property>
 		</condition>
 	</animation>
 	
@@ -1204,6 +1191,22 @@
 				<property>/flight-management/control/ver-ctrl</property>
 				<value>fmgc</value>
 			</equals>
+			<property>/systems/electric/outputs/avionics</property>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>alt.ind</object-name>
+		<condition>
+			<property>/systems/electric/outputs/avionics</property>
+		</condition>
+	</animation>
+	<animation>
+		<type>select</type>
+		<object-name>hdg.ind</object-name>
+		<condition>
+			<property>/systems/electric/outputs/avionics</property>
 		</condition>
 	</animation>
 	
@@ -1215,6 +1218,7 @@
 				<property>/flight-management/control/ver-sub</property>
 				<value>vs</value>
 			</equals>
+			<property>/systems/electric/outputs/avionics</property>
 		</condition>
 	</animation>
 	
@@ -1226,6 +1230,7 @@
 				<property>/flight-management/control/ver-sub</property>
 				<value>fpa</value>
 			</equals>
+			<property>/systems/electric/outputs/avionics</property>
 		</condition>
 	</animation>
 	
@@ -1237,6 +1242,7 @@
 				<property>/flight-management/fcu/level_ch</property>
 				<value>1</value>
 			</equals>
+			<property>/systems/electric/outputs/avionics</property>
 		</condition>
 	</animation>
 	

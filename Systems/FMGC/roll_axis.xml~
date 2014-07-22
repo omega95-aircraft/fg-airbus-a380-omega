@@ -24,10 +24,10 @@
 			<beta>1</beta>
 			<alpha>0.1</alpha>
 			<gamma>0</gamma>
-			<Ti>10</Ti>
+			<Ti>1</Ti>
 			<Td>0.000001</Td>
-			<u_min>-0.25</u_min>
-			<u_max>0.25</u_max>
+			<u_min>-0.2</u_min>
+			<u_max>0.2</u_max>
 		</config>
 	</pid-controller>
 	
@@ -47,12 +47,12 @@
 			<prop>/controls/flight/aileron</prop> <!-- This is basically the fbw input prop -->
 		</output>
 		<config>
-			<Kp>0.07</Kp>
+			<Kp>0.06</Kp>
 			<beta>1</beta>
 			<alpha>0.1</alpha>
 			<gamma>0</gamma>
 			<Ti>10</Ti>
-			<Td>0.0001</Td>
+			<Td>0.00005</Td>
 			<u_min>-0.8</u_min>
 			<u_max>0.8</u_max>
 		</config>

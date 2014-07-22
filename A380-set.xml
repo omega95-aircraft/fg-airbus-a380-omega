@@ -319,12 +319,14 @@
   	<alrn-ob-enable type="bool">false</alrn-ob-enable>
   	<alrn-md-enable type="bool">false</alrn-md-enable>
   	<elev-ob-enable type="bool">false</elev-ob-enable>
+  	<elev-ib-enable type="bool">false</elev-ib-enable>
   	<cmd-roll-rate type="float">0</cmd-roll-rate>
   	<cmd-pitch-rate type="float">0</cmd-pitch-rate>
   	<outputs>
   		<alrn-ob type="float">0</alrn-ob>
   		<alrn-md type="float">0</alrn-md>
   		<elev-ob type="float">0</elev-ob>
+  		<elev-ib type="float">0</elev-ib>
   		<rudder type="float">0</rudder>
   	</outputs>
   </fbw>
@@ -433,11 +435,13 @@
       <running>false</running>
       <rpm>1000</rpm>
       <reverser-position type="double">0.000000</reverser-position>
+      <reverser-pos-norm type="double">0.000000</reverser-pos-norm>
     </engine>
     <engine n="2">
       <running>false</running>
       <rpm>1000</rpm>
-      <reverser-position type="double">0.000000</reverser-position>          
+      <reverser-position type="double">0.000000</reverser-position>
+      <reverser-pos-norm type="double">0.000000</reverser-pos-norm>        
      </engine>
      <engine n="3">
        <running>false</running>
@@ -506,7 +510,7 @@
       <desc>Toggle Reversers</desc>
       <binding>
         <command>nasal</command>
-        <script>a380.togglereverser()</script>
+        <script>reversethrust.togglereverser()</script>
       </binding>
     </key>
     
@@ -539,181 +543,6 @@
         </binding>
       </mod-up>
     </key>
- 
-    <key n="106">
-      <name>j</name>
-      <desc>Decrease spoilers</desc>
-      <binding>
-        <command>nasal</command>
-        <script>A380.stepSpeedbrake(-1)</script>
-      </binding>
-    </key>
-
-    <key n="107">
-      <name>k</name>
-      <desc>Increase spoilers</desc>
-      <binding>
-        <command>nasal</command>
-        <script>A380.stepSpeedbrake(1)</script>
-      </binding>
-    </key>
-
-    <!-- key n="101">
-      <name>e</name>
-      <desc>Cycle cockpit location - Stand up, walk around, sit down</desc>
-      <binding>
-        <command>nasal</command>
-        <script>walk.cycle_cockpit(1)</script>
-      </binding>
-    </key>
-    
-    <key n="69">
-      <name>E</name>
-      <desc>Cycle cockpit location - Return to cockpit</desc>
-      <binding>
-        <command>nasal</command>
-        <script>walk.cycle_cockpit(10)</script>
-      </binding>
-    </key -->
-    
-    <key n="119">
-      <name>w</name>
-      <desc>Walk forward toward view</desc>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>nasal</command>
-        <script>walk.walk_about(0.1)</script>
-      </binding>
-    </key>
-    
-    <key n="87">
-      <name>W</name>
-      <desc>Walk backward from view</desc>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>nasal</command>
-        <script>walk.walk_about(-0.1)</script>
-      </binding>
-    </key>
-
-    <key n="68">
-      <name>D</name>
-      <desc>Aft Cargo door</desc>
-      <binding>
-        <command>nasal</command>
-        <script>DOORS.doorsystem.aftCargo()</script>
-      </binding>
-    </key>
-    
-    <key n="100">
-      <name>d</name>
-       <desc>Forward Cargo door</desc>
-       <binding>
-         <command>nasal</command>
-         <script>DOORS.doorsystem.forwardCargo()</script>
-       </binding>
-     </key>
-     
-     <key n="33">
-       <name>!</name>
-       <desc>Pax Left Lower door 1</desc>
-       <binding>
-         <command>nasal</command>
-         <script>DOORS.doorsystem.paxLeftLow1()</script>
-       </binding>
-     </key>
-     
-    <key n="64">
-      <name>@</name>
-      <desc>Pax Left Upper door 1</desc>
-      <binding>
-        <command>nasal</command>
-        <script>DOORS.doorsystem.paxLeftUp1()</script>
-      </binding>
-    </key>
-    
-    <key n="35">
-      <name>#</name>
-      <desc>Pax Right Lower door 1</desc>
-      <binding>
-        <command>nasal</command>
-        <script>DOORS.doorsystem.paxRightLow1()</script>
-      </binding>
-    </key>
-    
-    <key n="36">
-      <name>$</name>
-      <desc>Pax Right Upper door 1</desc>
-      <binding>
-        <command>nasal</command>
-        <script>DOORS.doorsystem.paxRightUp1()</script>
-      </binding>
-    </key>
-    
-    <key n="37">
-      <name>%</name>
-      <desc>Pax Left Lower door 2</desc>
-      <binding>
-        <command>nasal</command>
-        <script>DOORS.doorsystem.paxLeftLow2()</script>
-      </binding>
-    </key>
-    
-    <key n="94">
-      <name>^</name>
-      <desc>Pax Right Lower door 2</desc>
-      <binding>
-        <command>nasal</command>
-        <script>DOORS.doorsystem.paxRightLow2()</script>
-      </binding>
-    </key>
-   
-   <key n="360">  
-     <name>PAGEUP</name>
-     <desc>Increments Thrust</desc>
-     <binding>
-       <command>nasal</command>
-       <script>FCU.adjust_thrust(1)</script>
-     </binding>
-     <mod-shift>
-       <desc>Increments Thrust detent</desc>
-       <binding>
-         <command>nasal</command>
-         <script>FCU.toggle_thrust_detent(1)</script>
-       </binding>
-     </mod-shift>
-   </key>
-   
-   <key n="361"> 
-     <name>PAGEDN</name>
-     <desc>Decrements Thrust</desc>
-     <binding>
-       <command>nasal</command>
-       <script>FCU.adjust_thrust(-1)</script>
-     </binding>
-     <mod-shift>
-       <desc>Decrements Thrust Detent</desc>
-       <binding>
-         <command>nasal</command>
-         <script>FCU.toggle_thrust_detent(-1)</script>
-       </binding>
-     </mod-shift>
-   </key>
-
-   <key n="261">
-     <name>F5</name>
-     <repeatable type="bool">true</repeatable>
-     <mod-shift>
-       <desc>Reload autopilot configuration</desc>
-       <binding>
-         <command>nasal</command>
-         <script>
-         fgcommand('reinit', props.Node.new({ subsystem: "xml-autopilot" }));
-         print("xml-autopilot reinitialized!");
-         </script>
-       </binding>
-     </mod-shift>
-   </key>
   </keyboard>
 </input>
   
@@ -1030,10 +859,12 @@
 
 <nasal>
 	<a380>
-    	<file>Aircraft/A380/Nasal/reverse-thrust.nas</file>
     	<file>Aircraft/A380/Nasal/walk.nas</file>
     	<file>Aircraft/A380/Nasal/listeners.nas</file>
     </a380>
+   	<reversethrust>
+   		<file>Aircraft/A380/Nasal/reverse-thrust.nas</file>
+   	</reversethrust>
     <nd>
     	<file>Aircraft/A380/Models/Instruments/ND/nd.nas</file>
     	<file>Aircraft/A380/Models/Instruments/ND/vsd.nas</file>

@@ -185,7 +185,7 @@ var fmgc_loop = {
     			if(spd_brk_cmd > 1) {
     				spd_brk_cmd = 1;
     			}
-    			setprop("/controls/flight/speedbrake", spd_brk_cmd);
+    			setprop("/controls/flight/speedbrake-add", spd_brk_cmd);
     		} else {
     			if((getprop("/controls/flight/speedbrake") < 1 ) and (getprop("/controls/flight/speedbrake") > 0)) {
     				setprop("/controls/flight/speedbrake", 0);
@@ -513,6 +513,8 @@ var fmgc_loop = {
 			setprop(servo~ "elevator", 0);
 			
 			setprop(servo~ "elevator-gs", 0);
+			
+		}
 		
 		} # End of AP1 MASTER CHECK
 

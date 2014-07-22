@@ -179,18 +179,18 @@ var fmgc_loop = {
     		
     		# Help slow down with speed-brakes
     		# getprop("/instrumentation/airspeed-indicator/indicated-speed-kt")
-    		var spd_lookahead = getprop("/instrumentation/pfd/speed-lookahead");
-    		if((spd_lookahead > getprop(fcu~"ias") + 5) and (getprop("/controls/engines/engine/throttle") < 0.02)) {
-    			var spd_brk_cmd = (spd_lookahead - 5 - getprop(fcu~"ias"))/35;
-    			if(spd_brk_cmd > 1) {
-    				spd_brk_cmd = 1;
-    			}
-    			setprop("/controls/flight/speedbrake", spd_brk_cmd);
-    		} else {
-    			if((getprop("/controls/flight/speedbrake") < 1 ) and (getprop("/controls/flight/speedbrake") > 0)) {
-    				setprop("/controls/flight/speedbrake", 0);
-    			}
-    		}
+    		# var spd_lookahead = getprop("/instrumentation/pfd/speed-lookahead");
+    		# if((spd_lookahead > getprop(fcu~"ias") + 5) and (getprop("/controls/engines/engine/throttle") < 0.02)) {
+    		#	var spd_brk_cmd = (spd_lookahead - 5 - getprop(fcu~"ias"))/35;
+    		#	if(spd_brk_cmd > 1) {
+    		#		spd_brk_cmd = 1;
+    		#	}
+    		#	setprop("/controls/flight/speedbrake-add", spd_brk_cmd);
+    		# } else {
+    		#	if((getprop("/controls/flight/speedbrake") < 1 ) and (getprop("/controls/flight/speedbrake") > 0)) {
+    		#		setprop("/controls/flight/speedbrake", 0);
+    		#	}
+    		# }
     	
     	}
     	

@@ -134,8 +134,8 @@
                 <y> 0 </y>
                 <z> -9.19 </z>
             </location>
-            <static_friction> 0.8 </static_friction>
-            <dynamic_friction> 0.5 </dynamic_friction>
+            <static_friction> 0.95 </static_friction>
+            <dynamic_friction> 0.76 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 44000 </spring_coeff>
       		<damping_coeff unit="LBS/FT/SEC"> 8000 </damping_coeff>
@@ -433,7 +433,7 @@
       <tank type="FUEL">    <!-- FEED TANK 1 -->
             <location unit="M">
 		<x> 48.5306 </x>
-		<y> 23.4729 </y>
+		<y> -23.4729 </y>
 		<z> -5.01 </z>
             </location>
             <capacity unit="LBS"> 49455 </capacity> <!-- 7390 US gal -->
@@ -444,7 +444,7 @@
         <tank type="FUEL">    <!-- FEED TANK 2 -->
             <location unit="M">
 		<x> 37.4956 </x>
-		<y> 7.6904 </y>
+		<y> -7.6904 </y>
 		<z> -3.3069 </z>
             </location>
             <capacity unit="LBS"> 51896 </capacity> <!-- 7760 US gal -->
@@ -455,7 +455,7 @@
         <tank type="FUEL">    <!-- FEED TANK 3 -->
             <location unit="M">
 		<x> 37.4956 </x>
-		<y> -7.6904 </y>
+		<y> 7.6904 </y>
 		<z> -3.3069 </z>
             </location>
             <capacity unit="LBS"> 51896 </capacity> <!-- 7760 US gal -->
@@ -466,7 +466,7 @@
         <tank type="FUEL">    <!-- FEED TANK 4 -->
             <location unit="M">
 		<x> 48.5306 </x>
-		<y> -23.4729 </y>
+		<y> 23.4729 </y>
 		<z> -5.01 </z>
             </location>
             <capacity unit="LBS"> 49455 </capacity> <!-- 7390 US gal -->
@@ -477,7 +477,7 @@
 	<tank type="FUEL">    <!-- L INNER TANK -->
             <location unit="M">
 		<x> 42.1149 </x>
-		<y> 8.5886 </y>
+		<y> -8.5886 </y>
 		<z> -3.3069 </z>
             </location>
             <capacity unit="LBS"> 81612 </capacity> <!-- 12190 US gal -->
@@ -488,7 +488,7 @@
 	<tank type="FUEL">    <!-- R INNER TANK -->
             <location unit="M">
 		<x> 42.1149 </x>
-		<y> -8.5886 </y>
+		<y> 8.5886 </y>
 		<z> -3.3069 </z>
             </location>
             <capacity unit="LBS"> 81612 </capacity> <!-- 12190 US gal -->
@@ -499,7 +499,7 @@
 	<tank type="FUEL">    <!-- L MID TANK -->
             <location unit="M"> 
 		<x> 44.0396 </x>
-		<y> 15.0043 </y>
+		<y> -15.0043 </y>
 		<z> -4.67 </z>
             </location>
             <capacity unit="LBS"> 69690 </capacity> <!-- 9630 US gal -->
@@ -510,7 +510,7 @@
 	<tank type="FUEL">    <!-- R MID TANK -->
             <location unit="M">
 		<x> 44.0396 </x>
-		<y> -15.0043 </y>
+		<y> 15.0043 </y>
 		<z> -4.67 </z>
             </location>
             <capacity unit="LBS"> 69690 </capacity> <!-- 9630 US gal -->
@@ -521,7 +521,7 @@
 	<tank type="FUEL">    <!-- L OUTER TANK -->
             <location unit="M">
 		<x> 52.7169 </x>
-		<y> 30.1754 </y>
+		<y> -30.1754 </y>
 		<z> -5.28 </z>
             </location>
             <capacity unit="LBS"> 18607 </capacity> <!-- 2760 US gal -->
@@ -532,7 +532,7 @@
 	<tank type="FUEL">    <!-- R OUTER TANK -->
             <location unit="M">
 		<x> 52.7169 </x>
-		<y> -30.1754 </y>
+		<y> 30.1754 </y>
 		<z> -5.28 </z>
             </location>
             <capacity unit="LBS"> 18607 </capacity> <!-- 2760 US gal -->

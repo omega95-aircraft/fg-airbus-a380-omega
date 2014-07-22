@@ -300,7 +300,7 @@ var vsd = {
 			me.terrain.lineTo(me.bottom_left.x+(i*(me.max_range_px/(me.elev_pts-1))), me.bottom_left.y - me.alt_ceil_px*(me.elev_profile[i]/me.alt_ceil));
 		}
 		
-		me.terrain.lineTo(me.bottom_left.x+me.max_range_px,me.bottom_left.x-me.terr_offset);
+		me.terrain.lineTo(me.bottom_left.x+me.max_range_px,me.bottom_left.y+me.terr_offset);
 		
 		me.group.getElementById("text_alt1").setText(sprintf("%5.0f",me.alt_ceil/2));
 		me.group.getElementById("text_alt2").setText(sprintf("%5.0f",me.alt_ceil));
@@ -316,7 +316,7 @@ var vsd = {
 			var fpa = math.atan2(vs_fps, gs_fps);
 			# FIXME - something wrong with the center of the speed arrow
 			me.group.getElementById("speed_arrow").setTranslation(0,me.new_markerPos-me.lastalt)
-												  .setCenter(me.bottom_left.x + 12,me.bottom_left.y + me.new_markerPos)
+												  .setCenter(me.bottom_left.x + 12,740 + me.new_markerPos)
 												  .setRotation(-fpa)
 												  .show();			
 		} else {
