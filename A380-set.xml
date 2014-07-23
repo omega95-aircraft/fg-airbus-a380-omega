@@ -361,6 +361,24 @@
 								<dialog-name>pushback</dialog-name>
 							</binding>
 						</item>
+						<item>
+							<label>Toggle Dlg: ECAM E/WD</label>
+							<binding>
+								<command>nasal</command>
+								<script>
+								 ecam.ewd.showDlg();
+								</script>
+							</binding>
+						</item>
+						<item>
+							<label>Toggle Dlg: ECAM SD</label>
+							<binding>
+								<command>nasal</command>
+								<script>
+								 ecam.sd.showDlg();
+								</script>
+							</binding>
+						</item>
 					</menu>
 				</default>
 		</menubar>
@@ -910,6 +928,28 @@
 </instrumentation>
 
 <nasal>
+	<ecam>
+		<file>Aircraft/A380/Models/Instruments/ecam.nas</file>
+		<!-- ECAM E/WD Display -->
+		<file>Aircraft/A380/Models/Instruments/EWD/ewd.nas</file>
+		<!-- ECAM SD Display -->
+		<file>Aircraft/A380/Models/Instruments/SD/pages.nas</file>
+		<!-- A380 Briefing For Pilots Reference Pages -->
+		<file>Aircraft/A380/Models/Instruments/SD/fctl/fctl.nas</file>			 <!-- pg 141 -->
+		<file>Aircraft/A380/Models/Instruments/SD/fuel/fuel.nas</file>			 <!-- pg 164 -->
+		<file>Aircraft/A380/Models/Instruments/SD/cond/cond.nas</file>			 <!-- pg 047 -->
+		<file>Aircraft/A380/Models/Instruments/SD/bleed/bleed.nas</file>		 <!-- pg 048 -->
+		<file>Aircraft/A380/Models/Instruments/SD/cruise/cruise.nas</file>		 <!-- pg 057 -->
+		<file>Aircraft/A380/Models/Instruments/SD/cab_press/cab_press.nas</file> <!-- pg 057 -->
+		<file>Aircraft/A380/Models/Instruments/SD/elec_ac/elec_ac.nas</file>	 <!-- pg 108 -->
+		<file>Aircraft/A380/Models/Instruments/SD/elec_dc/elec_dc.nas</file>	 <!-- pg 108 -->
+		<file>Aircraft/A380/Models/Instruments/SD/hyd/hyd.nas</file>			 <!-- pg 169 -->
+		<file>Aircraft/A380/Models/Instruments/SD/wheel/wheel.nas</file>		 <!-- pg 232 -->
+		<file>Aircraft/A380/Models/Instruments/SD/door/door.nas</file>			 <!-- pg 255 -->
+		<file>Aircraft/A380/Models/Instruments/SD/engine/engine.nas</file>		 <!-- pg 294 -->
+		<file>Aircraft/A380/Models/Instruments/SD/apu/apu.nas</file>			 <!-- pg 283 -->
+		<file>Aircraft/A380/Models/Instruments/SD/sd.nas</file>
+	</ecam>
 	<a380>
     	<file>Aircraft/A380/Nasal/walk.nas</file>
     	<file>Aircraft/A380/Nasal/listeners.nas</file>

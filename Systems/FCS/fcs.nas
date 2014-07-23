@@ -150,7 +150,7 @@ var fcs = {
 		#	me.phase = 1;	
 		# }
 			
-		if(getprop("/gear/gear[1]/wow")) {
+		if(getprop("/gear/gear/wow")) {
 			setprop("/fbw/flight-phase", "Ground Mode");
 			me.phase = 0;
 		} else {
@@ -209,8 +209,9 @@ var fcs = {
 		me.alrn_rib.move_pos(me.stick_roll);
 		
 		# Yaw Damper
-		setprop("/fbw/cmd-yaw-rate", 3*me.stick_yaw + me.bank/20); # Co-ordinate turns
-		me.rudder.move_pos(getprop("/fbw/outputs/rudder"));
+		setprop("/fbw/cmd-yaw-rate", 3*me.stick_yaw + me.bank/12); # Co-ordinate turns
+		# me.rudder.move_pos(getprop("/fbw/outputs/rudder"));
+		me.rudder.move_pos(-getprop("/controls/flight/rudder"));
 		
 		# Roll control spoilers work the same way they do in DIRECT LAW
 		# Use Spoiler Assist for Hard Banks

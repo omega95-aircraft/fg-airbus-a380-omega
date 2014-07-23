@@ -8,10 +8,10 @@ var hyd_green = {
 		var epr = getprop("/engines/engine/epr");
 		
 		if (epr > 1)
-			pressure = epr * 1200;
+			pressure = epr * 1400;
 		
-		if (pressure > 2400)
-			hydraulics.green_psi += 2400; # Filter
+		if (pressure > 2800)
+			hydraulics.green_psi += 2800; # Filter
 		else
 			hydraulics.green_psi += pressure;
 	
@@ -22,10 +22,10 @@ var hyd_green = {
 		var epr = getprop("/engines/engine/epr");
 		
 		if (epr > 1)
-			pressure = epr * 1200;
+			pressure = epr * 1400;
 		
-		if (pressure > 2400)
-			hydraulics.green_psi += 2400; # Filter
+		if (pressure > 2800)
+			hydraulics.green_psi += 2800; # Filter
 		else
 			hydraulics.green_psi += pressure;
 	
@@ -36,10 +36,10 @@ var hyd_green = {
 		var epr = getprop("/engines/engine[1]/epr");
 		
 		if (epr > 1)
-			pressure = epr * 1200;
+			pressure = epr * 1400;
 		
-		if (pressure > 2400)
-			hydraulics.green_psi += 2400; # Filter
+		if (pressure > 2800)
+			hydraulics.green_psi += 2800; # Filter
 		else
 			hydraulics.green_psi += pressure;
 	
@@ -50,10 +50,10 @@ var hyd_green = {
 		var epr = getprop("/engines/engine[1]/epr");
 		
 		if (epr > 1)
-			pressure = epr * 1200;
+			pressure = epr * 1400;
 		
-		if (pressure > 2400)
-			hydraulics.green_psi += 2400; # Filter
+		if (pressure > 2800)
+			hydraulics.green_psi += 2800; # Filter
 		else
 			hydraulics.green_psi += pressure;
 	

@@ -255,6 +255,8 @@
         <object-name>vsd.l</object-name>
         <object-name>nd.r</object-name>
         <object-name>vsd.r</object-name>
+        <object-name>ecam_ewd</object-name>
+        <object-name>ecam_sd</object-name>
         <condition>
             <equals>
                 <property>systems/electric/outputs/avionics</property>
@@ -263,7 +265,7 @@
         </condition>
     </animation>
     
-    <!-- animation>
+    <animation>
 		<type>pick</type>
 		<object-name>nd.l</object-name>
 		<action>
@@ -287,7 +289,7 @@
 				<script>nd.showNd("fo");</script>
 			</binding>
 		</action>
-	</animation -->
+	</animation>
 	
 	<animation>
 		<type>pick</type>
@@ -311,6 +313,32 @@
 			<binding>
 				<command>nasal</command>
 				<script>nd.fo_vsd.showDlg();</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>ecam_ewd</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>ecam.ewd.showDlg();</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>ecam_ewd</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>ecam.sd.showDlg();</script>
 			</binding>
 		</action>
 	</animation>

@@ -76,8 +76,8 @@ var hyd_green = {
 		if(pump2b) {
 			me.eng2_pump_b();
 		}
-		if(hydraulics.green_psi >= 3000) { # Limit maximum hydraulic pressure
-			hydraulics.green_psi = 3000;
+		if(hydraulics.green_psi >= 5000) { # Limit maximum hydraulic pressure
+			hydraulics.green_psi = 5000;
 		}
 	}
 	

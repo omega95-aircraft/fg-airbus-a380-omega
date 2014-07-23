@@ -420,6 +420,8 @@ var compr = func(n) {
 	var cmpr = getprop("/fdm/jsbsim/gear/unit["~n~"]/compression-ft");
 	if(cmpr > 5) {
 		return 5;
+	} else {
+		return cmpr;
 	}
 }
 

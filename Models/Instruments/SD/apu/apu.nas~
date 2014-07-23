@@ -1,0 +1,10 @@
+# ECAM Systems Display - APU Page
+
+sd_pages["apu"] = {
+	path: "/Aircraft/A380/Models/Instruments/SD/apu/apu.svg",
+	svg: {},
+	objects: [],
+	update: func {
+		
+	}
+};

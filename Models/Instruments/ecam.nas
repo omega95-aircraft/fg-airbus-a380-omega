@@ -4,7 +4,6 @@
 var ecam = {
 	active: "",
 	pages: {},
-	svg: {},
 	new: func(pages, placement) {
 		var t = {parents:[ecam]};
 		t.pages = pages;
@@ -20,6 +19,8 @@ var ecam = {
 		t.objects = t.display.createGroup();
 		t.timer = maketimer(0.05, t, t.update);
 		
+		t.load("start");
+		
 		return t;
 	},
 	load: func(page) {
@@ -32,8 +33,9 @@ var ecam = {
 		canvas.parsesvg(me.objects, me.pages[page].path, {'font-mapper': font_mapper});
 		# Cache SVG Objects for animation
 		foreach(var svg_object; me.pages[page].objects) {
-			me.svg[svg_object] = me.objects.getElementById(svg_object);
+			me.pages[page].svg[svg_object] = me.objects.getElementById(svg_object);
 		}
+		me.active = page;
 	},
 	update: func() {
 		if(me.active != "") {
