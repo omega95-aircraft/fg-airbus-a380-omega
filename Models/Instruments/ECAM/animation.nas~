@@ -1,0 +1,55 @@
+# ECAM (well, canvas in general) Animation Helper Functions
+# Narendran M (c) 2014
+
+var animation = {
+	toggle_equals: func(prop, value, element) {
+		if(getprop(prop) == value) {
+			element.show();
+		} else {
+			element.hide();
+		}
+	},
+	toggle_not_equals: func(prop, value, element) {
+		if(getprop(prop) != value) {
+			element.show();
+		} else {
+			element.hide();
+		}
+	},
+	toggle_gte: func(prop, value, element) {
+		if(getprop(prop) >= value) {
+			element.show();
+		} else {
+			element.hide();
+		}
+	},
+	toggle_lte: func(prop, value, element) {
+		if(getprop(prop) <= value) {
+			element.show();
+		} else {
+			element.hide();
+		}
+	},
+	rotary_switch: func(prop, value, angle, element) {
+		if(getprop(prop) == value) {
+			element.setRotation(angle*D2R);
+		} else {
+			element.setRotation(0);
+		}
+	},
+	surface_position: func(prop, pos, thick, max_val, max_len, orient) {
+		# prop - 	interface property
+		# pos - 	[x,y] - left/top position on canvas
+		# thick - 	thickness in pixels of slider
+		# max_val -	maximum value of property corresponding to full slider length
+		# max_len -	maximum scaling value of slider in canvas
+		# orient -	'h' or 'v' corresponding to horizonal and vertical respectively
+		
+		if(orient == 'h') {	# Horizontal Slider
+		
+		} else { # Vertical Slider
+		
+		}
+		
+	}
+};

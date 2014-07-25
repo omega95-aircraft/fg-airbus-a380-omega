@@ -25,16 +25,16 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.88769531"
-     inkscape:cx="615.41719"
-     inkscape:cy="720.83691"
+     inkscape:cx="405.22158"
+     inkscape:cy="642.60928"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1855"
-     inkscape:window-height="1056"
-     inkscape:window-x="65"
+     inkscape:window-width="927"
+     inkscape:window-height="1028"
+     inkscape:window-x="992"
      inkscape:window-y="24"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:snap-global="false"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -188,7 +188,7 @@
     <text
        inkscape:label="#text7243"
        sodipodi:linespacing="125%"
-       id="text4091"
+       id="apu_flap_open"
        y="512.51257"
        x="693.70953"
        style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -203,7 +203,7 @@
        style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
        x="685.70953"
        y="588.51257"
-       id="text4863"
+       id="apu_oil_lvl_lo"
        sodipodi:linespacing="125%"
        inkscape:label="#text7243"><tspan
          style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;letter-spacing:0px;text-anchor:end;fill:#00dc00;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -281,7 +281,7 @@
        style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
        x="153.22145"
        y="211.30739"
-       id="text4887"
+       id="apu_gena_v"
        sodipodi:linespacing="125%"
        inkscape:label="#text7243"><tspan
          style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;letter-spacing:0px;text-anchor:end;fill:#00dc00;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -292,7 +292,7 @@
     <text
        inkscape:label="#text7243"
        sodipodi:linespacing="125%"
-       id="text4891"
+       id="apu_gena_hz"
        y="239.30739"
        x="153.22145"
        style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -318,7 +318,7 @@
     <text
        inkscape:label="#text7243"
        sodipodi:linespacing="125%"
-       id="text4899"
+       id="apu_genb_v"
        y="211.30739"
        x="273.22144"
        style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -333,7 +333,7 @@
        style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
        x="273.22144"
        y="239.30739"
-       id="text4903"
+       id="apu_genb_hz"
        sodipodi:linespacing="125%"
        inkscape:label="#text7243"><tspan
          style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;letter-spacing:0px;text-anchor:end;fill:#00dc00;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -479,7 +479,7 @@
        sodipodi:cy="623.95538"
        sodipodi:rx="2.7901785"
        sodipodi:ry="2.8571429"
-       d="m 276.78572,623.95538 a 2.7901785,2.8571429 0 1 1 -5.58035,0 2.7901785,2.8571429 0 1 1 5.58035,0 z"
+       d="m 276.78572,623.95538 c 0,1.57796 -1.2492,2.85715 -2.79018,2.85715 -1.54097,0 -2.79017,-1.27919 -2.79017,-2.85715 0,-1.57795 1.2492,-2.85714 2.79017,-2.85714 1.54098,0 2.79018,1.27919 2.79018,2.85714 z"
        transform="translate(0,28.362183)" />
     <text
        inkscape:label="#text7243"
@@ -647,14 +647,14 @@
        xml:space="preserve"
        style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
        x="150.14198"
-       y="623.3548"
+       y="621.76166"
        id="text5029"
        sodipodi:linespacing="125%"
        inkscape:label="#text7243"><tspan
          style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;letter-spacing:0px;text-anchor:end;fill:#dcdcdc;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          sodipodi:role="line"
          x="150.14198"
-         y="623.3548"
+         y="621.76166"
          id="tspan5031">2</tspan></text>
   </g>
 </svg>

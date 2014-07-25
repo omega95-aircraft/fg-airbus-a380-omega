@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="1024"
+   id="svg3377"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="topbar.svg">
+  <defs
+     id="defs3379" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.62769537"
+     inkscape:cx="509.27089"
+     inkscape:cy="958.11587"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1373"
+     inkscape:window-height="1028"
+     inkscape:window-x="546"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0"
+     inkscape:snap-global="false"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3385"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3382">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-28.362183)"
+     style="display:inline">
+    <rect
+       inkscape:label="#rect3529"
+       y="71.013527"
+       x="1.9713972"
+       height="99.059601"
+       width="794.85455"
+       id="rect4406"
+       style="fill:#a0a0a0;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#505050;fill-opacity:1;stroke:none"
+       id="autoflight_box"
+       width="185.81837"
+       height="61.357082"
+       x="3.9854155"
+       y="72.688858"
+       inkscape:label="#rect3529" />
+    <rect
+       inkscape:label="#rect3529"
+       y="72.688858"
+       x="191.54102"
+       height="61.357082"
+       width="185.81837"
+       id="efis_box"
+       style="fill:#505050;fill-opacity:1;stroke:none" />
+    <rect
+       inkscape:label="#rect3529"
+       y="71.049759"
+       x="377.29831"
+       height="63.014874"
+       width="419.43137"
+       id="sec_box"
+       style="fill:#3c3c3c;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       style="font-size:41.97316742px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2.91480327px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="99.042206"
+       y="107.89033"
+       id="autoflight_text"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"
+       transform="scale(0.97114392,1.0297135)"><tspan
+         style="font-size:23.31842613px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-0.97160107px;text-anchor:middle;fill:#dcdcdc;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
+         sodipodi:role="line"
+         x="98.556404"
+         y="107.89033"
+         id="tspan4350">AUTOFLIGHT</tspan></text>
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:0.97160107;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="autoflight_current"
+       width="165.58176"
+       height="38.097805"
+       x="12.546929"
+       y="83.267395"
+       inkscape:label="#rect3015" />
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="efis_text"
+       y="107.89033"
+       x="291.30301"
+       style="font-size:41.97316742px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2.91480327px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"
+       transform="scale(0.97114393,1.0297135)"><tspan
+         id="tspan3797"
+         y="107.89033"
+         x="290.8172"
+         sodipodi:role="line"
+         style="font-size:23.31842613px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-0.97160107px;text-anchor:middle;fill:#dcdcdc;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">EFIS</tspan></text>
+    <rect
+       y="84.064339"
+       x="201.25983"
+       height="38.097805"
+       width="165.58176"
+       id="efis_current"
+       style="fill:none;stroke:#dcdcdc;stroke-width:0.97160107;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect3799" />
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="page_title"
+       y="163.90878"
+       x="13.537213"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#505050;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan3897"
+         y="163.90878"
+         x="13.537213"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:-1px;text-anchor:start;fill:#505050;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">AUTOFLIGHT</tspan></text>
+  </g>
+</svg>

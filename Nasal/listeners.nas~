@@ -4,6 +4,10 @@
 
 aircraft.livery.init("Aircraft/A380/XML/Liveries");
 
+for(var n=0; n<5; n=n+1) {
+	setprop("/engines/engine["~n~"]/fuel-used-kg", 0);
+}
+
 strobe_switch = props.globals.getNode("/controls/switches/strobe", 0);
 aircraft.light.new("sim/model/A380/lighting/strobe", [0.05, 1.2], strobe_switch);
 beacon_switch = props.globals.getNode("/controls/lighting/beacon", 0);
@@ -55,7 +59,7 @@ init_controls = func {
 # UPDATE ENGINES
 update_engines = func {
 
-  ### APU stuff 
+  ### APU stuff  
   var apuN1 = getprop("/engines/engine[4]/n1");
   var hz = apuN1*20;
   setprop("/engines/engine[4]/gena-hz", hz);
@@ -471,8 +475,8 @@ var gear_helpers = {
 		} elsif(WOW(aft) and WOW(fwd)) { # Both wheels in contact with ground
 			var c_bar = (compr(fwd)+compr(aft))/2;
 			setprop("/gear/"~name~"/c_bar", c_bar);
-			setZ(aft,-(compr(aft)-c_bar)+zBar);
-			setZ(fwd,-(compr(fwd)-c_bar)+zBar);
+			setZ(aft,(compr(aft)-c_bar)+zBar);
+			setZ(fwd,(compr(fwd)-c_bar)+zBar);
 		} else { # No contact with ground
 			setprop("/gear/"~name~"/c_bar", 0);
 			if(relax == "pitch-down") {
@@ -528,6 +532,12 @@ var comp_tilt = {
 
 };
 
+var loop_timer = maketimer(0.03, func {
+	for(var n=0; n<5; n=n+1) {
+		setprop("/engines/engine["~n~"]/fuel-used-kg", getprop("/engines/engine["~n~"]/fuel-used-kg") + (getprop("/sim/time/delta-sec")*((getprop("/engines/engine["~n~"]/fuel-flow_pph")*LB2KG)/3600)));
+	}
+});
+
 setlistener("sim/signals/fdm-initialized", func {
 	setprop("/controls/electric/contact/engine_1", 0);
 	setprop("/controls/electric/contact/engine_2", 0);
@@ -539,6 +549,23 @@ setlistener("sim/signals/fdm-initialized", func {
 	setprop("/controls/electric/contact/batt_2", 0);
 	setprop("/controls/electric/contact/bus_tie", 0);
 	comp_tilt.init();
+	loop_timer.start();
+	setprop("/consumables/fuel/tank/selected",1);
+	setprop("/consumables/fuel/tank[1]/selected",1);
+	setprop("/consumables/fuel/tank[2]/selected",1);
+	setprop("/consumables/fuel/tank[3]/selected",1);
+	setprop("/controls/fuel/l-outer-tk/pump",0);
+	setprop("/controls/fuel/l-mid-tk/pump-aft",0);
+	setprop("/controls/fuel/l-mid-tk/pump-fwd",0);
+	setprop("/controls/fuel/l-inr-tk/pump-aft",0);
+	setprop("/controls/fuel/l-inr-tk/pump-fwd",0);
+	setprop("/controls/fuel/r-outer-tk/pump",0);
+	setprop("/controls/fuel/r-mid-tk/pump-aft",0);
+	setprop("/controls/fuel/r-mid-tk/pump-fwd",0);
+	setprop("/controls/fuel/r-inr-tk/pump-aft",0);
+	setprop("/controls/fuel/r-inr-tk/pump-fwd",0);
+	setprop("/controls/fuel/trim-tk/pump-l",0);
+	setprop("/controls/fuel/trim-tk/pump-r",0);
 });
 
 #FIXME - Remove when canvas ND is ready

@@ -361,8 +361,11 @@
 								<dialog-name>pushback</dialog-name>
 							</binding>
 						</item>
+					</menu>
+					<menu n="101">
+						<label>Displays</label>
 						<item>
-							<label>Toggle Dlg: ECAM E/WD</label>
+							<label>Show: ECAM E/WD</label>
 							<binding>
 								<command>nasal</command>
 								<script>
@@ -371,11 +374,47 @@
 							</binding>
 						</item>
 						<item>
-							<label>Toggle Dlg: ECAM SD</label>
+							<label>Show: ECAM SD</label>
 							<binding>
 								<command>nasal</command>
 								<script>
 								 ecam.sd.showDlg();
+								</script>
+							</binding>
+						</item>
+						<item>
+							<label>Show: ND [Capt]</label>
+							<binding>
+								<command>nasal</command>
+								<script>
+								 nd.showDlg();
+								</script>
+							</binding>
+						</item>
+						<item>
+							<label>Show: VSD [Capt]</label>
+							<binding>
+								<command>nasal</command>
+								<script>
+								 nd.capt_vsd.showDlg();
+								</script>
+							</binding>
+						</item>
+						<item>
+							<label>Show: MFD [Capt]</label>
+							<binding>
+								<command>nasal</command>
+								<script>
+								 mfd.capt_mfd.showDlg();
+								</script>
+							</binding>
+						</item>
+						<item>
+							<label>Show: MFD [F/O]</label>
+							<binding>
+								<command>nasal</command>
+								<script>
+								 mfd.fo_mfd.showDlg();
 								</script>
 							</binding>
 						</item>
@@ -929,26 +968,20 @@
 
 <nasal>
 	<ecam>
-		<file>Aircraft/A380/Models/Instruments/ecam.nas</file>
+		<file>Aircraft/A380/Models/Instruments/ECAM/ecam.nas</file>
 		<!-- ECAM E/WD Display -->
 		<file>Aircraft/A380/Models/Instruments/EWD/ewd.nas</file>
 		<!-- ECAM SD Display -->
 		<file>Aircraft/A380/Models/Instruments/SD/pages.nas</file>
+		<file>Aircraft/A380/Models/Instruments/SD/sd.nas</file>
 		<!-- A380 Briefing For Pilots Reference Pages -->
+		<file>Aircraft/A380/Models/Instruments/SD/animation.nas</file>
+		<file>Aircraft/A380/Models/Instruments/SD/pdz/pdz.nas</file> <!-- Permananent Data Zone and ATC Mailbox Area -->
 		<file>Aircraft/A380/Models/Instruments/SD/fctl/fctl.nas</file>			 <!-- pg 141 -->
 		<file>Aircraft/A380/Models/Instruments/SD/fuel/fuel.nas</file>			 <!-- pg 164 -->
-		<file>Aircraft/A380/Models/Instruments/SD/cond/cond.nas</file>			 <!-- pg 047 -->
-		<file>Aircraft/A380/Models/Instruments/SD/bleed/bleed.nas</file>		 <!-- pg 048 -->
-		<file>Aircraft/A380/Models/Instruments/SD/cruise/cruise.nas</file>		 <!-- pg 057 -->
-		<file>Aircraft/A380/Models/Instruments/SD/cab_press/cab_press.nas</file> <!-- pg 057 -->
-		<file>Aircraft/A380/Models/Instruments/SD/elec_ac/elec_ac.nas</file>	 <!-- pg 108 -->
-		<file>Aircraft/A380/Models/Instruments/SD/elec_dc/elec_dc.nas</file>	 <!-- pg 108 -->
-		<file>Aircraft/A380/Models/Instruments/SD/hyd/hyd.nas</file>			 <!-- pg 169 -->
-		<file>Aircraft/A380/Models/Instruments/SD/wheel/wheel.nas</file>		 <!-- pg 232 -->
-		<file>Aircraft/A380/Models/Instruments/SD/door/door.nas</file>			 <!-- pg 255 -->
-		<file>Aircraft/A380/Models/Instruments/SD/engine/engine.nas</file>		 <!-- pg 294 -->
 		<file>Aircraft/A380/Models/Instruments/SD/apu/apu.nas</file>			 <!-- pg 283 -->
-		<file>Aircraft/A380/Models/Instruments/SD/sd.nas</file>
+		<file>Aircraft/A380/Models/Instruments/SD/engine/engine.nas</file>		 <!-- pg 294 -->
+		<file>Aircraft/A380/Models/Instruments/SD/startup.nas</file>
 	</ecam>
 	<a380>
     	<file>Aircraft/A380/Nasal/walk.nas</file>
@@ -991,10 +1024,15 @@
     	<file>Aircraft/A380/Systems/Fuel/xfeedline.nas</file>
     	<file>Aircraft/A380/Systems/Fuel/fuel_system.nas</file>
     </fuel>
+    <!-- FMS using custom route management system -->
+    <fms>
+    	<file>Aircraft/A380/Systems/FMS/waypoint.nas</file>
+    	<file>Aircraft/A380/Systems/FMS/flightplan.nas</file>
+    	<file>Aircraft/A380/Systems/FMS/a380_fms.nas</file>
+    </fms>
+    <!-- FMSes are instantiated by the FMGC -->
     <!-- FMGC derived from A320neo FMGC -->
     <fmgc>
-    	<file>Aircraft/A380/Systems/FMGC/waypoint.nas</file>
-    	<file>Aircraft/A380/Systems/FMGC/flightplan.nas</file>
     	<file>Aircraft/A380/Systems/FMGC/hold-pattern.nas</file>
 		<file>Aircraft/A380/Systems/FMGC/autoland.nas</file>
 		<file>Aircraft/A380/Systems/FMGC/new_flight.nas</file>

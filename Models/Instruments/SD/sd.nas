@@ -4,10 +4,7 @@
 
 var placement = "ecam_sd";
 
-var sd = ecam.new(sd_pages, placement);
-
-# FIXME Start with the electric dc page
-sd.load("apu");
+var sd = ecam.new(sd_pages, placement, "pdz");
 
 setlistener("sim/signals/fdm-initialized", func {
 	sd.init();

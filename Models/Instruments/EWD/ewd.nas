@@ -11,6 +11,10 @@ ewd_pages["start"] = {
 	objects: ["eng1_off", "eng2_off", "eng3_off", "eng4_off", "eng1_fwd", "eng2_fwd", "eng3_fwd", "eng4_fwd", "eng1_rev", "eng2_rev", "eng3_rev", "eng4_rev", "egt1", "egt2", "egt3", "egt4", "egt1_text", "egt2_text", "egt3_text", "egt4_text", "egt1_off", "egt2_off", "egt3_off", "egt4_off", "egt1_needle", "egt2_needle", "egt3_needle", "egt4_needle", "eng1_thrlever", "eng2_thrlever", "eng3_thrlever", "eng4_thrlever", "eng1_thrneedle", "eng2_thrneedle", "eng3_thrneedle", "eng4_thrneedle", "eng1_thrtext", "eng2_thrtext", "eng3_thrtext", "eng4_thrtext", "packs_nai", "packs_nai"],
 	eng_x: [0, 93, 271, 525, 703],
 	egt_x: [0, 100, 278, 532, 710],
+	load: func {
+		print("[ECAM] Loaded E/WD page");
+		# Nothing much here
+	},
 	update: func {
 		# Engine Status
 		for(var n=1; n<=4; n=n+1) {
@@ -65,6 +69,8 @@ ewd_pages["start"] = {
 };
 
 var ewd = ecam.new(ewd_pages, placement);
+
+ewd.load("start");
 
 setlistener("sim/signals/fdm-initialized", func {
 	ewd.init();

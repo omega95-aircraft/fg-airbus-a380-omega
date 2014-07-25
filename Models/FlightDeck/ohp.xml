@@ -39,9 +39,13 @@
 				<property>/controls/APU/master-switch</property>
 			</binding>
 			<binding>
-		          <command>property-toggle</command>
-		          <property>/sim/sound/switch</property>
-		      </binding>
+		        <command>property-toggle</command>
+		        <property>/sim/sound/switch</property>
+		    </binding>
+		    <binding>
+		    	<command>nasal</command>
+		    	<script>ecam.sd.load("apu");</script>
+		    </binding>
 		</action>
 	</animation>
 	
@@ -97,6 +101,14 @@
 		  <command>property-toggle</command>
 		  <property>/sim/sound/switch</property>
 	      </binding>
+	      <binding>
+		    	<command>nasal</command>
+		    	<script>
+		    		if(ecam.sd.active != "engine") {
+		    			ecam.sd.load("engine");
+		    		}
+		    	</script>
+		    </binding>
 	  </action>
 	  <action>
 	      <button>1</button>

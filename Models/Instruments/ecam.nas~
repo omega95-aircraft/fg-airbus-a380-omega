@@ -1,6 +1,5 @@
 # (Airbus A380) Electronic Centralized Aircraft Monitor
 # Narendran M (c) 2014
-
 var ecam = {
 	active: "",
 	pages: {},
@@ -19,8 +18,6 @@ var ecam = {
 		t.objects = t.display.createGroup();
 		t.timer = maketimer(0.05, t, t.update);
 		
-		t.load("start");
-		
 		return t;
 	},
 	load: func(page) {
@@ -35,6 +32,8 @@ var ecam = {
 		foreach(var svg_object; me.pages[page].objects) {
 			me.pages[page].svg[svg_object] = me.objects.getElementById(svg_object);
 		}
+		me.active = page;
+		me.pages[page].load(); # Run page load script
 	},
 	update: func() {
 		if(me.active != "") {

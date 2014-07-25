@@ -1,0 +1,2 @@
+# FIXME Start with the electric dc page
+sd.load("apu");
