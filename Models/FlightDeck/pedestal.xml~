@@ -12,6 +12,17 @@
 <PropertyList>
 	<path>fd_pedestal.ac</path>
 	
+	<animation>
+        <type>select</type>
+        <object-name>mfd.l</object-name>
+        <condition>
+            <equals>
+                <property>systems/electric/outputs/avionics</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+	
 	<!-- Animations -->
 	<!-- ENGINE MASTER -->
 	<animation>
@@ -28,10 +39,6 @@
 				<command>property-toggle</command>
 				<property>/sim/sound/switch</property>
 			</binding>
-			<binding>
-		    	<command>nasal</command>
-		    	<script>ecam.sd.load("engine");</script>
-		    </binding>
 		</action>
 	</animation>
 
@@ -69,10 +76,6 @@
 				<command>property-toggle</command>
 				<property>/sim/sound/switch</property>
 			</binding>
-			<binding>
-		    	<command>nasal</command>
-		    	<script>ecam.sd.load("engine");</script>
-		    </binding>
 		</action>
 	</animation>
 
@@ -110,10 +113,6 @@
 				<command>property-toggle</command>
 				<property>/sim/sound/switch</property>
 			</binding>
-			<binding>
-		    	<command>nasal</command>
-		    	<script>ecam.sd.load("engine");</script>
-		    </binding>
 		</action>
 	</animation>
 
@@ -151,10 +150,6 @@
 				<command>property-toggle</command>
 				<property>/sim/sound/switch</property>
 			</binding>
-			<binding>
-		    	<command>nasal</command>
-		    	<script>ecam.sd.load("engine");</script>
-		    </binding>
 		</action>
 	</animation>
 
