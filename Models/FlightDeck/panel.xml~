@@ -255,8 +255,8 @@
         <object-name>vsd.l</object-name>
         <object-name>nd.r</object-name>
         <object-name>vsd.r</object-name>
-        <object-name>ecam_ewd</object-name>
-        <object-name>ecam_sd</object-name>
+        <object-name>ewd</object-name>
+        <object-name>sd</object-name>
         <condition>
             <equals>
                 <property>systems/electric/outputs/avionics</property>
@@ -319,7 +319,7 @@
 	
 	<animation>
 		<type>pick</type>
-		<object-name>ecam_ewd</object-name>
+		<object-name>ewd</object-name>
 		<action>
 			<button>0</button>
 			<repeatable>false</repeatable>
@@ -332,13 +332,39 @@
 	
 	<animation>
 		<type>pick</type>
-		<object-name>ecam_ewd</object-name>
+		<object-name>sd</object-name>
 		<action>
 			<button>0</button>
 			<repeatable>false</repeatable>
 			<binding>
 				<command>nasal</command>
 				<script>ecam.sd.showDlg();</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>mfd.l</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>mfd.capt_mfd.showDlg();</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>mfd.r</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>mfd.fo_mfd.showDlg();</script>
 			</binding>
 		</action>
 	</animation>

@@ -475,8 +475,8 @@ var gear_helpers = {
 		} elsif(WOW(aft) and WOW(fwd)) { # Both wheels in contact with ground
 			var c_bar = (compr(fwd)+compr(aft))/2;
 			setprop("/gear/"~name~"/c_bar", c_bar);
-			setZ(aft,(compr(aft)-c_bar)+zBar);
-			setZ(fwd,(compr(fwd)-c_bar)+zBar);
+			setZ(aft,-(compr(aft)-c_bar)+zBar);
+			setZ(fwd,-(compr(fwd)-c_bar)+zBar);
 		} else { # No contact with ground
 			setprop("/gear/"~name~"/c_bar", 0);
 			if(relax == "pitch-down") {

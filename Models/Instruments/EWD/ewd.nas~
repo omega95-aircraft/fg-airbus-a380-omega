@@ -12,7 +12,7 @@ ewd_pages["start"] = {
 	eng_x: [0, 93, 271, 525, 703],
 	egt_x: [0, 100, 278, 532, 710],
 	load: func {
-		print("[ECAM] ");
+		print("[ECAM] Loaded E/WD page");
 		# Nothing much here
 	},
 	update: func {

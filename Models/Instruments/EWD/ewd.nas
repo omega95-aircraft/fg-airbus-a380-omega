@@ -1,7 +1,7 @@
 # (Airbus A380) E/WD - Engine and Warnings Display
 # Narendran M (c) 2014
 
-var placement = "ecam_ewd";
+var placement = "ewd";
 
 var ewd_pages = {};
 

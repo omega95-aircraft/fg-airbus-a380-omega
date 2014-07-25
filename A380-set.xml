@@ -39,7 +39,7 @@
     
     
     <startup>
-       <splash-texture>Aircraft/A380/splash1.png</splash-texture>
+       <splash-texture>Aircraft/A380/splash2.png</splash-texture>
     </startup>
     
     <flight-management>
@@ -387,7 +387,7 @@
 							<binding>
 								<command>nasal</command>
 								<script>
-								 nd.showDlg();
+								 nd.showNd();
 								</script>
 							</binding>
 						</item>

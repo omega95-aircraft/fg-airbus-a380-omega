@@ -12,6 +12,18 @@
 <PropertyList>
 	<path>fd_pedestal.ac</path>
 	
+	<animation>
+        <type>select</type>
+        <object-name>mfd.l</object-name>
+        <object-name>mfd.r</object-name>
+        <condition>
+            <equals>
+                <property>systems/electric/outputs/avionics</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+	
 	<!-- Animations -->
 	<!-- ENGINE MASTER -->
 	<animation>
