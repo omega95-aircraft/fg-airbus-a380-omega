@@ -10,6 +10,7 @@ MATERIAL "DefaultWhite.028" rgb 1 1 1  amb 0.7 0.7 0.7  emis 0 0 0  spec 0 0 0  
 MATERIAL "DefaultWhite.033" rgb 1 1 1  amb 0.7172 0.7172 0.7172  emis 0 0 0  spec 0 0 0  shi 50  trans 0
 MATERIAL "DefaultWhite.035" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0 0 0  shi 50  trans 0.5253
 MATERIAL "DefaultWhite.036" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0 0 0  shi 50  trans 0.7879
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 1 1 1  emis 1 1 1  spec 0 0 0  shi 128  trans 0
 OBJECT world
 kids 486
 OBJECT poly
@@ -25,19 +26,19 @@ numvert 5
 2.37851 6.51219 0.0926336
 numsurf 3
 SURF 0x30
-mat 5
+mat 11
 refs 3
 2 0.000439584 0.999256
 1 0.000439554 0.000389338
 0 0.500441 0.000389338
 SURF 0x30
-mat 5
+mat 11
 refs 3
 2 0.000439584 0.999256
 0 0.500441 0.000389338
 3 1.00044 0.000389278
 SURF 0x30
-mat 5
+mat 11
 refs 3
 3 1.00044 0.000389278
 4 1.00044 0.999256
@@ -87,19 +88,19 @@ numvert 5
 2.37851 6.51219 0.0926336
 numsurf 3
 SURF 0x30
-mat 5
+mat 11
 refs 3
 2 0.000439584 0.999256
 1 0.000439554 0.000389338
 0 0.500441 0.000389338
 SURF 0x30
-mat 5
+mat 11
 refs 3
 2 0.000439584 0.999256
 0 0.500441 0.000389338
 3 1.00044 0.000389278
 SURF 0x30
-mat 5
+mat 11
 refs 3
 3 1.00044 0.000389278
 4 1.00044 0.999256
@@ -118,19 +119,19 @@ numvert 5
 2.52954 6.38849 0.17252
 numsurf 3
 SURF 0x30
-mat 5
+mat 11
 refs 3
 1 1.00044 0.000389278
 0 1.00044 0.999256
 2 0.000439584 0.999256
 SURF 0x30
-mat 5
+mat 11
 refs 3
 2 0.000439584 0.999256
 4 0.500441 0.000389338
 1 1.00044 0.000389278
 SURF 0x30
-mat 5
+mat 11
 refs 3
 2 0.000439584 0.999256
 3 0.000439554 0.000389338
