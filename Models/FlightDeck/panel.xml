@@ -256,7 +256,6 @@
         <object-name>nd.r</object-name>
         <object-name>vsd.r</object-name>
         <object-name>ewd</object-name>
-        <object-name>sd</object-name>
         <condition>
             <equals>
                 <property>systems/electric/outputs/avionics</property>
@@ -326,45 +325,6 @@
 			<binding>
 				<command>nasal</command>
 				<script>ecam.ewd.showDlg();</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>sd</object-name>
-		<action>
-			<button>0</button>
-			<repeatable>false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>ecam.sd.showDlg();</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>mfd.l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable>false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>mfd.capt_mfd.showDlg();</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>mfd.r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable>false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>mfd.fo_mfd.showDlg();</script>
 			</binding>
 		</action>
 	</animation>

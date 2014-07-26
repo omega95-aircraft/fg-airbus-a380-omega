@@ -1,6 +1,24 @@
 <?xml version="1.0"?>
 
 	<PropertyList>
+	
+	<nasal>
+		<load>
+			var livery_update = aircraft.livery_update.new("Aircraft/A380/Models/Liveries");
+		</load>
+
+		<unload>
+			livery_update.stop();
+		</unload>
+	</nasal>
+	
+	<animation>
+		<type>material</type>
+		<object-name>fuselage</object-name>
+		<property-base>sim/model/livery</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>Liveries/F-WWDD.png</texture>
+	</animation>
 
 	<path>a380.ac</path> 
 	<offsets>
@@ -8,7 +26,17 @@
    		<y-m>0</y-m>
    		<x-m>-30</x-m>  
    		<pitch-deg>0.0</pitch-deg>
-	</offsets>   
+	</offsets>
+	
+	<model>
+		<name>Pushback</name>
+		<path>Models/Airport/Pushback/Goldhofert.xml</path>
+		<offsets>
+			<x-m>-17.97</x-m>
+			<y-m>0</y-m>
+			<z-m>-5.45</z-m>
+		</offsets>
+	</model>
  
 	<!-- Engines -->
 	<model>

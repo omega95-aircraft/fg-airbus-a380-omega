@@ -3,6 +3,27 @@
 	<PropertyList>
 
 	<path>trent900.ac</path>
+	
+	<nasal>
+		<load>
+			var livery_update = aircraft.livery_update.new("Aircraft/A380/Models/Liveries");
+		</load>
+
+		<unload>
+			livery_update.stop();
+		</unload>
+	</nasal>
+	
+	<animation>
+		<type>material</type>
+		<object-name>fancowl</object-name>
+		<object-name>cowl1</object-name>
+		<object-name>cowl3</object-name>
+		<object-name>reverse</object-name>
+		<property-base>sim/model/livery</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>Liveries/F-WWDD.png</texture>
+	</animation>
  
 	<animation>
 		<type>spin</type>

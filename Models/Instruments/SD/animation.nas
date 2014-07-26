@@ -37,6 +37,13 @@ var animation = {
 			element.setRotation(0);
 		}
 	},
+	color_rotary_switch: func(prop, value, angle, element, onColor, offColor) {
+		if(getprop(prop) == value) {
+			element.setRotation(angle*D2R).setColor(onColor);
+		} else {
+			element.setRotation(0).setColor(offColor);
+		}
+	},
 	surface_position: func(prop, pos, thick, factor, orient, element, parent, color) {
 		# prop - 	interface property
 		# pos - 	[x,y] - top/left position on canvas

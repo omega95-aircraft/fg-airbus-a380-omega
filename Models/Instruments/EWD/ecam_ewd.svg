@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.9899495"
-     inkscape:cx="277.07474"
-     inkscape:cy="748.82913"
+     inkscape:zoom="0.35"
+     inkscape:cx="-137.18246"
+     inkscape:cy="695.7366"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -35,7 +35,7 @@
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:snap-global="true"
+     inkscape:snap-global="false"
      showguides="true"
      inkscape:guide-bbox="true">
     <inkscape:grid
@@ -1659,5 +1659,841 @@
            y="524.36218"
            id="tspan4022">XXX</tspan></text>
     </g>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="title_center"
+       y="449.36218"
+       x="403.70312"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan3245"
+         y="449.36218"
+         x="403.70312"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">LIMITATIONS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="31.109375"
+       y="449.36218"
+       id="title_left"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="31.109375"
+         y="449.36218"
+         id="tspan3249">CHECKLIST TITLE</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="item_1"
+       y="509.36218"
+       x="71.109383"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan3253"
+         y="509.36218"
+         x="71.109383"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">LEFT ITEMS NBR 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="411.10938"
+       y="497.36218"
+       id="limit1"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="411.10938"
+         y="497.36218"
+         id="tspan3257">LIMITATION 1</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="limit2"
+       y="537.36218"
+       x="411.10938"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan3261"
+         y="537.36218"
+         x="411.10938"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">LIMITATION 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="411.10938"
+       y="577.36218"
+       id="limit3"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="411.10938"
+         y="577.36218"
+         id="tspan3266">LIMITATION 3</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="limit4"
+       y="617.36218"
+       x="411.10938"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan3270"
+         y="617.36218"
+         x="411.10938"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">LIMITATION 4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="411.10938"
+       y="657.36218"
+       id="limit5"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="411.10938"
+         y="657.36218"
+         id="tspan3274">LIMITATION 5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="411.10938"
+       y="697.36218"
+       id="memo1"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#00dc00;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="411.10938"
+         y="697.36218"
+         id="tspan3286">MEMO ITEM 1</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="memo2"
+       y="737.36218"
+       x="411.10938"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4058"
+         y="737.36218"
+         x="411.10938"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#00dc00;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">MEMO ITEM 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="411.10938"
+       y="777.36218"
+       id="memo3"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#00dc00;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="411.10938"
+         y="777.36218"
+         id="tspan4062">MEMO ITEM 3</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="memo4"
+       y="817.36218"
+       x="411.10938"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4066"
+         y="817.36218"
+         x="411.10938"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#00dc00;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">MEMO ITEM 4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00dc00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="411.10938"
+       y="857.36218"
+       id="memo5"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#00dc00;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="411.10938"
+         y="857.36218"
+         id="tspan4070">MEMO ITEM 5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="71.109383"
+       y="549.36218"
+       id="text4076"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="71.109383"
+         y="549.36218"
+         id="tspan4078">LEFT ITEMS NBR 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="71.109383"
+       y="589.36218"
+       id="item_3"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="71.109383"
+         y="589.36218"
+         id="tspan4082">LEFT ITEMS NBR 3</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="item_4"
+       y="629.36218"
+       x="71.109383"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4087"
+         y="629.36218"
+         x="71.109383"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">LEFT ITEMS NBR 4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="71.109383"
+       y="669.36218"
+       id="item_5"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="71.109383"
+         y="669.36218"
+         id="tspan4091">LEFT ITEMS NBR 5</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="item_6"
+       y="709.36218"
+       x="71.109383"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4095"
+         y="709.36218"
+         x="71.109383"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">LEFT ITEMS NBR 6</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="item_7"
+       y="749.36218"
+       x="70.099228"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4099"
+         y="749.36218"
+         x="70.099228"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">LEFT ITEMS NBR 7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="71.109383"
+       y="789.36218"
+       id="item_8"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="71.109383"
+         y="789.36218"
+         id="tspan4103">LEFT ITEMS NBR 8</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="item_9"
+       y="829.36218"
+       x="71.109383"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4107"
+         y="829.36218"
+         x="71.109383"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">LEFT ITEMS NBR 9</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="71.109383"
+       y="869.36218"
+       id="item_10"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="71.109383"
+         y="869.36218"
+         id="tspan4111">LEFT ITEMS NBR 10</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="71.109383"
+       y="909.36218"
+       id="item_11"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="71.109383"
+         y="909.36218"
+         id="tspan4115">LEFT ITEMS NBR 11</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="item_12"
+       y="949.36218"
+       x="71.109383"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4119"
+         y="949.36218"
+         x="71.109383"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">LEFT ITEMS NBR 12</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="item_13"
+       y="989.36218"
+       x="71.109383"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4123"
+         y="989.36218"
+         x="71.109383"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">LEFT ITEMS NBR 13</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="720.45312"
+       y="509.36218"
+       id="resp_1"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="720.45312"
+         y="509.36218"
+         id="tspan4131">CHECK</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="resp_2"
+       y="549.36218"
+       x="720.45312"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4135"
+         y="549.36218"
+         x="720.45312"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">CHECK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="720.45312"
+       y="589.36218"
+       id="resp_3"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="720.45312"
+         y="589.36218"
+         id="tspan4139">CHECK</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="resp_4"
+       y="629.36218"
+       x="720.45312"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4143"
+         y="629.36218"
+         x="720.45312"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">CHECK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="720.45312"
+       y="669.36218"
+       id="resp_5"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="720.45312"
+         y="669.36218"
+         id="tspan4147">CHECK</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="resp_6"
+       y="709.36218"
+       x="720.45312"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4151"
+         y="709.36218"
+         x="720.45312"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">CHECK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="720.45312"
+       y="749.36218"
+       id="resp_7"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="720.45312"
+         y="749.36218"
+         id="tspan4155">CHECK</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="resp_8"
+       y="789.36218"
+       x="720.45312"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4159"
+         y="789.36218"
+         x="720.45312"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">CHECK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="720.45312"
+       y="829.36218"
+       id="resp_9"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="720.45312"
+         y="829.36218"
+         id="tspan4163">CHECK</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="resp_10"
+       y="869.36218"
+       x="720.45312"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4167"
+         y="869.36218"
+         x="720.45312"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">CHECK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="720.45312"
+       y="908.64789"
+       id="resp_11"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="720.45312"
+         y="908.64789"
+         id="tspan4171">CHECK</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="resp_12"
+       y="949.36218"
+       x="720.45312"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4175"
+         y="949.36218"
+         x="720.45312"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">CHECK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="720.45312"
+       y="989.36218"
+       id="resp_13"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="720.45312"
+         y="989.36218"
+         id="tspan4179">CHECK</tspan></text>
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="checkbox_1"
+       width="19.445425"
+       height="19.445425"
+       x="43.199799"
+       y="489.45471"
+       inkscape:label="#rect4181" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="box_1"
+       width="710.57025"
+       height="30.705885"
+       x="31.164915"
+       y="483.88422"
+       inkscape:label="#rect4183" />
+    <path
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 45.898807,499.93501 4.103745,5.42957 10.101525,-12.94258"
+       id="check_1"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path4185" />
+    <rect
+       y="529.45471"
+       x="43.199799"
+       height="19.445425"
+       width="19.445425"
+       id="checkbox_2"
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4191" />
+    <rect
+       y="523.88422"
+       x="31.164915"
+       height="30.705885"
+       width="710.57025"
+       id="box_2"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4193" />
+    <path
+       inkscape:connector-curvature="0"
+       id="check_2"
+       d="m 45.898807,539.93501 4.103745,5.42957 10.101525,-12.94258"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:label="#path4195" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="checkbox_3"
+       width="19.445425"
+       height="19.445425"
+       x="43.199799"
+       y="569.45471"
+       inkscape:label="#rect4197" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="box_3"
+       width="710.57025"
+       height="30.705885"
+       x="31.164915"
+       y="563.88422"
+       inkscape:label="#rect4199" />
+    <path
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 45.898807,579.93501 4.103745,5.42957 10.101525,-12.94258"
+       id="check_3"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path4201" />
+    <rect
+       y="609.45471"
+       x="43.199799"
+       height="19.445425"
+       width="19.445425"
+       id="checkbox_4"
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4203" />
+    <rect
+       y="603.88422"
+       x="31.164915"
+       height="30.705885"
+       width="710.57025"
+       id="box_4"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4205" />
+    <path
+       inkscape:connector-curvature="0"
+       id="check_4"
+       d="m 45.393731,618.92486 4.103745,5.42957 10.101525,-12.94258"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:label="#path4207" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="checkbox_5"
+       width="19.445425"
+       height="19.445425"
+       x="43.199799"
+       y="649.45471"
+       inkscape:label="#rect4209" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="box_5"
+       width="710.57025"
+       height="30.705885"
+       x="31.164915"
+       y="643.88422"
+       inkscape:label="#rect4211" />
+    <path
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 45.898807,659.93501 4.103745,5.42957 10.101525,-12.94258"
+       id="check_5"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path4213" />
+    <rect
+       y="689.45471"
+       x="43.199799"
+       height="19.445425"
+       width="19.445425"
+       id="checkbox_6"
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4215" />
+    <rect
+       y="683.88422"
+       x="31.164915"
+       height="30.705885"
+       width="710.57025"
+       id="box_6"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4217" />
+    <path
+       inkscape:connector-curvature="0"
+       id="check_6"
+       d="m 45.898807,699.93501 4.103745,5.42957 10.101525,-12.94258"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:label="#path4219" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="checkbox_7"
+       width="19.445425"
+       height="19.445425"
+       x="43.199799"
+       y="729.45471"
+       inkscape:label="#rect4221" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="box_7"
+       width="710.57025"
+       height="30.705885"
+       x="31.164915"
+       y="722.87408"
+       inkscape:label="#rect4223" />
+    <path
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 45.898807,739.93501 4.103745,5.42957 10.101525,-12.94258"
+       id="check_7"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path4225" />
+    <rect
+       y="769.45471"
+       x="43.199799"
+       height="19.445425"
+       width="19.445425"
+       id="checkbox_8"
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4227" />
+    <rect
+       y="763.88422"
+       x="31.164915"
+       height="30.705885"
+       width="710.57025"
+       id="box_8"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4229" />
+    <path
+       inkscape:connector-curvature="0"
+       id="check_8"
+       d="m 45.898807,779.93501 4.103745,5.42957 10.101525,-12.94258"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:label="#path4231" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="checkbox_9"
+       width="19.445425"
+       height="19.445425"
+       x="43.199799"
+       y="809.45471"
+       inkscape:label="#rect4233" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="box_9"
+       width="710.57025"
+       height="30.705885"
+       x="31.164915"
+       y="803.88422"
+       inkscape:label="#rect4235" />
+    <path
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 45.898807,819.93501 4.103745,5.42957 10.101525,-12.94258"
+       id="check_9"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path4237" />
+    <rect
+       y="849.45471"
+       x="43.199799"
+       height="19.445425"
+       width="19.445425"
+       id="checkbox_10"
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4239" />
+    <rect
+       y="843.88422"
+       x="31.164915"
+       height="30.705885"
+       width="710.57025"
+       id="box_10"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4241" />
+    <path
+       inkscape:connector-curvature="0"
+       id="check_10"
+       d="m 45.898807,859.93501 4.103745,5.42957 10.101525,-12.94258"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:label="#path4243" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="checkbox_11"
+       width="19.445425"
+       height="19.445425"
+       x="43.199799"
+       y="889.45471"
+       inkscape:label="#rect4245" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="box_11"
+       width="710.57025"
+       height="30.705885"
+       x="31.164915"
+       y="883.88422"
+       inkscape:label="#rect4247" />
+    <path
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 45.898807,899.93501 4.103745,5.42957 10.101525,-12.94258"
+       id="check_11"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path4249" />
+    <rect
+       y="929.45471"
+       x="43.199799"
+       height="19.445425"
+       width="19.445425"
+       id="checkbox_12"
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4251" />
+    <rect
+       y="923.88422"
+       x="31.164915"
+       height="30.705885"
+       width="710.57025"
+       id="box_12"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4253" />
+    <path
+       inkscape:connector-curvature="0"
+       id="check_12"
+       d="m 45.898807,939.93501 4.103745,5.42957 10.101525,-12.94258"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:label="#path4255" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="checkbox_13"
+       width="19.445425"
+       height="19.445425"
+       x="43.199799"
+       y="969.45471"
+       inkscape:label="#rect4257" />
+    <rect
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="box_13"
+       width="710.57025"
+       height="30.705885"
+       x="31.164915"
+       y="963.88422"
+       inkscape:label="#rect4259" />
+    <path
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 45.898807,979.93501 4.103745,5.42957 10.101525,-12.94258"
+       id="check_13"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path4261" />
+    <text
+       xml:space="preserve"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="71.109383"
+       y="1029.3622"
+       id="item_14"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk"
+         sodipodi:role="line"
+         x="71.109383"
+         y="1029.3622"
+         id="tspan4265">LEFT ITEMS NBR 14</tspan></text>
+    <text
+       inkscape:label="#text7243"
+       sodipodi:linespacing="125%"
+       id="resp_14"
+       y="1029.3622"
+       x="720.45312"
+       style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c8c8c8;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         id="tspan4269"
+         y="1029.3622"
+         x="720.45312"
+         sodipodi:role="line"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#c8c8c8;fill-opacity:1;font-family:Padauk;-inkscape-font-specification:Padauk">CHECK</tspan></text>
+    <rect
+       inkscape:label="#rect4257"
+       y="1009.4547"
+       x="43.199799"
+       height="19.445425"
+       width="19.445425"
+       id="checkbox_14"
+       style="fill:none;stroke:#dcdcdc;stroke-width:1.99974191;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       y="1003.8842"
+       x="31.164915"
+       height="30.705885"
+       width="710.57025"
+       id="box_14"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4273" />
+    <path
+       inkscape:connector-curvature="0"
+       id="check_14"
+       d="m 45.898807,1019.935 4.103745,5.4296 10.101525,-12.9426"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:label="#path4275" />
+    <rect
+       y="483.36853"
+       x="767.3219"
+       height="551.9447"
+       width="9.2741079"
+       id="scroll_bar"
+       style="fill:none;stroke:#dcdcdc;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:label="#rect4277" />
   </g>
 </svg>

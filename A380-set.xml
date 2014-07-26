@@ -34,17 +34,12 @@
       <model type="int">4</model>
     </rating>
     <flight-model>jsb</flight-model>
-    <livery>Aircraft/A380/Textures/Livery/House</livery>
     <aero>A380</aero>
     
     
     <startup>
        <splash-texture>Aircraft/A380/splash2.png</splash-texture>
     </startup>
-    
-    <flight-management>
-    	<phase type="string">T/O</phase>
-    </flight-management>
 
     <systems>
 		<autopilot>
@@ -97,7 +92,7 @@
    <model>
     <path>Aircraft/A380/Models/A380.xml</path>
     <livery> 
-	<file type="string">House</file> 
+		<file type="string">F-WWDD</file> 
     </livery> 
     <pushback>
 	  	<kp type="double">900</kp>
@@ -610,7 +605,10 @@
   </internal>
 </autopilot>
 
-
+<flight-management>
+	<flt_nbr type="string">AIB1174</flt_nbr>
+	<phase type="string">T/O</phase>
+</flight-management>
 
 <input>
   <keyboard>
@@ -970,6 +968,10 @@
 	<ecam>
 		<file>Aircraft/A380/Models/Instruments/ECAM/ecam.nas</file>
 		<!-- ECAM E/WD Display -->
+		<file>Aircraft/A380/Models/Instruments/EWD/limit.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/item.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/checklist.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/alerts.nas</file>
 		<file>Aircraft/A380/Models/Instruments/EWD/ewd.nas</file>
 		<!-- ECAM SD Display -->
 		<file>Aircraft/A380/Models/Instruments/SD/pages.nas</file>
@@ -977,13 +979,23 @@
 		<!-- A380 Briefing For Pilots Reference Pages -->
 		<file>Aircraft/A380/Models/Instruments/SD/animation.nas</file>
 		<file>Aircraft/A380/Models/Instruments/SD/pdz/pdz.nas</file> <!-- Permananent Data Zone and ATC Mailbox Area -->
-		<file>Aircraft/A380/Models/Instruments/SD/fctl/fctl.nas</file>			 <!-- pg 141 -->
+		<file>Aircraft/A380/Models/Instruments/SD/fctl/fctl.nas</file> 			 <!-- pg 141 -->
 		<file>Aircraft/A380/Models/Instruments/SD/fuel/fuel.nas</file>			 <!-- pg 164 -->
-		<file>Aircraft/A380/Models/Instruments/SD/apu/apu.nas</file>			 <!-- pg 283 -->
+		<file>Aircraft/A380/Models/Instruments/SD/cond/cond.nas</file>			 <!-- pg 047 -->
+		<file>Aircraft/A380/Models/Instruments/SD/bleed/bleed.nas</file>		 <!-- pg 048 -->
+		<file>Aircraft/A380/Models/Instruments/SD/cruise/cruise.nas</file>		 <!-- pg 057 -->
+		<file>Aircraft/A380/Models/Instruments/SD/cab_press/cab_press.nas</file> <!-- pg 057 -->
+		<file>Aircraft/A380/Models/Instruments/SD/elec_ac/elec_ac.nas</file>	 <!-- pg 108 -->
+		<file>Aircraft/A380/Models/Instruments/SD/elec_dc/elec_dc.nas</file>	 <!-- pg 108 -->
+		<file>Aircraft/A380/Models/Instruments/SD/hyd/hyd.nas</file>			 <!-- pg 169 -->
+		<file>Aircraft/A380/Models/Instruments/SD/wheel/wheel.nas</file>		 <!-- pg 232 -->
+		<file>Aircraft/A380/Models/Instruments/SD/door/door.nas</file>			 <!-- pg 255 -->
 		<file>Aircraft/A380/Models/Instruments/SD/engine/engine.nas</file>		 <!-- pg 294 -->
+		<file>Aircraft/A380/Models/Instruments/SD/apu/apu.nas</file>			 <!-- pg 283 -->
 		<file>Aircraft/A380/Models/Instruments/SD/startup.nas</file>
 	</ecam>
 	<a380>
+		<file>Aircraft/A380/Nasal/liveries.nas</file>
     	<file>Aircraft/A380/Nasal/walk.nas</file>
     	<file>Aircraft/A380/Nasal/listeners.nas</file>
     </a380>
@@ -1040,6 +1052,11 @@
 		<file>Aircraft/A380/Systems/FMGC/deflection.nas</file>
 		<file>Aircraft/A380/Systems/FMGC/fmgc_loop.nas</file>
     </fmgc>
+    <!-- Multi-Function Display -->
+    <mfd>
+    	<file>Aircraft/A380/Models/Instruments/MFD/modes.nas</file>
+    	<file>Aircraft/A380/Models/Instruments/MFD/mfd.nas</file>
+    </mfd>
 </nasal>
 
 <consumables>

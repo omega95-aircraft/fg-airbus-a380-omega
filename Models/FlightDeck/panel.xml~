@@ -256,7 +256,6 @@
         <object-name>nd.r</object-name>
         <object-name>vsd.r</object-name>
         <object-name>ewd</object-name>
-        <object-name>sd</object-name>
         <condition>
             <equals>
                 <property>systems/electric/outputs/avionics</property>

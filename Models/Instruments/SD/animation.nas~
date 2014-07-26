@@ -37,6 +37,13 @@ var animation = {
 			element.setRotation(0);
 		}
 	},
+	color_rotary_switch: func(prop, value, angle, element, onColor, offColor) {
+		if(getprop(prop) == value) {
+			element.setRotation(angle*D2R);
+		} else {
+			element.setRotation(0);
+		}
+	},
 	surface_position: func(prop, pos, thick, factor, orient, element, parent, color) {
 		# prop - 	interface property
 		# pos - 	[x,y] - top/left position on canvas
@@ -46,10 +53,8 @@ var animation = {
 		# orient -	'h' or 'v' corresponding to horizonal and vertical respectively
 		
 		# The element must be instantiated on page load before this animation can be used!
-		element.reset();
-		element = parent.createChild("path")
-						.setColorFill(color)
-						.moveTo(pos[0], pos[1]);
+		element.reset().setColorFill(color)
+					   .moveTo(pos[0], pos[1]);
 		
 		var value = getprop(prop);
 		
