@@ -458,24 +458,30 @@ var gear_helpers = {
 		if(WOW(aft) and !WOW(fwd)) { # Only Aft wheels in contact with ground
 			setprop("/gear/"~name~"/c_bar", 0);
 			if(getZ(fwd) > zFwd) {
-				# setZ(aft,getZ(aft)+compr(aft));
-				# setZ(fwd,getZ(fwd)-compr(aft));
-				setZ(aft,getZ(aft)+0.5);
-				setZ(fwd,getZ(fwd)-0.5);
+				if(compr(aft)<2) {
+					setZ(aft,getZ(aft)+compr(aft));
+					setZ(fwd,getZ(fwd)-compr(aft));
+				} else {
+					setZ(aft,getZ(aft)+2);
+					setZ(fwd,getZ(fwd)-2);
+				}
 			}
 		} elsif(!WOW(aft) and WOW(fwd)) { # Only the forward wheels are in contact
 			setprop("/gear/"~name~"/c_bar", 0);
 			if(getZ(aft) > zAft) {
-				# setZ(aft,getZ(aft)-compr(fwd));
-				# setZ(fwd,getZ(fwd)+compr(fwd));
-				setZ(aft,getZ(aft)-0.5);
-				setZ(fwd,getZ(fwd)+0.5);
+				if(compr(fwd)<2) {
+					setZ(aft,getZ(aft)-compr(fwd));
+					setZ(fwd,getZ(fwd)+compr(fwd));
+				} else {
+					setZ(aft,getZ(aft)-2);
+					setZ(fwd,getZ(fwd)+2);
+				}
 			}
 		} elsif(WOW(aft) and WOW(fwd)) { # Both wheels in contact with ground
 			var c_bar = (compr(fwd)+compr(aft))/2;
 			setprop("/gear/"~name~"/c_bar", c_bar);
-			setZ(aft,-(compr(aft)-c_bar)+zBar);
-			setZ(fwd,-(compr(fwd)-c_bar)+zBar);
+			setZ(aft,(compr(aft)-c_bar)+zBar);
+			setZ(fwd,(compr(fwd)-c_bar)+zBar);
 		} else { # No contact with ground
 			setprop("/gear/"~name~"/c_bar", 0);
 			if(relax == "pitch-down") {

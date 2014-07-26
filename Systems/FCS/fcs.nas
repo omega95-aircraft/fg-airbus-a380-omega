@@ -245,8 +245,8 @@ var fcs = {
 		# Outboard Elevators work to achieve commanded pitch rate [G-Force above 210 KIAS]
 		me.elev_lob.move_pos(getprop("/fbw/outputs/elev-ob"));
 		me.elev_rob.move_pos(getprop("/fbw/outputs/elev-ob"));
-		me.elev_lib.move_pos(getprop("/fbw/outputs/elev-ib"));
-		me.elev_rib.move_pos(getprop("/fbw/outputs/elev-ib"));
+		me.elev_lib.move_pos(getprop("/fbw/outputs/elev-ob"));
+		me.elev_rib.move_pos(getprop("/fbw/outputs/elev-ob"));
 		
 		me.hstb.move_pos(me.pitch_trim); # FBW Output for HSTAB is the pitch trim property
 		

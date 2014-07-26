@@ -6,10 +6,11 @@ for(var n=0; n<5; n=n+1) {
 	setprop("/engines/engine["~n~"]/fuel-used-kg", 0);
 }
 
-strobe_switch = props.globals.getNode("/controls/switches/strobe", 0);
-aircraft.light.new("sim/model/A380/lighting/strobe", [0.05, 1.2], strobe_switch);
-beacon_switch = props.globals.getNode("/controls/lighting/beacon", 0);
-aircraft.light.new("sim/model/A380/lighting/beacon", [0.05, 1.25], beacon_switch);
+var beacon_switch = props.globals.getNode("controls/switches/beacon", 2);
+var beacon = aircraft.light.new("sim/model/lights/beacon", [0.015, 3], "controls/lighting/beacon");
+
+var strobe_switch = props.globals.getNode("controls/switches/strobe", 2);
+var strobe = aircraft.light.new("sim/model/lights/strobe", [0.025, 1.5], "controls/lighting/strobe");
 
 # Control slats and flaps together - F1 = Slat full
 setlistener("/controls/flight/flaps", func(n) {
@@ -457,24 +458,30 @@ var gear_helpers = {
 		if(WOW(aft) and !WOW(fwd)) { # Only Aft wheels in contact with ground
 			setprop("/gear/"~name~"/c_bar", 0);
 			if(getZ(fwd) > zFwd) {
-				# setZ(aft,getZ(aft)+compr(aft));
-				# setZ(fwd,getZ(fwd)-compr(aft));
-				setZ(aft,getZ(aft)+0.5);
-				setZ(fwd,getZ(fwd)-0.5);
+				if(compr(aft)<2) {
+					setZ(aft,getZ(aft)+compr(aft));
+					setZ(fwd,getZ(fwd)-compr(aft));
+				} else {
+					setZ(aft,getZ(aft)+2);
+					setZ(fwd,getZ(fwd)-2);
+				}
 			}
 		} elsif(!WOW(aft) and WOW(fwd)) { # Only the forward wheels are in contact
 			setprop("/gear/"~name~"/c_bar", 0);
 			if(getZ(aft) > zAft) {
-				# setZ(aft,getZ(aft)-compr(fwd));
-				# setZ(fwd,getZ(fwd)+compr(fwd));
-				setZ(aft,getZ(aft)-0.5);
-				setZ(fwd,getZ(fwd)+0.5);
+				if(compr(aft)<2) {
+					setZ(aft,getZ(aft)-compr(aft));
+					setZ(fwd,getZ(fwd)+compr(aft));
+				} else {
+					setZ(aft,getZ(aft)-2);
+					setZ(fwd,getZ(fwd)+2);
+				}
 			}
 		} elsif(WOW(aft) and WOW(fwd)) { # Both wheels in contact with ground
 			var c_bar = (compr(fwd)+compr(aft))/2;
 			setprop("/gear/"~name~"/c_bar", c_bar);
-			setZ(aft,-(compr(aft)-c_bar)+zBar);
-			setZ(fwd,-(compr(fwd)-c_bar)+zBar);
+			setZ(aft,(compr(aft)-c_bar)+zBar);
+			setZ(fwd,(compr(fwd)-c_bar)+zBar);
 		} else { # No contact with ground
 			setprop("/gear/"~name~"/c_bar", 0);
 			if(relax == "pitch-down") {
