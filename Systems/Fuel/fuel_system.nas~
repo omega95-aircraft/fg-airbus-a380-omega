@@ -6,6 +6,11 @@
 # PATHS
 var ctl = "/controls/fuel/";
 
+setprop(ctl~"jettison/arm", 0);
+setprop(ctl~"jettison/arm-prot", 0);
+setprop(ctl~"jettison/active", 0);
+setprop(ctl~"jettison/active-prot", 0);
+
 var fuel_system = {
 	
 	init : func { 
@@ -44,8 +49,8 @@ var fuel_system = {
 				 pump.new(ctl~"jettison/arm", 4, me.r_outr_tk, me.r_vent_tk),
 				 pump.new(ctl~"jettison/arm", 5, me.feed_tk1, me.l_vent_tk),
 				 pump.new(ctl~"jettison/arm", 5, me.feed_tk2, me.r_vent_tk),
-				 pump.new(ctl~"jettison/arm", 5, me.l_outr_tk, me.l_vent_tk),
-				 pump.new(ctl~"jettison/arm", 5, me.r_outr_tk, me.r_vent_tk)];
+				 pump.new(ctl~"jettison/arm", 5, me.feed_tk3, me.l_vent_tk),
+				 pump.new(ctl~"jettison/arm", 5, me.feed_tk4, me.r_vent_tk)];
 		
 		me.feedtanks = [xfeedline.new(me.feed_tk1, ctl~"crossfeed/pump-1"),
 				xfeedline.new(me.feed_tk2, ctl~"crossfeed/pump-2"),
@@ -117,6 +122,13 @@ var fuel_system = {
 			# Vent fuel at 6 gal/s (not exactly sure about this number, but it works)
 			me.l_vent_tk.rm_gal(6*dt);
 			me.r_vent_tk.rm_gal(6*dt);
+			
+			if(me.l_vent_tk.level_norm() > 0.1) {
+				setprop(ctl~"jettison/left", 1);
+			} else {
+				setprop(ctl~"jettison/left", 0);
+			}
+			
 		}
 		
 		

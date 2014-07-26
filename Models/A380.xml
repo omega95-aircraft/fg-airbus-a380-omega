@@ -2789,4 +2789,100 @@
 	</axis>
 </animation>
 
+<!-- Exterior aircraft lighting -->
+
+<model>
+	<name>nav.l</name>
+	<path>Aircraft/A380/Models/Lights/rednav.xml</path>
+	<offsets>
+			<x-m>55.8669</x-m>
+			<y-m>-39.5900</y-m>
+			<z-m>7.4771</z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>nav.r</name>
+	<path>Aircraft/A380/Models/Lights/greennav.xml</path>
+	<offsets>
+			<x-m>55.8669</x-m>
+			<y-m>39.5900</y-m>
+			<z-m>7.4771</z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>strobe.l</name>
+	<path>Aircraft/A380/Models/Lights/strobe.xml</path>
+	<offsets>
+			<x-m>55.8669</x-m>
+			<y-m>-39.5900</y-m>
+			<z-m>7.4771</z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>strobe.r</name>
+	<path>Aircraft/A380/Models/Lights/strobe.xml</path>
+	<offsets>
+			<x-m>55.8669</x-m>
+			<y-m>39.5900</y-m>
+			<z-m>7.4771</z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>beacon.1</name>
+	<path>Aircraft/A380/Models/Lights/beacon.xml</path>
+	<offsets>
+			<x-m>43.2853</x-m>
+			<y-m>0</y-m>
+			<z-m>10.7499</z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>beacon.2</name>
+	<path>Aircraft/A380/Models/Lights/beacon.xml</path>
+	<offsets>
+			<x-m>31.0555</x-m>
+			<y-m>0</y-m>
+			<z-m>1.6153</z-m>
+	</offsets>
+</model>
+
+<!-- Fuel Jettison -->
+
+<model>
+	<path>Aircraft/A380/Models/Effects/fuel-dump.xml</path>
+	<name>fueldump.l</name>  
+	<condition>
+		<equals>
+			<property>controls/fuel/jettison/left</property>
+			<value>1</value>
+		</equals>
+	</condition>   
+	<offsets>
+		<x-m>54.67</x-m>
+		<y-m>-25.70</y-m>
+		<z-m>6.05</z-m>  
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/A380/Models/Effects/fuel-dump.xml</path>
+	<name>fueldump.r</name>  
+	<condition>
+		<equals>
+			<property>controls/fuel/jettison/right</property>
+			<value>1</value>
+		</equals>
+	</condition>   
+	<offsets>
+		<x-m>54.67</x-m>
+		<y-m>25.70</y-m>
+		<z-m>6.05</z-m>  
+	</offsets>
+</model>
+
 </PropertyList>

@@ -6,6 +6,11 @@
 # PATHS
 var ctl = "/controls/fuel/";
 
+setprop(ctl~"jettison/arm", 0);
+setprop(ctl~"jettison/arm-prot", 0);
+setprop(ctl~"jettison/active", 0);
+setprop(ctl~"jettison/active-prot", 0);
+
 var fuel_system = {
 	
 	init : func { 
@@ -117,6 +122,19 @@ var fuel_system = {
 			# Vent fuel at 6 gal/s (not exactly sure about this number, but it works)
 			me.l_vent_tk.rm_gal(6*dt);
 			me.r_vent_tk.rm_gal(6*dt);
+			
+			if(me.l_vent_tk.level_norm() > 0.1) {
+				setprop(ctl~"jettison/left", 1);
+			} else {
+				setprop(ctl~"jettison/left", 0);
+			}
+			
+			if(me.r_vent_tk.level_norm() > 0.1) {
+				setprop(ctl~"jettison/right", 1);
+			} else {
+				setprop(ctl~"jettison/right", 0);
+			}
+			
 		}
 		
 		

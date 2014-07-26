@@ -480,30 +480,140 @@
 		</action>
 	</animation>
 	
+	<!-- +++++++++++++++++++++++++++++++++++ -->
+	<!--Throttle-->
+	<!-- +++++++++++++++++++++++++++++++++++ -->
+	<!--1-->
 	<animation>
-		<type>pick</type>
-		<object-name>mfd.l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable>false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>mfd.capt_mfd.showDlg();</script>
-			</binding>
-		</action>
+		<type>rotate</type>
+		<object-name>throttle_1</object-name>
+		<property>controls/engines/engine[0]/throttle</property>
+		<factor>-40</factor>
+		<center>
+			<x-m>-0.47763</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.60223</z-m>
+		</center>
+		<axis>
+			<x> 0 </x>
+			<y> 1 </y>
+			<z> 0 </z>
+		</axis>
 	</animation>
 	
+	<!--2-->
 	<animation>
-		<type>pick</type>
-		<object-name>mfd.r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable>false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>mfd.fo_mfd.showDlg();</script>
-			</binding>
-		</action>
+		<type>rotate</type>
+		<object-name>throttle_2</object-name>
+		<object-name>throttle2_1</object-name>
+		<object-name>throttle2_2</object-name>
+		<property>controls/engines/engine[1]/throttle</property>
+		<factor>-40</factor>
+		<center>
+			<x-m>-0.47763</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.60223</z-m>
+		</center>
+		<axis>
+			<x> 0 </x>
+			<y> 1 </y>
+			<z> 0 </z>
+		</axis>
+	</animation>
+	
+	<!--3-->
+	<animation>
+		<type>rotate</type>
+		<object-name>throttle_3</object-name>
+		<object-name>throttle3_1</object-name>
+		<object-name>throttle3_2</object-name>
+		<property>controls/engines/engine[2]/throttle</property>
+		<factor>-40</factor>
+		<center>
+			<x-m>-0.47763</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.60223</z-m>
+		</center>
+		<axis>
+			<x> 0 </x>
+			<y> 1 </y>
+			<z> 0 </z>
+		</axis>
+	</animation>
+	
+	<!--4-->
+	<animation>
+		<type>rotate</type>
+		<object-name>throttle_4</object-name>
+		<property>controls/engines/engine[3]/throttle</property>
+		<factor>-40</factor>
+		<center>
+			<x-m>-0.47763</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.60223</z-m>
+		</center>
+		<axis>
+			<x> 0 </x>
+			<y> 1 </y>
+			<z> 0 </z>
+		</axis>
+	</animation>
+
+	
+	<!--Parking break--> 
+	<animation>
+		<type>rotate</type>
+		<object-name>brake_selector</object-name>
+		<property>controls/gear/brake-parking</property>
+		<factor> 90 </factor>
+		<center>
+			<x-m>-0.01763</x-m>
+			<y-m>-0.12528</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x> 0 </x>
+			<y> 0 </y>
+			<z> -1 </z>
+		</axis>
+	</animation>	
+	
+	<!-- Flaps lever -->
+	<animation>
+		<type>rotate</type>
+		<object-name>flapselector</object-name>
+		<property>controls/flight/flaps</property>
+		<factor>60</factor>
+		<offset-deg>-20</offset-deg>   		
+		<center>
+			<x-m>-0.13465</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.6402</z-m>
+		</center>
+		<axis>
+			<x> 0 </x>
+			<y> 1 </y>
+			<z> 0 </z>
+		</axis>
+	</animation>
+	
+	<!-- Speed brakes lever -->
+	<animation>
+		<type>rotate</type>
+		<object-name>speed_brake</object-name>
+		<property>controls/flight/spoilers</property>
+		<factor>60</factor>
+		<offset-deg>-20</offset-deg> 
+		<center>
+			<x-m>-0.14347</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.64096</z-m>
+		</center>
+		<axis>
+			<x> 0 </x>
+			<y> 1 </y>
+			<z> 0 </z>
+		</axis>
 	</animation>
 	
 </PropertyList>

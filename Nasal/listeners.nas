@@ -6,10 +6,11 @@ for(var n=0; n<5; n=n+1) {
 	setprop("/engines/engine["~n~"]/fuel-used-kg", 0);
 }
 
-strobe_switch = props.globals.getNode("/controls/switches/strobe", 0);
-aircraft.light.new("sim/model/A380/lighting/strobe", [0.05, 1.2], strobe_switch);
-beacon_switch = props.globals.getNode("/controls/lighting/beacon", 0);
-aircraft.light.new("sim/model/A380/lighting/beacon", [0.05, 1.25], beacon_switch);
+var beacon_switch = props.globals.getNode("controls/switches/beacon", 2);
+var beacon = aircraft.light.new("sim/model/lights/beacon", [0.015, 3], "controls/lighting/beacon");
+
+var strobe_switch = props.globals.getNode("controls/switches/strobe", 2);
+var strobe = aircraft.light.new("sim/model/lights/strobe", [0.025, 1.5], "controls/lighting/strobe");
 
 # Control slats and flaps together - F1 = Slat full
 setlistener("/controls/flight/flaps", func(n) {

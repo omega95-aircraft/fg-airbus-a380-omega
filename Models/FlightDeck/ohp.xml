@@ -2393,9 +2393,9 @@
 				</script>
 			</binding>
 			<binding>
-                  <command>property-toggle</command>
-                  <property>/sim/sound/switch</property>
-              </binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
 		</action>
 	</animation>
 	
@@ -2433,6 +2433,759 @@
 				<script>
 					settimer(func {
 						setprop("/controls/hydraulics/engine[3]/prot-ab", 0);
+					}, 3);
+				</script>
+			</binding>
+			<binding>
+                  <command>property-toggle</command>
+                  <property>/sim/sound/switch</property>
+              </binding>
+		</action>
+	</animation>
+	
+	<!-- Anti-ice -->
+	<animation>
+		<type>pick</type>
+		<object-name>btn.antiice.wing</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/anti-ice/wing-heat</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>btn.antiice.wing</object-name>
+		<property>controls/anti-ice/wing-heat</property>
+		<factor>0.5</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+		</axis>
+	</animation>
+	
+	<!-- Engines Anti-ice -->
+	<animation>
+		<type>pick</type>
+		<object-name>btn.antiice.eng.1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/anti-ice/engine[0]/inlet-heat</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>btn.antiice.eng.1</object-name>
+		<property>controls/anti-ice/engine[0]/inlet-heat</property>
+		<factor>0.5</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>btn.antiice.eng.2</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/anti-ice/engine[1]/inlet-heat</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>btn.antiice.eng.2</object-name>
+		<property>controls/anti-ice/engine[1]/inlet-heat</property>
+		<factor>0.5</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>btn.antiice.eng.3</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/anti-ice/engine[2]/inlet-heat</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>btn.antiice.eng.3</object-name>
+		<property>controls/anti-ice/engine[2]/inlet-heat</property>
+		<factor>0.5</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>btn.antiice.eng.4</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/anti-ice/engine[3]/inlet-heat</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>btn.antiice.eng.4</object-name>
+		<property>controls/anti-ice/engine[3]/inlet-heat</property>
+		<factor>0.5</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+		</axis>
+	</animation>
+	
+	<!-- External Lighting -->
+	<animation>
+		<type>pick</type>
+		<object-name>sw.strobe</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/strobe</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.strobe</object-name>
+		<property>controls/lighting/strobe</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5376</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3672</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.beacon</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/beacon</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.beacon</object-name>
+		<property>controls/lighting/beacon</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5376</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3672</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.nav</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/nav</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.nav</object-name>
+		<property>controls/lighting/nav</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5376</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3672</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.logo</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/logo</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.logo</object-name>
+		<property>controls/lighting/logo</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5376</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3672</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.wing</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/wing</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.wing</object-name>
+		<property>controls/lighting/wing</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5799</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3511</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.rwy</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/rwy</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.rwy</object-name>
+		<property>controls/lighting/rwy</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5799</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3511</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.land</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/land</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.land</object-name>
+		<property>controls/lighting/land</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5799</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3511</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.nose</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/nose</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.nose</object-name>
+		<property>controls/lighting/nose</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5799</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3511</z-m>
+		</center>
+	</animation>
+	
+	<!-- Internal Lighting -->
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.stbycompass</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/internal/stbycompass</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.stbycompass</object-name>
+		<property>controls/lighting/internal/stbycompass</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5376</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3672</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.storm</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/internal/storm</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.storm</object-name>
+		<property>controls/lighting/internal/storm</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5376</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3672</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.annlt</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/internal/annlt</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.annlt</object-name>
+		<property>controls/lighting/internal/annlt</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5376</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3672</z-m>
+		</center>
+	</animation>
+	
+	<!-- Signs -->
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.seatbelt</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/signs/seatbelt</property>
+			</binding>
+			<binding>
+				<command>property-toggle</command>
+				<property>instrumentation/switches/seatbelt-sign</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.seatbelt</object-name>
+		<property>controls/signs/seatbelt</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5799</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3511</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>sw.nosmoking</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/signs/no-smoking</property>
+			</binding>
+			<binding>
+				<command>property-toggle</command>
+				<property>instrumentation/switches/seatbelt-sign</property>
+			</binding>
+			<binding>
+            	<command>property-toggle</command>
+            	<property>/sim/sound/switch</property>
+            </binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>sw.nosmoking</object-name>
+		<property>controls/signs/no-smoking</property>
+		<factor>-60</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.5799</x-m>
+			<y-m>0</y-m>
+			<z-m>0.3511</z-m>
+		</center>
+	</animation>
+	
+	<!-- Jettison -->
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>btn.fueljettison.arm</object-name>
+		<property>/controls/fuel/jettison/arm</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>btn.fueljettison.arm</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+					var prot_open = getprop("/controls/fuel/jettison/arm-prot");
+					var value = getprop("/controls/fuel/jettison/arm");
+					
+					if(prot_open) {
+						if(value) {
+							setprop("/controls/fuel/jettison/arm", 0);
+						} else {
+							setprop("/controls/fuel/jettison/arm", 1);
+						}
+					} else {
+						print("Open switch cage first!");
+					}
+				</script>
+			</binding>
+			<binding>
+                  <command>property-toggle</command>
+                  <property>/sim/sound/switch</property>
+              </binding>
+		</action>
+	</animation>
+	
+	<animation>
+	  <type>rotate</type>
+	  <object-name>prot.fueljettison.arm</object-name>
+	  <property>/controls/fuel/jettison/arm-prot</property>
+	  <interpolation>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>1</ind><dep>-120</dep></entry>
+	  </interpolation>
+	  <axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	  </axis>
+	  <center>
+	  	<x-m>-0.1770</x-m>
+	  	<y-m>0</y-m>
+	  	<z-m>0.4914</z-m>
+	  </center>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>prot.fueljettison.arm</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>/controls/fuel/jettison/arm-prot</property>
+			</binding>
+			<binding>
+				<command>nasal</command>
+				<script>
+					settimer(func {
+						setprop("/controls/fuel/jettison/arm-prot", 0);
+					}, 3);
+				</script>
+			</binding>
+			<binding>
+                  <command>property-toggle</command>
+                  <property>/sim/sound/switch</property>
+              </binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>btn.fueljettison.active</object-name>
+		<property>/controls/fuel/jettison/active</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>btn.fueljettison.active</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+					var prot_open = getprop("/controls/fuel/jettison/active-prot");
+					var value = getprop("/controls/fuel/jettison/active");
+					
+					if(prot_open) {
+						if(value) {
+							setprop("/controls/fuel/jettison/active", 0);
+						} else {
+							setprop("/controls/fuel/jettison/active", 1);
+						}
+					} else {
+						print("Open switch cage first!");
+					}
+				</script>
+			</binding>
+			<binding>
+                  <command>property-toggle</command>
+                  <property>/sim/sound/switch</property>
+              </binding>
+		</action>
+	</animation>
+	
+	<animation>
+	  <type>rotate</type>
+	  <object-name>prot.fueljettison.active</object-name>
+	  <property>/controls/fuel/jettison/active-prot</property>
+	  <interpolation>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>1</ind><dep>-120</dep></entry>
+	  </interpolation>
+	  <axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	  </axis>
+	  <center>
+	  	<x-m>-0.1770</x-m>
+	  	<y-m>0</y-m>
+	  	<z-m>0.4914</z-m>
+	  </center>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>prot.fueljettison.active</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>/controls/fuel/jettison/active-prot</property>
+			</binding>
+			<binding>
+				<command>nasal</command>
+				<script>
+					settimer(func {
+						setprop("/controls/fuel/jettison/active-prot", 0);
 					}, 3);
 				</script>
 			</binding>
