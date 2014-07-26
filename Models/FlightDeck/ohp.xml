@@ -3196,4 +3196,138 @@
 		</action>
 	</animation>
 	
+	<!-- Manual Engine Start Switches -->
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>eng.manstart.1</object-name>
+		<property>/controls/engines/engine[0]/starter</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>eng.manstart.1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>/controls/APU/master-switch</property>
+			</binding>
+			<binding>
+		        <command>property-toggle</command>
+		        <property>/sim/sound/switch</property>
+		    </binding>
+		    <binding>
+		    	<command>property-toggle</command>
+		        <property>/controls/engines/engine[0]/starter</property>
+		    </binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>eng.manstart.2</object-name>
+		<property>/controls/engines/engine[1]/starter</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>eng.manstart.2</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>/controls/APU/master-switch</property>
+			</binding>
+			<binding>
+		        <command>property-toggle</command>
+		        <property>/sim/sound/switch</property>
+		    </binding>
+		    <binding>
+		    	<command>property-toggle</command>
+		        <property>/controls/engines/engine[1]/starter</property>
+		    </binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>eng.manstart.3</object-name>
+		<property>/controls/engines/engine[2]/starter</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>eng.manstart.3</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>/controls/APU/master-switch</property>
+			</binding>
+			<binding>
+		        <command>property-toggle</command>
+		        <property>/sim/sound/switch</property>
+		    </binding>
+		    <binding>
+		    	<command>property-toggle</command>
+		        <property>/controls/engines/engine[2]/starter</property>
+		    </binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>eng.manstart.4</object-name>
+		<property>/controls/engines/engine[3]/starter</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>eng.manstart.4</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>/controls/APU/master-switch</property>
+			</binding>
+			<binding>
+		        <command>property-toggle</command>
+		        <property>/sim/sound/switch</property>
+		    </binding>
+		    <binding>
+		    	<command>property-toggle</command>
+		        <property>/controls/engines/engine[3]/starter</property>
+		    </binding>
+		</action>
+	</animation>
+	
 </PropertyList>

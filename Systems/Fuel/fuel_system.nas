@@ -135,6 +135,9 @@ var fuel_system = {
 				setprop(ctl~"jettison/right", 0);
 			}
 			
+		} else {
+			setprop(ctl~"jettison/left", 0);
+			setprop(ctl~"jettison/right", 0);
 		}
 		
 		

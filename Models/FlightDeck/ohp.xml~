@@ -3026,7 +3026,7 @@
 	
 	<animation>
 		<type>textranslate</type>
-		<object-name>btn.fuel.jettison.arm</object-name>
+		<object-name>btn.fueljettison.arm</object-name>
 		<property>/controls/fuel/jettison/arm</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
@@ -3038,7 +3038,7 @@
 	</animation>
 	<animation>
 		<type>pick</type>
-		<object-name>btn.fuel.jettison.arm</object-name>
+		<object-name>btn.fueljettison.arm</object-name>
 		<action>
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
@@ -3068,7 +3068,7 @@
 	
 	<animation>
 	  <type>rotate</type>
-	  <object-name>prot.fuel.jettison.arm</object-name>
+	  <object-name>prot.fueljettison.arm</object-name>
 	  <property>/controls/fuel/jettison/arm-prot</property>
 	  <interpolation>
 		<entry><ind>0</ind><dep>0</dep></entry>
@@ -3087,7 +3087,7 @@
 	</animation>
 	<animation>
 		<type>pick</type>
-		<object-name>prot.fuel.jettison.arm</object-name>
+		<object-name>prot.fueljettison.arm</object-name>
 		<action>
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
@@ -3112,7 +3112,7 @@
 	
 	<animation>
 		<type>textranslate</type>
-		<object-name>btn.fuel.jettison.active</object-name>
+		<object-name>btn.fueljettison.active</object-name>
 		<property>/controls/fuel/jettison/active</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
@@ -3124,7 +3124,7 @@
 	</animation>
 	<animation>
 		<type>pick</type>
-		<object-name>btn.fuel.jettison.active</object-name>
+		<object-name>btn.fueljettison.active</object-name>
 		<action>
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
@@ -3154,7 +3154,7 @@
 	
 	<animation>
 	  <type>rotate</type>
-	  <object-name>prot.fuel.jettison.active</object-name>
+	  <object-name>prot.fueljettison.active</object-name>
 	  <property>/controls/fuel/jettison/active-prot</property>
 	  <interpolation>
 		<entry><ind>0</ind><dep>0</dep></entry>
@@ -3173,7 +3173,7 @@
 	</animation>
 	<animation>
 		<type>pick</type>
-		<object-name>prot.fuel.jettison.active</object-name>
+		<object-name>prot.fueljettison.active</object-name>
 		<action>
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
@@ -3193,6 +3193,41 @@
                   <command>property-toggle</command>
                   <property>/sim/sound/switch</property>
               </binding>
+		</action>
+	</animation>
+	
+	<!-- Manual Engine Start Switches -->
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>eng.manstart.1</object-name>
+		<property>/controls/engines/engine[0]/starter</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>eng.manstart.1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>/controls/APU/master-switch</property>
+			</binding>
+			<binding>
+		        <command>property-toggle</command>
+		        <property>/sim/sound/switch</property>
+		    </binding>
+		    <binding>
+		    	<command>property-toggle</command>
+		        <property>/controls/engines/engine[0]/starter</property>
+		    </binding>
 		</action>
 	</animation>
 	

@@ -129,6 +129,15 @@ var fuel_system = {
 				setprop(ctl~"jettison/left", 0);
 			}
 			
+			if(me.r_vent_tk.level_norm() > 0.1) {
+				setprop(ctl~"jettison/right", 1);
+			} else {
+				setprop(ctl~"jettison/right", 0);
+			}
+			
+		} else {
+			setprop(ctl~"jettison/left", 0);
+				
 		}
 		
 		
