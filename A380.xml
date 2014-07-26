@@ -176,7 +176,7 @@
         
         <contact type="BOGEY" name="Left Aft Main gear FWD WHEELS">
             <location unit="M">
-                <x> 44.00 </x>
+                <x> 41.95 </x>
                 <y> -3.45</y>
                 <z> -8.9152 </z>
             </location>
@@ -191,7 +191,7 @@
         </contact>
         <contact type="BOGEY" name="Right Fwd Main Gear FWD WHEELS">
             <location unit="M">
-                <x> 44.00 </x>
+                <x> 41.95 </x>
                 <y>  3.45</y>
                 <z> -8.9152 </z>
             </location>
@@ -240,7 +240,7 @@
         
         <contact type="BOGEY" name="Left Aft Main gear REAR WHEELS">
             <location unit="M">
-                <x> 46.89 </x>
+                <x> 44.95 </x>
                 <y> -3.45</y>
                 <z> -8.9152 </z>
             </location>
@@ -255,7 +255,7 @@
         </contact>
         <contact type="BOGEY" name="Right Fwd Main Gear REAR WHEELS">
             <location unit="M">
-                <x> 46.89 </x>
+                <x> 44.95 </x>
                 <y>  3.45</y>
                 <z> -8.9152 </z>
             </location>

@@ -608,6 +608,7 @@
 <flight-management>
 	<flt_nbr type="string">AIB1174</flt_nbr>
 	<phase type="string">T/O</phase>
+	<crz_fl type="double">320</crz_fl>
 </flight-management>
 
 <input>
