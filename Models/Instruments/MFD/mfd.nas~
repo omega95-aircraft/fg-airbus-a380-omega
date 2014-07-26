@@ -12,19 +12,19 @@ var font_mapper = func(family, weight)
 };
 
 var mfd = {
-	obj_setfunc: {
-		"click": func(object, svg_element, parent) {
-			if(svg_element.getVisible()) {
-				svg_element.addEventListener("click", func { object.function(me, parent)});
-			}
-		},
-		"textbox": func(object, svg_element, parent) {
-			#FIXME
-		},
-		"label": func(object, svg_element, parent) {
-			#FIXME
-		}
-	},
+	# obj_setfunc: {
+	# 	"click": func(object, svg_element, my_modes) {
+	# 		svg_element.addEventListener("click", func {
+	# 			object.function(my_modes);
+	# 		});
+	# 	},
+	# 	"textbox": func(object, svg_element, my_modes) {
+	# 		#FIXME
+	# 	},
+	# 	"label": func(object, svg_element, my_modes) {
+	# 		#FIXME
+	# 	}
+	# },
 	activePage: "",
 	activeMenu: "",
 	pages: {},
@@ -32,7 +32,7 @@ var mfd = {
 	pageObjects: nil,
 	permObjects: nil,
 	menuObjects: nil,
-	new: func(placement, modes) {
+	new: func(placement) {
 		var t = {parents:[mfd]};
 		
 		t.display = canvas.new({
@@ -47,21 +47,25 @@ var mfd = {
 		t.permObjects = t.display.createGroup();	# SVG Objects for mode selector dropdown
 		t.menuObjects = t.display.createGroup();	# SVG Objects for menu bar
 		
-		t.modes = modes;
-		
-		# Load Permananent Section
-		canvas.parsesvg(t.permObjects, t.modes.path, {'font-mapper':font_mapper});
-		# Cache SVG Objects for use and load functions
-		foreach(var svg_object; t.modes.objects) {
-			t.modes.svg[svg_object] = t.permObjects.getElementById(svg_object);
-		}
-		foreach(var svg_object; t.modes.widgets) {
-			t.obj_setfunc[svg_object.type](svg_object, t.modes.svg[svg_object.element], t.modes);
-		}
-		
-		t.modes.load();
-		
 		return t;
+	},
+	init: func(modes) {
+	
+		me.modes = modes;
+	
+		# Load Permananent Section
+		# canvas.parsesvg(me.permObjects, me.modes.path, {'font-mapper':font_mapper});
+		# Cache SVG Objects for use and load functions
+		foreach(var svg_object; me.modes.objects) {
+			me.modes.svg[svg_object] = me.permObjects.getElementById(svg_object);
+		}
+		# foreach(var svg_object; me.modes.widgets) {
+		# 	foreach(var element; svg_object.elements) {
+		# 		me.obj_setfunc[svg_object.type](svg_object, me.modes.svg[element], me.modes);
+		# 	}
+		# }
+		
+		me.modes.load();
 	},
 	loadPage: func(page) {
 		if((me.pages[page] != nil) and (page != me.activePage)) { # Canvas page is available
@@ -104,6 +108,6 @@ var mfd = {
 	}
 };
 
-var capt_mfd = mfd.new("mfd.l", modes); # Captain's side MFD
-var fo_mfd = mfd.new("mfd.r", modes); # First Officer's side MFD
+var capt_mfd = mfd.new("mfd.l"); # Captain's side MFD
+var fo_mfd = mfd.new("mfd.r"); # First Officer's side MFD
 print("Airbus Multi-function Displays Initialized");

@@ -1054,8 +1054,8 @@
     </fmgc>
     <!-- Multi-Function Display -->
     <mfd>
-    	<file>Aircraft/A380/Models/Instruments/MFD/modes.nas</file>
     	<file>Aircraft/A380/Models/Instruments/MFD/mfd.nas</file>
+    	<file>Aircraft/A380/Models/Instruments/MFD/modes.nas</file>
     </mfd>
 </nasal>
 

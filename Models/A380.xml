@@ -15,6 +15,7 @@
 	<animation>
 		<type>material</type>
 		<object-name>fuselage</object-name>
+		<object-name>belly</object-name>
 		<object-name>winglet.l</object-name>
 		<object-name>winglet.r</object-name>
 		<object-name>vstab</object-name>
