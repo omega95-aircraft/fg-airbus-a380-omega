@@ -281,7 +281,7 @@ name "lfairing"
 loc -35.2597 -1.69604 0.0121556
 data 8
 Mesh.066
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 61.000000
 numvert 203
 42.0789 1.9628 3.15722
@@ -1353,7 +1353,7 @@ name "rhbodyfairing"
 loc -35.2597 -1.69604 0.0122265
 data 8
 Mesh.067
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 61.000000
 numvert 207
 46.7406 4.31077 -3.43097
@@ -2429,7 +2429,7 @@ name "innerbgdoor"
 loc 10.33 0.290725 2.28925
 data 8
 Mesh.058
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 61.000000
 numvert 22
 1.1512 -0.0994968 -0.57802
@@ -2545,7 +2545,7 @@ name "midbgdoor"
 loc 9.6361 0.413465 3.18754
 data 8
 Mesh.059
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 61.000000
 numvert 16
 -1.6621 0.0588474 0.07932
@@ -2651,7 +2651,7 @@ name "lhwgdoor"
 loc 4.9623 0.401225 2.71533
 data 8
 Mesh.061
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 61.000000
 numvert 116
 1.95475 -0.267881 0.176374
@@ -3375,7 +3375,7 @@ name "rhinnerbgdoor"
 loc 10.3266 0.290865 -2.2907
 data 8
 Mesh.063
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 61.000000
 numvert 20
 1.17915 -0.0997486 0.57873
@@ -3489,7 +3489,7 @@ name "outerbgdoor"
 loc 10.32 0.589365 3.16471
 data 8
 Mesh.060
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 61.000000
 numvert 24
 2.52865 0.258558 0.247855
@@ -3621,7 +3621,7 @@ name "rhmidbgdoor"
 loc 9.6545 0.413645 -3.19844
 data 8
 Mesh.064
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 61.000000
 numvert 16
 -1.68055 0.0586681 -0.0804448
@@ -3727,7 +3727,7 @@ name "rhouterbgdoor"
 loc 10.3263 0.589365 -3.17954
 data 8
 Mesh.065
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 61.000000
 numvert 24
 2.52235 0.258558 -0.24608
@@ -3859,7 +3859,7 @@ name "rhwgdoor"
 loc 4.9636 0.403435 -2.71254
 data 8
 Mesh.062
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 61.000000
 numvert 114
 1.95515 -0.267881 -0.179744
@@ -17470,7 +17470,7 @@ loc 7.28556 -0.130608 0
 kids 2
 OBJECT poly
 name "lowerrudder"
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 38
 63.6921 9.6644 -0.121229
@@ -17637,7 +17637,7 @@ refs 3
 kids 0
 OBJECT poly
 name "upperrudder"
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 64
 68.2741 14.4914 -0.0167465
@@ -20989,7 +20989,7 @@ kids 0
 OBJECT poly
 name "vstab"
 loc 7.28556 -0.130608 0
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 120
 55.6861 10.4923 -0.589117
@@ -29686,7 +29686,7 @@ kids 0
 OBJECT poly
 name "winglet.l"
 loc 7.56003 -0.248238 0
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 33
 51.5244 8.98738 39.875
@@ -30033,7 +30033,7 @@ kids 0
 OBJECT poly
 name "winglet.r"
 loc 7.56003 -0.248238 0
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 33
 51.5336 8.98894 -39.8967
@@ -55373,7 +55373,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 7.28556 -0.130608 0
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 2080
 1.66912 4.27049 0.733324
@@ -73135,7 +73135,7 @@ kids 0
 OBJECT poly
 name "nosegrdoor_fl"
 loc 10.1981 3.01489 0.366712
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 85
 -0.632706 0.0399666 -0.0255427
@@ -73687,7 +73687,7 @@ kids 0
 OBJECT poly
 name "nosegrdoor_rl"
 loc 12.199 2.63999 0.366751
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 49
 0.183459 -0.0157003 0.127538
@@ -73973,7 +73973,7 @@ kids 0
 OBJECT poly
 name "nosegrdoor_fr"
 loc 10.1981 3.01738 -0.372804
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 85
 -1.21896 0.181492 0.208762
@@ -74525,7 +74525,7 @@ kids 0
 OBJECT poly
 name "nosegrdoor_rr"
 loc 12.199 2.64135 -0.372783
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 49
 0.183459 -0.038168 0.127716

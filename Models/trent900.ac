@@ -967,7 +967,7 @@ name "cowl1"
 loc 0.544033 -0.136213 0.0445766
 data 8
 Mesh.002
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 48
 -0.232727 -0.00193596 -1.948
@@ -1409,7 +1409,7 @@ name "cowl3"
 loc 2.80462 -0.18965 0.0445766
 data 8
 Mesh.004
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 80
 0.939713 1.42293 -0.614494
@@ -2267,7 +2267,7 @@ name "fancowl"
 loc -0.387497 -0.113745 0.0445766
 data 8
 Mesh.006
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 54
 -1.41958 1.68309 -0.6749
@@ -12210,7 +12210,7 @@ name "cowl1"
 loc 0.544018 -0.136214 0.0445805
 data 8
 Mesh.002
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 48
 -0.232727 -0.00193405 1.948
@@ -12652,7 +12652,7 @@ name "reverse"
 loc 2.80461 -0.189647 0.0445805
 data 8
 Mesh.004
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 80
 -1.2187 -1.03706 1.04341
@@ -13510,7 +13510,7 @@ name "fancowl"
 loc -0.38751 -0.113744 0.0445805
 data 8
 Mesh.006
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 54
 -0.207706 -1.75129 -0.735607
@@ -30491,7 +30491,7 @@ name "fancowl"
 loc -0.403654 -0.118483 0.0464373
 data 8
 Mesh.006
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 54
 -1.41959 1.68309 30.4079
@@ -30939,7 +30939,7 @@ name "reverse"
 loc 2.78846 -0.194386 0.0464373
 data 8
 Mesh.004
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 80
 0.939713 1.42293 30.3475
@@ -31797,7 +31797,7 @@ name "cowl1"
 loc 0.527872 -0.140952 0.0464373
 data 8
 Mesh.002
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 48
 -0.232727 -0.00193501 31.681
@@ -41175,7 +41175,7 @@ name "fancowl"
 loc -0.403648 -0.118484 0.0464363
 data 8
 Mesh.006
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 54
 -0.207703 -1.75129 51.5998
@@ -41623,7 +41623,7 @@ name "cowl3"
 loc 2.78847 -0.194387 0.0464363
 data 8
 Mesh.004
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 80
 -1.2187 -1.03706 49.8207
@@ -42481,7 +42481,7 @@ name "cowl1"
 loc 0.527882 -0.140955 0.0464363
 data 8
 Mesh.002
-texture "F-WWDD.png"
+texture "Liveries/F-WWDD.png"
 crease 30.000000
 numvert 48
 -0.232727 -0.00193405 48.9161
