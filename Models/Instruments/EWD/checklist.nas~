@@ -2,12 +2,12 @@
 # Narendran Muraleedharan (c) 2014
 
 var checklist_item = {
-	desc: "",
-	resp: "",
+	desc: '',
+	resp: '',
 	manual: 0,
-	prop: "",
+	prop: '',
 	value: 0,
-	new: func(desc, resp, manual, prop="", value=0) {
+	new: func(desc, resp, manual, prop='', value=0) {
 		var t = {parents:[checklist_item]};
 		t.desc = desc;
 		t.resp = resp;
@@ -21,4 +21,4 @@ var checklist_item = {
 var checklists = {};
 
 # Map checklists in menu to checklists hash
-var checklists_menu = ["before_start", "after_start", "before_takeoff", "after_takeoff", "approach", "landing", "after_landing", "parking", "securing_the_aircraft"];
+var checklists_menu = ['before_start', 'after_start', 'before_takeoff', 'after_takeoff', 'approach', 'landing', 'after_landing', 'parking', 'securing_the_aircraft'];

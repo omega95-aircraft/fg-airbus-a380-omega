@@ -2823,7 +2823,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>R2GearCompressor1</object-name>
-	<object-name>R2GearCompressor2</object-name>
+	<object-name>R2Compressor2</object-name>
 	<property>/gear/mlg_rr/c_bar</property>
 	<factor>-12</factor>
 	<center>
@@ -2840,7 +2840,7 @@
 
 <animation>
 	<type>rotate</type>
-	<object-name>R2GearCompressor2</object-name>
+	<object-name>R2Compressor2</object-name>
 	<property>/gear/mlg_rr/c_bar</property>
 	<factor>10</factor>
 	<center>

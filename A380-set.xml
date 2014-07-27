@@ -609,6 +609,9 @@
 	<flt_nbr type="string">AIB1174</flt_nbr>
 	<phase type="string">T/O</phase>
 	<crz_fl type="double">320</crz_fl>
+	<ecam>
+		<no-blue type="bool">false</no-blue>
+	</ecam>
 </flight-management>
 
 <input>
@@ -659,6 +662,10 @@
 </surface-positions>
 
 <controls>
+  <signs>
+  	<no-smoking type="bool">false</no-smoking>
+  	<seatbelt type="bool">false</seatbelt>
+  </signs>
   <apu>
   	<master-switch type="bool">false</master-switch>
   	<start type="bool">false</start>
@@ -969,9 +976,20 @@
 	<ecam>
 		<file>Aircraft/A380/Models/Instruments/ECAM/ecam.nas</file>
 		<!-- ECAM E/WD Display -->
-		<file>Aircraft/A380/Models/Instruments/EWD/limit.nas</file>
-		<file>Aircraft/A380/Models/Instruments/EWD/item.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/limits.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/memos.nas</file>
 		<file>Aircraft/A380/Models/Instruments/EWD/checklist.nas</file>
+		<!-- ECAM E/WD Checklists -->
+		<file>Aircraft/A380/Models/Instruments/EWD/checklists/before_start.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/checklists/after_start.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/checklists/before_takeoff.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/checklists/after_takeoff.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/checklists/approach.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/checklists/landing.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/checklists/after_landing.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/checklists/parking.nas</file>
+		<file>Aircraft/A380/Models/Instruments/EWD/checklists/securing_the_aircraft.nas</file>
+		<!-- ++++++++++++++++++++ -->
 		<file>Aircraft/A380/Models/Instruments/EWD/alerts.nas</file>
 		<file>Aircraft/A380/Models/Instruments/EWD/ewd.nas</file>
 		<!-- ECAM SD Display -->

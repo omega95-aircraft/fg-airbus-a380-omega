@@ -2194,7 +2194,7 @@
  <property>gear/gear[3]/position-norm</property>
  <interpolation>
    <entry>
-    <ind>0.15</ind>
+    <ind>0.25</ind>
     <dep>0</dep>
    </entry>
    <entry>
@@ -2288,7 +2288,7 @@
  <property>gear/gear[4]/position-norm</property>
  <interpolation>
    <entry>
-    <ind>0.15</ind>
+    <ind>0.25</ind>
     <dep>0</dep>
    </entry>
    <entry>

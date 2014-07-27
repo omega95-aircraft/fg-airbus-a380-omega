@@ -366,7 +366,7 @@
 	
 	<animation>
 		<type>pick</type>
-		<object-name>sd.clear</object-name>
+		<object-name>ecam.clear</object-name>
 		<action>
 			<button>0</button>
 			<repeatable>false</repeatable>
@@ -383,7 +383,50 @@
 	
 	<animation>
 		<type>pick</type>
-		<object-name>sd.rcl_last</object-name>
+		<object-name>cl</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+					if(ecam.alerts.mode == 'CHECKLIST') {
+						ecam.alerts.mode = 'LIMIT';
+					} else {
+						ecam.alerts.mode = 'CHECKLIST_MENU';
+					}
+				</script>
+			</binding>
+			<binding>
+				<command>property-toggle</command>
+				<property>/sim/sound/switch</property>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>check.l</object-name>
+		<object-name>check.r</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+					ecam.alerts.check_item();
+				</script>
+			</binding>
+			<binding>
+				<command>property-toggle</command>
+				<property>/sim/sound/switch</property>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>ecam.rcl_last</object-name>
 		<action>
 			<button>0</button>
 			<repeatable>false</repeatable>
@@ -423,7 +466,7 @@
 			<repeatable>false</repeatable>
 			<binding>
 				<command>nasal</command>
-				<script>ecam.scroll_up();</script>
+				<script>ecam.alerts.scroll_up();</script>
 			</binding>
 			<binding>
 				<command>property-toggle</command>
@@ -440,25 +483,7 @@
 			<repeatable>false</repeatable>
 			<binding>
 				<command>nasal</command>
-				<script>ecam.scroll_down();</script>
-			</binding>
-			<binding>
-				<command>property-toggle</command>
-				<property>/sim/sound/switch</property>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>check.l</object-name>
-		<object-name>check.r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable>false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>ecam.acknowledge();</script>
+				<script>ecam.alerts.scroll_down();</script>
 			</binding>
 			<binding>
 				<command>property-toggle</command>
@@ -559,6 +584,7 @@
 		</axis>
 	</animation>
 
+	<!-- Engine Reverse Thrust -->
 	
 	<!--Parking break--> 
 	<animation>

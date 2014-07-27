@@ -2,6 +2,8 @@
 # S.Hamilton and N.Muraleedharan
 # NOTE - I've removed a lot of the older instrument based code as I've made new instruments with their own scripts. ~Naru
 
+setprop("/controls/lighting/emer-exit-lt");
+
 for(var n=0; n<5; n=n+1) {
 	setprop("/engines/engine["~n~"]/fuel-used-kg", 0);
 }
@@ -469,9 +471,9 @@ var gear_helpers = {
 		} elsif(!WOW(aft) and WOW(fwd)) { # Only the forward wheels are in contact
 			setprop("/gear/"~name~"/c_bar", 0);
 			if(getZ(aft) > zAft) {
-				if(compr(aft)<2) {
-					setZ(aft,getZ(aft)-compr(aft));
-					setZ(fwd,getZ(fwd)+compr(aft));
+				if(compr(fwd)<2) {
+					setZ(aft,getZ(aft)-compr(fwd));
+					setZ(fwd,getZ(fwd)+compr(fwd));
 				} else {
 					setZ(aft,getZ(aft)-2);
 					setZ(fwd,getZ(fwd)+2);

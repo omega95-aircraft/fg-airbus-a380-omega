@@ -2,6 +2,8 @@
 # S.Hamilton and N.Muraleedharan
 # NOTE - I've removed a lot of the older instrument based code as I've made new instruments with their own scripts. ~Naru
 
+setprop("/controls/lighting/emer-exit-lt", 0);
+
 for(var n=0; n<5; n=n+1) {
 	setprop("/engines/engine["~n~"]/fuel-used-kg", 0);
 }
