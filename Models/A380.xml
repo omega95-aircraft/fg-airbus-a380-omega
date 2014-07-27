@@ -62,7 +62,7 @@
   	<animation>
 		<type>rotate</type>
 		<object-name>aileron01</object-name>
-		<property>/fdm/jsbsim/fcs/alrn-lob-fbw-output</property>
+		<property>/sim/multiplay/generic/float[9]</property>
 		<factor>20</factor>
 		<offset-deg>fdm/jsbsim/aero/coefficient/CLalpha</offset-deg> 
 		<axis>
@@ -78,7 +78,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron01</object-name>
-		<property>/fdm/jsbsim/fcs/aileron-ob-droop</property>
+		<property>/sim/multiplay/generic/float[35]</property>
 		<factor>57.3</factor> 
 		<axis>
 			<x1-m>54.84</x1-m>
@@ -93,7 +93,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron02</object-name>
-		<property>/fdm/jsbsim/fcs/alrn-lmd-fbw-output</property>
+		<property>/sim/multiplay/generic/float[34]</property>
 		<factor>20</factor>
 		<offset-deg>fdm/jsbsim/aero/coefficient/CLalpha</offset-deg>   
 		<axis>
@@ -109,7 +109,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron02</object-name>
-		<property>/fdm/jsbsim/fcs/aileron-md-droop</property>
+		<property>/sim/multiplay/generic/float[36]</property>
 		<factor>57.3</factor> 
 		<axis>
 			<x1-m>54.84</x1-m>
@@ -124,7 +124,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron03</object-name>
-		<property>/fdm/jsbsim/fcs/alrn-lib-fbw-output</property>
+		<property>/sim/multiplay/generic/float[10]</property>
 		<factor>20</factor>
 		<offset-deg>fdm/jsbsim/aero/coefficient/CLalpha</offset-deg>   
 		<axis>
@@ -140,7 +140,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron03</object-name>
-		<property>/fdm/jsbsim/fcs/aileron-ib-droop</property>
+		<property>/sim/multiplay/generic/float[37]</property>
 		<factor>57.3</factor> 
 		<axis>
 			<x1-m>54.84</x1-m>
@@ -155,7 +155,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron04</object-name>
-		<property>/fdm/jsbsim/fcs/alrn-rib-fbw-output</property>
+		<property>/sim/multiplay/generic/float[13]</property>
 		<factor>20</factor>
 		<offset-deg>fdm/jsbsim/aero/coefficient/CLalpha</offset-deg>   
 		<axis>
@@ -171,7 +171,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron04</object-name>
-		<property>/fdm/jsbsim/fcs/aileron-ib-droop</property>
+		<property>/sim/multiplay/generic/float[37]</property>
 		<factor>-57.3</factor> 
 		<axis>
 			<x1-m>54.84</x1-m>
@@ -186,7 +186,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron05</object-name>
-		<property>/fdm/jsbsim/fcs/alrn-rmd-fbw-output</property>
+		<property>/sim/multiplay/generic/float[12]</property>
 		<factor>20</factor>
 		<offset-deg>fdm/jsbsim/aero/coefficient/CLalpha</offset-deg>   
 		<axis>
@@ -202,7 +202,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron05</object-name>
-		<property>/fdm/jsbsim/fcs/aileron-md-droop</property>
+		<property>/sim/multiplay/generic/float[36]</property>
 		<factor>-57.3</factor> 
 		<axis>
 			<x1-m>54.84</x1-m>
@@ -217,7 +217,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron06</object-name>
-		<property>/fdm/jsbsim/fcs/alrn-rob-fbw-output</property>
+		<property>/sim/multiplay/generic/float[11]</property>
 		<factor>20</factor>
 		<offset-deg>fdm/jsbsim/aero/coefficient/CLalpha</offset-deg>   
 		<axis>
@@ -233,7 +233,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>aileron06</object-name>
-		<property>/fdm/jsbsim/fcs/aileron-ob-droop</property>
+		<property>/sim/multiplay/generic/float[35]</property>
 		<factor>-57.3</factor> 
 		<axis>
 			<x1-m>54.84</x1-m>
@@ -271,7 +271,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>elev1</object-name>
-		<property>/fdm/jsbsim/fcs/elev-lob-output</property>
+		<property>/sim/multiplay/generic/float[14]</property>
 		<factor>20</factor>   
 		<axis>
 			<x1-m>77.82</x1-m>
@@ -286,7 +286,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>elev2</object-name>
-		<property>/fdm/jsbsim/fcs/elev-lib-output</property>
+		<property>/sim/multiplay/generic/float[15]</property>
 		<factor>20</factor>   
 		<axis>
 			<x1-m>77.82</x1-m>
@@ -301,7 +301,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>elev3</object-name>
-		<property>/fdm/jsbsim/fcs/elev-rib-output</property>
+		<property>/sim/multiplay/generic/float[17]</property>
 		<factor>-20</factor>   
 		<axis>
 			<x1-m>77.82</x1-m>
@@ -316,7 +316,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>elev4</object-name>
-		<property>/fdm/jsbsim/fcs/elev-rob-output</property>
+		<property>/sim/multiplay/generic/float[16]</property>
 		<factor>-20</factor>   
 		<axis>
 			<x1-m>77.82</x1-m>
@@ -1028,7 +1028,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler01</object-name>
-		<property>fdm/jsbsim/fcs/lsp8-pos-rad</property>
+		<property>/sim/multiplay/generic/float[25]</property>
 		<factor>-57.295</factor>
 		<axis>
 			<x1-m>50.11</x1-m>
@@ -1043,7 +1043,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler02</object-name>
-		<property>fdm/jsbsim/fcs/lsp7-pos-rad</property>
+		<property>/sim/multiplay/generic/float[24]</property>
 		<factor>57.295</factor>
 		<axis>
 			<x1-m>47.32</x1-m>
@@ -1058,7 +1058,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler03</object-name>
-		<property>fdm/jsbsim/fcs/lsp6-pos-rad</property>
+		<property>/sim/multiplay/generic/float[23]</property>
 		<factor>-57.295</factor>
 		<axis>
 			<x1-m>47.32</x1-m>
@@ -1073,7 +1073,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler04</object-name>
-		<property>fdm/jsbsim/fcs/lsp5-pos-rad</property>
+		<property>/sim/multiplay/generic/float[22]</property>
 		<factor>57.295</factor>
 		<axis>
 			<x1-m>45.16</x1-m>
@@ -1088,7 +1088,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler05</object-name>
-		<property>fdm/jsbsim/fcs/lsp4-pos-rad</property>
+		<property>/sim/multiplay/generic/float[21]</property>
 		<factor>-57.295</factor>
 		<axis>
 			<x1-m>45.16</x1-m>
@@ -1103,7 +1103,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler06</object-name>
-		<property>fdm/jsbsim/fcs/lsp3-pos-rad</property>
+		<property>/sim/multiplay/generic/float[20]</property>
 		<factor>57.295</factor>
 		<axis>
 			<x1-m>43.30</x1-m>
@@ -1118,7 +1118,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler07</object-name>
-		<property>fdm/jsbsim/fcs/lsp2-pos-rad</property>
+		<property>/sim/multiplay/generic/float[19]</property>
 		<factor>-57.295</factor>
 		<axis>
 			<x1-m>43.30</x1-m>
@@ -1133,7 +1133,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler08</object-name>
-		<property>fdm/jsbsim/fcs/lsp1-pos-rad</property>
+		<property>/sim/multiplay/generic/float[18]</property>
 		<factor>57.295</factor>
 		<axis>
 			<x1-m>42.27</x1-m>
@@ -1148,7 +1148,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler16</object-name>
-		<property>fdm/jsbsim/fcs/rsp8-pos-rad</property>
+		<property>/sim/multiplay/generic/float[33]</property>
 		<factor>57.295</factor>
 		<axis>
 			<x1-m>50.11</x1-m>
@@ -1163,7 +1163,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler15</object-name>
-		<property>fdm/jsbsim/fcs/rsp7-pos-rad</property>
+		<property>/sim/multiplay/generic/float[32]</property>
 		<factor>-57.295</factor>
 		<axis>
 			<x1-m>47.32</x1-m>
@@ -1178,7 +1178,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler14</object-name>
-		<property>fdm/jsbsim/fcs/rsp6-pos-rad</property>
+		<property>/sim/multiplay/generic/float[31]</property>
 		<factor>57.295</factor>
 		<axis>
 			<x1-m>47.32</x1-m>
@@ -1193,7 +1193,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler13</object-name>
-		<property>fdm/jsbsim/fcs/rsp5-pos-rad</property>
+		<property>/sim/multiplay/generic/float[30]</property>
 		<factor>-57.295</factor>
 		<axis>
 			<x1-m>45.16</x1-m>
@@ -1208,7 +1208,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler12</object-name>
-		<property>fdm/jsbsim/fcs/rsp4-pos-rad</property>
+		<property>/sim/multiplay/generic/float[29]</property>
 		<factor>57.295</factor>
 		<axis>
 			<x1-m>45.16</x1-m>
@@ -1223,7 +1223,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler11</object-name>
-		<property>fdm/jsbsim/fcs/rsp3-pos-rad</property>
+		<property>/sim/multiplay/generic/float[28]</property>
 		<factor>-57.295</factor>
 		<axis>
 			<x1-m>43.30</x1-m>
@@ -1238,7 +1238,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler10</object-name>
-		<property>fdm/jsbsim/fcs/rsp2-pos-rad</property>
+		<property>/sim/multiplay/generic/float[27]</property>
 		<factor>57.295</factor>
 		<axis>
 			<x1-m>43.30</x1-m>
@@ -1253,7 +1253,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spoiler09</object-name>
-		<property>fdm/jsbsim/fcs/rsp1-pos-rad</property>
+		<property>/sim/multiplay/generic/float[26]</property>
 		<factor>-57.295</factor>
 		<axis>
 			<x1-m>42.27</x1-m>
@@ -2648,7 +2648,7 @@
 	<object-name>NoseWheel</object-name>
 	<object-name>NGearStrut</object-name>
 	<object-name>choke_nose</object-name>
-	<property>/fdm/jsbsim/gear/unit/compression-ft</property>
+	<property>/sim/multiplay/generic/float[0]</property>
 	<factor>0.3125</factor> <!-- 3.2 ft = 1 m -->
 	<axis>
 		<z>1</z>
@@ -2662,7 +2662,7 @@
 	<object-name>LeftGearCompressor</object-name>
 	<object-name>LeftGearBaseRod</object-name>
 	<object-name>choke_left</object-name>
-	<property>/gear/mlg_fl/c_bar</property>
+	<property>/sim/multiplay/generic/float[1]</property>
 	<factor>0.3125</factor> <!-- 3.2 ft = 1 m -->
 	<axis>
 		<z>1</z>
@@ -2676,7 +2676,7 @@
 	<object-name>RightGearCompressor</object-name>
 	<object-name>RightGearBaseRod</object-name>
 	<object-name>choke_right</object-name>
-	<property>/gear/mlg_fr/c_bar</property>
+	<property>/sim/multiplay/generic/float[2]</property>
 	<factor>0.3125</factor> <!-- 3.2 ft = 1 m -->
 	<axis>
 		<z>1</z>
@@ -2691,7 +2691,7 @@
 	<object-name>L2GearCompressor</object-name>
 	<object-name>L2GearBaseRod</object-name>
 	<object-name>choke_left</object-name>
-	<property>/gear/mlg_rl/c_bar</property>
+	<property>/sim/multiplay/generic/float[3]</property>
 	<factor>0.3125</factor> <!-- 3.2 ft = 1 m -->
 	<axis>
 		<z>1</z>
@@ -2706,7 +2706,7 @@
 	<object-name>R2GearCompressor</object-name>
 	<object-name>R2GearBaseRod</object-name>
 	<object-name>choke_right</object-name>
-	<property>/gear/mlg_rr/c_bar</property>
+	<property>/sim/multiplay/generic/float[4]</property>
 	<factor>0.3125</factor> <!-- 3.2 ft = 1 m -->
 	<axis>
 		<z>1</z>
@@ -2719,7 +2719,7 @@
 	<type>rotate</type>
 	<object-name>LeftGearCompressor1</object-name>
 	<object-name>LeftGearCompressor2</object-name>
-	<property>/gear/mlg_fl/c_bar</property>
+	<property>/sim/multiplay/generic/float[1]</property>
 	<factor>-15</factor>
 	<center>
 		<x-m>40.0894</x-m>
@@ -2736,7 +2736,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>LeftGearCompressor2</object-name>
-	<property>/gear/mlg_fl/c_bar</property>
+	<property>/sim/multiplay/generic/float[1]</property>
 	<factor>12</factor>
 	<center>
 		<x-m>39.6971</x-m>
@@ -2754,7 +2754,7 @@
 	<type>rotate</type>
 	<object-name>RightGearCompressor1</object-name>
 	<object-name>RightGearCompressor2</object-name>
-	<property>/gear/mlg_fr/c_bar</property>
+	<property>/sim/multiplay/generic/float[2]</property>
 	<factor>-15</factor>
 	<center>
 		<x-m>40.0894</x-m>
@@ -2771,7 +2771,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>RightGearCompressor2</object-name>
-	<property>/gear/mlg_fr/c_bar</property>
+	<property>/sim/multiplay/generic/float[2]</property>
 	<factor>12</factor>
 	<center>
 		<x-m>39.6971</x-m>
@@ -2789,7 +2789,7 @@
 	<type>rotate</type>
 	<object-name>L2GearCompressor1</object-name>
 	<object-name>L2GearCompressor2</object-name>
-	<property>/gear/mlg_rl/c_bar</property>
+	<property>/sim/multiplay/generic/float[3]</property>
 	<factor>-12</factor>
 	<center>
 		<x-m>45.1969</x-m>
@@ -2806,7 +2806,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>L2GearCompressor2</object-name>
-	<property>/gear/mlg_rl/c_bar</property>
+	<property>/sim/multiplay/generic/float[3]</property>
 	<factor>10</factor>
 	<center>
 		<x-m>45.1969</x-m>
@@ -2824,7 +2824,7 @@
 	<type>rotate</type>
 	<object-name>R2GearCompressor1</object-name>
 	<object-name>R2Compressor2</object-name>
-	<property>/gear/mlg_rr/c_bar</property>
+	<property>/sim/multiplay/generic/float[4]</property>
 	<factor>-12</factor>
 	<center>
 		<x-m>45.1969</x-m>
@@ -2841,7 +2841,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>R2Compressor2</object-name>
-	<property>/gear/mlg_rr/c_bar</property>
+	<property>/sim/multiplay/generic/float[4]</property>
 	<factor>10</factor>
 	<center>
 		<x-m>45.1969</x-m>
@@ -2882,7 +2882,7 @@
 	<object-name>LeftWheelFront</object-name>
 	<object-name>LeftWheelBack</object-name>
 	<object-name>LeftGearBaseRod</object-name>
-	<property>/gear/mlg_fl/tilt_deg</property>
+	<property>/sim/multiplay/generic/float[5]</property>
 	<center>
 		<x-m>40.3448</x-m>
 		<y-m>0.0</y-m>
@@ -2919,7 +2919,7 @@
 	<object-name>LeftWheel2Mid</object-name>
 	<object-name>LeftWheel2Back</object-name>
 	<object-name>L2GearBaseRod</object-name>
-	<property>/gear/mlg_rl/tilt_deg</property>
+	<property>/sim/multiplay/generic/float[7]</property>
 	<center>
 		<x-m>43.4995</x-m>
 		<y-m>0.0</y-m>
@@ -2938,7 +2938,7 @@
 	<object-name>RightWheel2Mid</object-name>
 	<object-name>RightWheel2Back</object-name>
 	<object-name>L2GearBaseRod</object-name>
-	<property>/gear/mlg_rr/tilt_deg</property>
+	<property>/sim/multiplay/generic/float[8]</property>
 	<center>
 		<x-m>43.4995</x-m>
 		<y-m>0.0</y-m>

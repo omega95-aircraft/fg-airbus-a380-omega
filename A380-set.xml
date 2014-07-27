@@ -309,6 +309,153 @@
 					<property type="string">/aircraft/tyresmoke/right</property>
 					<interpolation>linear</interpolation>
 				</signal>
+				<!-- Aileron Droop -->
+				<signal>
+					<type>float</type>
+					<property type="string">/fdm/jsbsim/fcs/aileron-ob-droop</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/fdm/jsbsim/fcs/aileron-md-droop</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/fdm/jsbsim/fcs/aileron-ib-droop</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<!-- Control Surfaces -->
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[9]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[10]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[11]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[12]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[13]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[14]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[15]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[16]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[17]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[18]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[19]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[20]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[21]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[22]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[23]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[24]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[25]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[26]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[27]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[28]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[29]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[30]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[31]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[32]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[33]</property>
+					<interpolation>linear</interpolation>
+				</signal>
+				<signal>
+					<type>float</type>
+					<property type="string">/sim/multiplay/generic/float[34]</property>
+					<interpolation>linear</interpolation>
+				</signal>
 			</config>
 		</flight-recorder>
 		
@@ -416,6 +563,48 @@
 					</menu>
 				</default>
 		</menubar>
+		<multiplay>
+			<generic>
+				<float n="0" alias="/fdm/jsbsim/gear/unit/compression-ft" />
+				<float n="1" alias="/gear/mlg_fl/c_bar" />
+				<float n="2" alias="/gear/mlg_fr/c_bar" />
+				<float n="3" alias="/gear/mlg_rl/c_bar" />
+				<float n="4" alias="/gear/mlg_rr/c_bar" />
+				<float n="5" alias="/gear/mlg_fl/tilt_deg" />
+				<float n="6" alias="/gear/mlg_fr/tilt_deg" />
+				<float n="7" alias="/gear/mlg_rl/tilt_deg" />
+				<float n="8" alias="/gear/mlg_rr/tilt_deg" />
+				<float n="9" alias="/fdm/jsbsim/fcs/alrn-lob-fbw-output" />
+				<float n="10" alias="/fdm/jsbsim/fcs/alrn-lib-fbw-output" />
+				<float n="11" alias="/fdm/jsbsim/fcs/alrn-rob-fbw-output" />
+				<float n="12" alias="/fdm/jsbsim/fcs/alrn-rmd-fbw-output" />
+				<float n="13" alias="/fdm/jsbsim/fcs/alrn-rib-fbw-output" />
+				<float n="14" alias="/fdm/jsbsim/fcs/elev-lob-output" />
+				<float n="15" alias="/fdm/jsbsim/fcs/elev-lib-output" />
+				<float n="16" alias="/fdm/jsbsim/fcs/elev-rob-output" />
+				<float n="17" alias="/fdm/jsbsim/fcs/elev-rib-output" />
+				<float n="18" alias="/fdm/jsbsim/fcs/lsp1-pos-rad" />
+				<float n="19" alias="/fdm/jsbsim/fcs/lsp2-pos-rad" />
+				<float n="20" alias="/fdm/jsbsim/fcs/lsp3-pos-rad" />
+				<float n="21" alias="/fdm/jsbsim/fcs/lsp4-pos-rad" />
+				<float n="22" alias="/fdm/jsbsim/fcs/lsp5-pos-rad" />
+				<float n="23" alias="/fdm/jsbsim/fcs/lsp6-pos-rad" />
+				<float n="24" alias="/fdm/jsbsim/fcs/lsp7-pos-rad" />
+				<float n="25" alias="/fdm/jsbsim/fcs/lsp8-pos-rad" />
+				<float n="26" alias="/fdm/jsbsim/fcs/rsp1-pos-rad" />
+				<float n="27" alias="/fdm/jsbsim/fcs/rsp2-pos-rad" />
+				<float n="28" alias="/fdm/jsbsim/fcs/rsp3-pos-rad" />
+				<float n="29" alias="/fdm/jsbsim/fcs/rsp4-pos-rad" />
+				<float n="30" alias="/fdm/jsbsim/fcs/rsp5-pos-rad" />
+				<float n="31" alias="/fdm/jsbsim/fcs/rsp6-pos-rad" />
+				<float n="32" alias="/fdm/jsbsim/fcs/rsp7-pos-rad" />
+				<float n="33" alias="/fdm/jsbsim/fcs/rsp8-pos-rad" />
+				<float n="34" alias="/fdm/jsbsim/fcs/alrn-lmd-fbw-output" />
+				<float n="35" alias="/fdm/jsbsim/fcs/aileron-ob-droop" />
+				<float n="36" alias="/fdm/jsbsim/fcs/aileron-md-droop" />
+				<float n="37" alias="/fdm/jsbsim/fcs/aileron-ib-droop" />
+			</generic>
+		</multiplay>
   </sim>
   
   <!-- Initialize Fly-by-wire Properties -->

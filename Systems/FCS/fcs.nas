@@ -150,7 +150,14 @@ var fcs = {
 		#	me.phase = 1;	
 		# }
 			
-		if(getprop("/gear/gear/wow")) {
+		# if(getprop("/gear/gear[1]/wow")) {
+		
+		var gspd = getprop("/velocities/groundspeed-kt");
+		if(gspd == nil) {
+			gspd = 0;
+		}
+		
+		if(gspd < 125) {
 			setprop("/fbw/flight-phase", "Ground Mode");
 			me.phase = 0;
 		} else {
@@ -230,7 +237,7 @@ var fcs = {
 			me.rsp7.add(0);
 		}
 		
-		if((abs(me.stick_pitch) <= me.dead_band) and (abs(me.pitch_rate) <= 1)) {
+		if((abs(me.stick_pitch) <= me.dead_band) and (abs(me.pitch_rate) <= 2)) {
 			setprop("/fbw/elev-ob-stable", 1);
 			setprop("/fbw/elev-ob-enable", 0);
 			setprop("/fbw/elev-ib-enable", 0);
