@@ -217,8 +217,8 @@ var fcs = {
 		
 		# Yaw Damper
 		setprop("/fbw/cmd-yaw-rate", 3*me.stick_yaw + me.bank/12); # Co-ordinate turns
-		# me.rudder.move_pos(getprop("/fbw/outputs/rudder"));
-		me.rudder.move_pos(-getprop("/controls/flight/rudder"));
+		me.rudder.move_pos(getprop("/fbw/outputs/rudder"));
+		# me.rudder.move_pos(-getprop("/controls/flight/rudder"));
 		
 		# Roll control spoilers work the same way they do in DIRECT LAW
 		# Use Spoiler Assist for Hard Banks

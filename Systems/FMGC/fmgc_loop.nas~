@@ -659,18 +659,24 @@ var fmgc_loop = {
 		
 		} elsif (phase == "CLB") {
 		
-			var crz_fl = getprop("/flight-management/crz_fl");
+			if(!getprop("/gear/gear[3]/wow")) {
+		
+				var crz_fl = getprop("/flight-management/crz_fl");
 			
-			if (crz_fl != 0) {
+				if (crz_fl != 0) {
 			
-				if (getprop("/position/altitude-ft") >= ((crz_fl * 100) - 500))
-					setprop("/flight-management/phase", "CRZ");
+					if (getprop("/position/altitude-ft") >= ((crz_fl * 100) - 500))
+						setprop("/flight-management/phase", "CRZ");
 			
+				} else {
+			
+					if (getprop("/position/altitude-ft") > 26000)
+						setprop("/flight-management/phase", "CRZ");
+			
+				}
+				
 			} else {
-			
-				if (getprop("/position/altitude-ft") > 26000)
-					setprop("/flight-management/phase", "CRZ");
-			
+				setprop("/flight-management/phase", "CRZ");
 			}
 		
 		} elsif (phase == "CRZ") {
@@ -689,11 +695,11 @@ var fmgc_loop = {
 			
 			}
 		
-		} elsif ((phase == "DES") and (getprop("/flight-management/control/ver-mode") == "ils")) {
+		} elsif ((phase == "DES") and (getprop("/position/altitude-ft") <= 3000 or getprop("/flight-management/control/ver-mode") == "ils")) {
 		
 			setprop("/flight-management/phase", "APP");
 		
-		} elsif ((phase == "APP") and (getprop("/gear/gear/wow"))) {
+		} elsif (((phase == "APP") or (phase == "DES")) and (getprop("/gear/gear/wow"))) {
 		
 			setprop("/flight-management/phase", "T/O");
 			

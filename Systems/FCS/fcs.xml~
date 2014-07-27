@@ -157,7 +157,7 @@
 			<prop>/fbw/outputs/alrn-md</prop>
 		</output>
 		<config>
-			<Kp>0.035</Kp>
+			<Kp>0.045</Kp>
 			<beta>1</beta>
 			<alpha>0.1</alpha>
 			<gamma>0</gamma>

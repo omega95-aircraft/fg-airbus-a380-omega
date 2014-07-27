@@ -10,19 +10,19 @@ var modes = {
 		{
 			elements: ["fms_mode_static", "fms_mode_box", "fms_mode_text"],
 			type: "click",
-			function: return func() {
+			function: func (return func() {
 				me.svg["dropdown"].show();
 				foreach(var obj; me.options) {
 					me.svg[obj~"_click"].show();
 				}
 				me.svg["fms_mode_box"].setColorFill(220,220,220);
 				print("fms_mode_static - Function Called");
-			}
+			})()
 		},
 		{
 			elements: ["fms1_click"],
 			type: "click",
-			function: return func() {
+			function: func (return func() {
 				# Open dropdown menu
 				my_modes.svg["dropdown"].hide();
 				foreach(var obj; my_modes.options) {
@@ -32,7 +32,7 @@ var modes = {
 				print("fms1_click - Function Called");
 				my_modes.svg["fms_mode_text"].setText("FMS 1");
 				# Set Mode to FMS 1
-			}
+			})()
 		}
 	],
 	new: func() {
