@@ -11,11 +11,13 @@ var alerts = {
 	mode: 'LIMIT', # CHECKLIST_MENU, CHECKLIST, PROC, LIMIT, ABN PROC
 	active_item: -1,
 	checklist: 'before_start', # Default checklist
+	checklist_id: 0,
 	items: [], # ITEM - Checklist/Procedure items
 	limits: [],	# LIMIT - Limitations (displayed in white/cyan)
 	memos: [],	# STRING - Memos (displayed in green)
 	select_checklist: func() {
 		me.checklist = checklists_menu[me.active_item];
+		me.checklist_id = me.active_item;
 		me.active_item = 0;
 		me.mode = 'CHECKLIST';
 	},
@@ -25,6 +27,7 @@ var alerts = {
 		} else {
 			if(me.active_item == (size(me.items)-1)) {
 				me.mode = 'CHECKLIST_MENU'; # Go to checklist menu
+				me.active_item = me.checklist_id+1;
 			} else {
 				me.active_item = me.active_item + 1;
 			}
@@ -107,7 +110,7 @@ var alerts = {
 				}
 			}
 			if(me.active_item >= size(me.items)) {
-				me.active_item = 0;
+				me.active_item = me.checklist_id+1;
 				me.mode = 'CHECKLIST_MENU';
 			}
 		} elsif(me.mode == 'PROC') {
