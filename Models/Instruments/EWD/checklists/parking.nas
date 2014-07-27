@@ -8,7 +8,7 @@ checklists["parking"] = {	title: 'PARKING',
 									checklist_item.new( desc: 'ENGINES',
 									resp: 'OFF',
 									manual: 0,
-									prop: '/engines/engine[4]/running',
+									prop: '/engines/engine[3]/running',
 									value: 0),
 									
 									checklist_item.new( desc: 'SEAT BELTS',

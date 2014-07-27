@@ -108,6 +108,7 @@ var alerts = {
 			}
 			if(me.active_item >= size(me.items)) {
 				me.active_item = 0;
+				me.mode = 'CHECKLIST_MENU';
 			}
 		} elsif(me.mode == 'PROC') {
 			#FIXME - Figure this part out

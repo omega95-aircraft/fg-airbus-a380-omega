@@ -129,7 +129,8 @@ var alerts = {
 					} else {
 						append(me.memos, {
 							desc: memo.desc,
-							color: memo.def_color
+							#color: memo.def_color
+							color: 'cyan'
 						});
 						noblue = 0;
 					}
