@@ -12,33 +12,20 @@ var font_mapper = func(family, weight)
 };
 
 var generator = {
-	gen_click: func(object, svg_element, my_modes) return func {
+	gen_click: func(object, svg_element) return func {
 		svg_element.addEventListener("click", func {
-			object.function(my_modes);
+			object.function();
 		});
 	},
 	gen_textbox: func(object, svg_element, my_modes) return func {
 		 # FIXME
 	},
-	gen_click: func(object, svg_element, my_modes) return func {
+	gen_label: func(object, svg_element, my_modes) return func {
 		# FIXME
 	}
 }
 
 var mfd = {
-	# obj_setfunc: {
-	# 	"click": func(object, svg_element, my_modes) {
-	# 		svg_element.addEventListener("click", func {
-	# 			object.function(my_modes);
-	# 		});
-	# 	},
-	# 	"textbox": func(object, svg_element, my_modes) {
-	# 		#FIXME
-	# 	},
-	# 	"label": func(object, svg_element, my_modes) {
-	# 		#FIXME
-	# 	}
-	# },
 	activePage: "",
 	activeMenu: "",
 	pages: {},
