@@ -8,7 +8,7 @@ MATERIAL "DefaultWhite.001" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.32 0.32 0.3
 MATERIAL "ac3dmat1" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0 0 0  shi 128  trans 0
 MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.784314 0.796078 0.8  emis 0 0 0  spec 0 0 0  shi 128  trans 0
 OBJECT world
-kids 160
+kids 156
 OBJECT poly
 name "door1B"
 texture "wing.png"
@@ -220253,9 +220253,13 @@ refs 4
 24 0.75 0
 28 0.75 1
 kids 0
-OBJECT poly
+OBJECT group
 name "fuselage"
-loc 7.28556 -0.130608 0
+loc 10.416 2.2366 -0.0024248
+kids 5
+OBJECT poly
+name "fuselage_"
+loc -3.13039 -2.36721 0.0024248
 texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 2080
@@ -238017,7 +238021,7 @@ refs 4
 kids 0
 OBJECT poly
 name "nosegrdoor_fl"
-loc 10.1981 3.01489 0.366712
+loc -0.217853 0.77829 0.369137
 texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 85
@@ -238569,7 +238573,7 @@ refs 4
 kids 0
 OBJECT poly
 name "nosegrdoor_rl"
-loc 12.199 2.63999 0.366751
+loc 1.78305 0.40339 0.369176
 texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 49
@@ -238855,7 +238859,7 @@ refs 3
 kids 0
 OBJECT poly
 name "nosegrdoor_fr"
-loc 10.1981 3.01738 -0.372804
+loc -0.217853 0.78078 -0.370379
 texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 85
@@ -239407,7 +239411,7 @@ refs 4
 kids 0
 OBJECT poly
 name "nosegrdoor_rr"
-loc 12.199 2.64135 -0.372783
+loc 1.78305 0.40475 -0.370358
 texture "Liveries/F-WWDD.png"
 crease 45.000000
 numvert 49
