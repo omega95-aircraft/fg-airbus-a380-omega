@@ -11,6 +11,20 @@ var font_mapper = func(family, weight)
 		return "LiberationFonts/LiberationSans-Regular.ttf";
 };
 
+var generator = {
+	gen_click: func(object, svg_element, my_modes) return func {
+		svg_element.addEventListener("click", func {
+			object.function(my_modes);
+		});
+	},
+	gen_textbox: func(object, svg_element, my_modes) return func {
+		 # FIXME
+	},
+	gen_click: func(object, svg_element, my_modes) return func {
+		# FIXME
+	}
+}
+
 var mfd = {
 	# obj_setfunc: {
 	# 	"click": func(object, svg_element, my_modes) {

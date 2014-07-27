@@ -11,6 +11,20 @@ var font_mapper = func(family, weight)
 		return "LiberationFonts/LiberationSans-Regular.ttf";
 };
 
+var generator = {
+	gen_click: func(object, svg_element, my_modes) return func {
+		svg_element.addEventListener("click", func {
+			object.function(my_modes);
+		});
+	},
+	gen_textbox: func(object, svg_element, my_modes) return func {
+		 # FIXME
+	},
+	gen_click: func(object, svg_element, my_modes) return func {
+		# FIXME
+	}
+}
+
 var mfd = {
 	# obj_setfunc: {
 	# 	"click": func(object, svg_element, my_modes) {
@@ -54,7 +68,7 @@ var mfd = {
 		me.modes = modes;
 	
 		# Load Permananent Section
-		# canvas.parsesvg(me.permObjects, me.modes.path, {'font-mapper':font_mapper});
+		canvas.parsesvg(me.permObjects, me.modes.path, {'font-mapper':font_mapper});
 		# Cache SVG Objects for use and load functions
 		foreach(var svg_object; me.modes.objects) {
 			me.modes.svg[svg_object] = me.permObjects.getElementById(svg_object);
