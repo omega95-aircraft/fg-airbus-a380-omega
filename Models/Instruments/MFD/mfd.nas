@@ -12,16 +12,12 @@ var font_mapper = func(family, weight)
 };
 
 var generator = {
-	gen_click: func(object, svg_element) return func {
-		svg_element.addEventListener("click", func {
-			object.function();
-		});
-	},
-	gen_textbox: func(object, svg_element, my_modes) return func {
-		 # FIXME
-	},
-	gen_label: func(object, svg_element, my_modes) return func {
-		# FIXME
+	gen_click: func() {
+		return func(object, svg_element) {
+			svg_element.addEventListener("click", func {
+				object.function();
+			})
+		}
 	}
 }
 
