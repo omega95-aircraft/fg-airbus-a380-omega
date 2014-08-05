@@ -1263,7 +1263,18 @@
     <!-- Multi-Function Display -->
     <mfd>
     	<file>Aircraft/A380/Models/Instruments/MFD/mfd.nas</file>
-    	<file>Aircraft/A380/Models/Instruments/MFD/modes.nas</file>
+    	<!-- A380 MFDs -->
+    	<file>Aircraft/A380/Models/Instruments/MFD/a380_mfds.nas</file>
+    	<!-- MFD Menus 
+    	<file>Aircraft/A380/Models/Instruments/MFD/menus/fms.nas</file>
+    	<file>Aircraft/A380/Models/Instruments/MFD/menus/atc_com.nas</file>
+    	<file>Aircraft/A380/Models/Instruments/MFD/menus/surv.nas</file>
+    	<file>Aircraft/A380/Models/Instruments/MFD/menus/fcu_bkup.nas</file -->
+    	<!-- MFD Pages
+    	<file>Aircraft/A380/Models/Instruments/MFD/pages/fms_active_init.nas</file>
+    	<file>Aircraft/A380/Models/Instruments/MFD/pages/fms_active_fpln.nas</file>
+    	<file>Aircraft/A380/Models/Instruments/MFD/pages/fms_active_fuel.nas</file>
+    	<file>Aircraft/A380/Models/Instruments/MFD/pages/fms_active_perf.nas</file -->
     </mfd>
 </nasal>
 

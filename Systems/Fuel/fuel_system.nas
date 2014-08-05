@@ -127,7 +127,7 @@ var fuel_system = {
 		} elsif(phase == "CLB" or phase == "CRZ") {
 			cg_trgt = 35; # 32% MAC
 		} else { # DES, APP
-			cg_trgt = 38; # 38% MAC
+			cg_trgt = 37; # 38% MAC
 		}
 
 		if(getprop(ctl~"trim-tk/pump-l") == 1) {

@@ -123,7 +123,7 @@ var fuel_system = {
 		if(phase == "T/O") {
 			cg_trgt = 32; # 32% MAC - use pitch trim for take-off
 			# Suggest pitch trim for take-off
-			setprop("/flight-management/to-trim", (gwcg-37)*0.06);
+			setprop("/flight-management/to-trim", (gwcg-37)*0.07);
 		} elsif(phase == "CLB" or phase == "CRZ") {
 			cg_trgt = 35; # 32% MAC
 		} else { # DES, APP

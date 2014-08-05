@@ -25,7 +25,7 @@ var flightplan = {
 	},
 	transit: func() {
 		if(me.getDistToNextWpt() < 2) {
-			
+			me.nextWpt();
 		}
 	},
 	dirTo: func(id) {
