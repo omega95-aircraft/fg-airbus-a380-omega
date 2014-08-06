@@ -31,8 +31,8 @@ var mfd = {
 		t.svgGroup = t.display.createGroup();	# SVG Objects for pages
 		canvas.parsesvg(t.svgGroup, svg_path, {'font-mapper':font_mapper});		
 		
-		foreach(var element; ["dropdown", "fms1_click", "fms2_click", "atc_com_click", "surv_click", "fcu_bkup_click", "fms_mode_text", "fms_mode_box", "fms_mode_static", "active_box", 
-"position_box", "active_dropdown", "position_dropdown", "active_current", "position_current", "active_fpln_box", "active_perf_box", "active_fuel_box", "active_wind_box", "active_init_box", "position_navaids_box"]) {
+		foreach(var element; ["dropdown", "fms1_click", "fms2_click", "atc_com_click", "surv_click", "fcu_bkup_click", "fms1_text", "fms2_text", "atc_com_text", "surv_text", "fcu_bkup_text", "fms_mode_text", "fms_mode_box", "fms_mode_static", "active_box", 
+"position_box", "active_dropdown", "position_dropdown", "active_current", "position_current", "active_fpln_box", "active_perf_box", "active_fuel_box", "active_wind_box", "active_init_box", "position_navaids_box", "position_navaids_text", "page_title", "connect_current", "request_current", "report_current", "msg_record_current", "status_current", "controls_current", "autoflight_current", "efis_current", "active_fpln_text", "active_perf_text", "active_fuel_text", "active_wind_text", "active_init_text"]) {
 			t.svgCache[element] = t.svgGroup.getElementById(element);
 		}
 		
@@ -43,7 +43,7 @@ var mfd = {
 				widgets: [
 					#FIXME
 				],
-				load: func(m) {
+				load: func() {
 					
 				}
 			},
@@ -51,7 +51,7 @@ var mfd = {
 				widgets: [
 					#FIXME
 				],
-				load: func(m) {
+				load: func() {
 					
 				},
 				pages: {
@@ -59,7 +59,7 @@ var mfd = {
 						widgets: [
 							#FIXME
 						],
-						load: func(m) {
+						load: func() {
 							
 						}
 					},
@@ -67,7 +67,7 @@ var mfd = {
 						widgets: [
 							#FIXME
 						],
-						load: func(m) {
+						load: func() {
 							
 						}
 					},
@@ -75,7 +75,7 @@ var mfd = {
 						widgets: [
 							#FIXME
 						],
-						load: func(m) {
+						load: func() {
 							
 						}
 					},
@@ -83,7 +83,7 @@ var mfd = {
 						widgets: [
 							#FIXME
 						],
-						load: func(m) {
+						load: func() {
 							
 						}
 					}
@@ -93,7 +93,7 @@ var mfd = {
 				widgets: [
 					#FIXME
 				],
-				load: func(m) {
+				load: func() {
 					
 				}
 			},
@@ -101,7 +101,7 @@ var mfd = {
 				widgets: [
 					#FIXME
 				],
-				load: func(m) {
+				load: func() {
 					
 				}
 			}
@@ -115,6 +115,11 @@ var mfd = {
 		foreach(var layer; t.pageLayers) {
 			t.svgCache[layer] = t.svgGroup.getElementById(layer);
 		}
+		
+		t.svgCache["position_dropdown"].hide();
+		t.svgCache["active_dropdown"].hide();
+		t.svgCache["position_dropdown"].hide();
+		t.svgCache["dropdown"].hide();
 		
 		foreach(var widget; [
 			{
@@ -134,7 +139,7 @@ var mfd = {
 			},
 			{
 				type: 'click',
-				objects: ["fms1_click"],
+				objects: ["fms1_click", "fms1_text"],
 				function: func() {
 					t.svgCache["fms1_click"].setColor(colors.blue1);
 					settimer(func {
@@ -143,12 +148,14 @@ var mfd = {
 						t.svgCache["fms_mode_box"].setColorFill(colors.gray1);
 						t.svgCache["fms_mode_text"].setText("FMS1");
 						t.loadPage("menu_fms", "fms_active_init");
+						t.svgCache["position_current"].hide();
+						t.svgCache["active_current"].show();
 					}, 0.1);
 				}
 			},
 			{
 				type: 'click',
-				objects: ["atc_com_click"],
+				objects: ["atc_com_click", "atc_com_text"],
 				function: func() {
 					t.svgCache["atc_com_click"].setColor(colors.blue1);
 					settimer(func {
@@ -157,12 +164,16 @@ var mfd = {
 						t.svgCache["fms_mode_box"].setColorFill(colors.gray1);
 						t.svgCache["fms_mode_text"].setText("ATC COM");
 						t.loadPage("menu_atc_com", "atc_com_connect");
+						t.svgCache["report_current"].hide();
+						t.svgCache["request_current"].hide();
+						t.svgCache["msg_record_current"].hide();
+						t.svgCache["connect_current"].show();
 					}, 0.1);
 				}
 			},
 			{
 				type: 'click',
-				objects: ["surv_click"],
+				objects: ["surv_click", "surv_text"],
 				function: func() {
 					t.svgCache["surv_click"].setColor(colors.blue1);
 					settimer(func {
@@ -171,12 +182,14 @@ var mfd = {
 						t.svgCache["fms_mode_box"].setColorFill(colors.gray1);
 						t.svgCache["fms_mode_text"].setText("SURV");
 						t.loadPage("menu_surv", "surv_controls");
+						t.svgCache["status_current"].hide();
+						t.svgCache["controls_current"].show();
 					}, 0.1);
 				}
 			},
 			{
 				type: 'click',
-				objects: ["fcu_bkup_click"],
+				objects: ["fcu_bkup_click", "fcu_bkup_text"],
 				function: func() {
 					t.svgCache["fcu_bkup_click"].setColor(colors.blue1);
 					settimer(func {
@@ -185,6 +198,8 @@ var mfd = {
 						t.svgCache["fms_mode_box"].setColorFill(colors.gray1);
 						t.svgCache["fms_mode_text"].setText("FCU BKUP");
 						t.loadPage("menu_fcu_bkup", "fcu_bkup_autoflight");
+						t.svgCache["efis_current"].hide();
+						t.svgCache["autoflight_current"].show();
 					}, 0.1);
 				}
 			},
@@ -196,10 +211,10 @@ var mfd = {
 					t.svgCache["position_dropdown"].hide();
 					if(t.svgCache["active_dropdown"].getVisible()) {
 						t.svgCache["active_dropdown"].hide();
-						t.svgCache["active_box"].setColor(colors.gray1);
+						t.svgCache["active_box"].setColorFill(colors.gray1);
 					} else {
 						t.svgCache["active_dropdown"].show();
-						t.svgCache["active_box"].setColor(colors.gray2);
+						t.svgCache["active_box"].setColorFill(colors.gray2);
 					}
 				}
 			},
@@ -211,11 +226,75 @@ var mfd = {
 					t.svgCache["active_dropdown"].hide();
 					if(t.svgCache["position_dropdown"].getVisible()) {
 						t.svgCache["position_dropdown"].hide();
-						t.svgCache["position_box"].setColor(colors.gray1);
+						t.svgCache["position_box"].setColorFill(colors.gray1);
 					} else {
 						t.svgCache["position_dropdown"].show();
-						t.svgCache["position_box"].setColor(colors.gray2);
+						t.svgCache["position_box"].setColorFill(colors.gray2);
 					}
+				}
+			},
+			{
+				type: 'click',
+				objects: ["active_fpln_box", "active_fpln_text"],
+				function: func() {
+					t.svgCache["active_fpln_box"].setColor(colors.blue1);
+					settimer(func {
+						t.svgCache["active_dropdown"].hide();
+						t.svgCache["active_box"].setColorFill(colors.gray1);
+						t.svgCache["active_fpln_box"].setColor(colors.gray1);
+						t.svgCache["page_title"].setText("ACTIVE / F-PLN");
+						t.loadPage("menu_fms", "fms_active_fpln");
+						t.svgCache["position_current"].hide();
+						t.svgCache["active_current"].show();
+					}, 0.1);
+				}
+			},
+			{
+				type: 'click',
+				objects: ["active_perf_box", "active_perf_text"],
+				function: func() {
+					t.svgCache["active_perf_box"].setColor(colors.blue1);
+					settimer(func {
+						t.svgCache["active_dropdown"].hide();
+						t.svgCache["active_box"].setColorFill(colors.gray1);
+						t.svgCache["active_perf_box"].setColor(colors.gray1);
+						t.svgCache["page_title"].setText("ACTIVE / PERF");
+						t.loadPage("menu_fms", "fms_active_perf");
+						t.svgCache["position_current"].hide();
+						t.svgCache["active_current"].show();
+					}, 0.1);
+				}
+			},
+			{
+				type: 'click',
+				objects: ["active_fuel_box", "active_fuel_text"],
+				function: func() {
+					t.svgCache["active_fuel_box"].setColor(colors.blue1);
+					settimer(func {
+						t.svgCache["active_dropdown"].hide();
+						t.svgCache["active_box"].setColorFill(colors.gray1);
+						t.svgCache["active_fuel_box"].setColor(colors.gray1);
+						t.svgCache["page_title"].setText("ACTIVE / FUEL & LOAD");
+						t.loadPage("menu_fms", "fms_active_fuel");
+						t.svgCache["position_current"].hide();
+						t.svgCache["active_current"].show();
+					}, 0.1);
+				}
+			},
+			{
+				type: 'click',
+				objects: ["active_init_box", "active_init_text"],
+				function: func() {
+					t.svgCache["active_init_box"].setColor(colors.blue1);
+					settimer(func {
+						t.svgCache["active_dropdown"].hide();
+						t.svgCache["active_box"].setColorFill(colors.gray1);
+						t.svgCache["active_init_box"].setColor(colors.gray1);
+						t.svgCache["page_title"].setText("ACTIVE / INIT");
+						t.loadPage("menu_fms", "fms_active_init");
+						t.svgCache["position_current"].hide();
+						t.svgCache["active_current"].show();
+					}, 0.1);
 				}
 			}
 		]) {
@@ -236,14 +315,14 @@ var mfd = {
 			}
 			me.svgCache[page].show();
 			# Run page load function
-			me.menus[menu].pages[page].load(me);
+			me.menus[menu].pages[page].load();
 			if(menu != me.activeMenu) {
 				foreach(var layer; me.menuLayers) {
 					me.svgCache[layer].hide();
 				}
 				me.svgCache[menu].show();
 				# Run page load function
-				me.menus[menu].load(me);
+				me.menus[menu].load();
 			}
 		}
 	},

@@ -25,10 +25,10 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.3264177"
-     inkscape:cx="501.81708"
-     inkscape:cy="752.38722"
+     inkscape:cx="243.52333"
+     inkscape:cy="974.80374"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="1855"
      inkscape:window-height="1056"
@@ -62,6 +62,32 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="Page">
+    <rect
+       style="fill:#a0a0a0;fill-opacity:1;stroke:none;display:inline"
+       id="rect4406-0"
+       width="794.85455"
+       height="99.059601"
+       x="2.5142097"
+       y="43.301743"
+       inkscape:label="#rect3529" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#505050;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="6.8731689"
+       y="135.54683"
+       id="page_title"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text7243"><tspan
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:-1px;text-anchor:start;fill:#505050;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
+         sodipodi:role="line"
+         x="6.8731689"
+         y="135.54683"
+         id="tspan3897-6">REQUEST</tspan></text>
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer9"
@@ -4536,14 +4562,6 @@
        transform="translate(0,-380)"
        style="display:inline">
       <rect
-         style="fill:#a0a0a0;fill-opacity:1;stroke:none;display:inline"
-         id="rect4406"
-         width="794.85455"
-         height="99.059601"
-         x="1.9141287"
-         y="423.78189"
-         inkscape:label="#rect3529" />
-      <rect
          inkscape:label="#rect3529"
          y="425.47165"
          x="3.9141285"
@@ -4664,19 +4682,6 @@
            x="677.81171"
            y="463.86087"
            id="tspan3813">DATA</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#505050;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-         x="13.479985"
-         y="516.67712"
-         id="page_title"
-         sodipodi:linespacing="125%"
-         inkscape:label="#text7243"><tspan
-           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:-1px;text-anchor:start;fill:#505050;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
-           sodipodi:role="line"
-           x="13.479985"
-           y="516.67712"
-           id="tspan3897">ACTIVE / F-PLN</tspan></text>
       <g
          id="active_dropdown"
          inkscape:label="#g3799"
@@ -4689,6 +4694,14 @@
            width="196.93234"
            id="rect"
            style="fill:#505050;fill-opacity:1;stroke:none" />
+        <rect
+           inkscape:label="#rect4364"
+           y="107.93023"
+           x="4.9433646"
+           height="39.0704"
+           width="194.72397"
+           id="active_fpln_box"
+           style="fill:#505050;fill-opacity:1;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <text
            inkscape:label="#text7243"
            sodipodi:linespacing="125%"
@@ -4702,6 +4715,14 @@
              x="12.120161"
              sodipodi:role="line"
              style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:0px;text-anchor:start;fill:#dcdcdc;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">F-PLN</tspan></text>
+        <rect
+           style="fill:#505050;fill-opacity:1;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="active_perf_box"
+           width="194.72397"
+           height="39.0704"
+           x="4.9433646"
+           y="149.93025"
+           inkscape:label="#rect4364" />
         <text
            xml:space="preserve"
            style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#dcdcdc;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -4715,6 +4736,14 @@
              x="12.120161"
              y="178.8503"
              id="tspan4007">PERF</tspan></text>
+        <rect
+           inkscape:label="#rect4364"
+           y="191.93024"
+           x="4.9433646"
+           height="39.0704"
+           width="194.72397"
+           id="active_fuel_box"
+           style="fill:#505050;fill-opacity:1;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <text
            inkscape:label="#text7243"
            sodipodi:linespacing="125%"
@@ -4728,6 +4757,14 @@
              x="12.120161"
              sodipodi:role="line"
              style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:0px;text-anchor:start;fill:#dcdcdc;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">FUEL&amp;LOAD</tspan></text>
+        <rect
+           style="fill:#505050;fill-opacity:1;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="active_wind_box"
+           width="194.72397"
+           height="39.0704"
+           x="4.9433646"
+           y="233.93024"
+           inkscape:label="#rect4364" />
         <text
            xml:space="preserve"
            style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#dcdcdc;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -4741,6 +4778,14 @@
              x="12.120161"
              y="262.85028"
              id="tspan4019">WIND</tspan></text>
+        <rect
+           inkscape:label="#rect4364"
+           y="275.93024"
+           x="4.9433646"
+           height="39.0704"
+           width="194.72397"
+           id="active_init_box"
+           style="fill:#505050;fill-opacity:1;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
         <text
            inkscape:label="#text7243"
            sodipodi:linespacing="125%"
@@ -4754,51 +4799,19 @@
              x="12.120161"
              sodipodi:role="line"
              style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:0px;text-anchor:start;fill:#dcdcdc;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">INIT</tspan></text>
-        <rect
-           inkscape:label="#rect4364"
-           y="107.93023"
-           x="4.9433646"
-           height="39.0704"
-           width="194.72397"
-           id="active_fpln_box"
-           style="fill:none;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-        <rect
-           style="fill:none;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           id="active_perf_box"
-           width="194.72397"
-           height="39.0704"
-           x="4.9433646"
-           y="149.93025"
-           inkscape:label="#rect4364" />
-        <rect
-           inkscape:label="#rect4364"
-           y="191.93024"
-           x="4.9433646"
-           height="39.0704"
-           width="194.72397"
-           id="active_fuel_box"
-           style="fill:none;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-        <rect
-           style="fill:none;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           id="active_wind_box"
-           width="194.72397"
-           height="39.0704"
-           x="4.9433646"
-           y="233.93024"
-           inkscape:label="#rect4364" />
-        <rect
-           inkscape:label="#rect4364"
-           y="275.93024"
-           x="4.9433646"
-           height="39.0704"
-           width="194.72397"
-           id="active_init_box"
-           style="fill:none;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       </g>
       <g
          id="position_dropdown"
          inkscape:label="#g3820"
          transform="translate(0,380)">
+        <rect
+           style="fill:#505050;fill-opacity:1;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="position_navaids_box"
+           width="194.72397"
+           height="39.0704"
+           x="203.71503"
+           y="107.93023"
+           inkscape:label="#rect4364" />
         <rect
            style="fill:#505050;fill-opacity:1;stroke:none"
            id="rect3023"
@@ -4812,7 +4825,7 @@
            style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#dcdcdc;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
            x="210.89183"
            y="137.22725"
-           id="text3025"
+           id="position_navaids_text"
            sodipodi:linespacing="125%"
            inkscape:label="#text7243"><tspan
              style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:0px;text-anchor:start;fill:#dcdcdc;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -4820,14 +4833,6 @@
              x="210.89183"
              y="137.22725"
              id="tspan3027">NAVAIDS</tspan></text>
-        <rect
-           style="fill:none;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           id="position_navaids_box"
-           width="194.72397"
-           height="39.0704"
-           x="203.71503"
-           y="107.93023"
-           inkscape:label="#rect4364" />
       </g>
     </g>
   </g>
@@ -4839,14 +4844,6 @@
     <g
        id="menu_atc_com"
        inkscape:label="#g4960">
-      <rect
-         style="fill:#a0a0a0;fill-opacity:1;stroke:none;display:inline"
-         id="rect4406-0"
-         width="794.85455"
-         height="99.059601"
-         x="1.9243927"
-         y="43.789078"
-         inkscape:label="#rect3529" />
       <rect
          inkscape:label="#rect3529"
          y="45.479614"
@@ -4877,19 +4874,6 @@
          width="112.19817"
          id="connect_current"
          style="fill:none;stroke:#dcdcdc;stroke-width:1.00399995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
-      <text
-         xml:space="preserve"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#505050;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-         x="13.49025"
-         y="136.68434"
-         id="page_title-9"
-         sodipodi:linespacing="125%"
-         inkscape:label="#text7243"><tspan
-           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:-1px;text-anchor:start;fill:#505050;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
-           sodipodi:role="line"
-           x="13.49025"
-           y="136.68434"
-           id="tspan3897-6">REQUEST</tspan></text>
       <rect
          style="fill:#505050;fill-opacity:1;stroke:none;display:inline"
          id="request_box"
@@ -4913,7 +4897,7 @@
            y="83.995667"
            id="tspan3948">REQUEST</tspan></text>
       <rect
-         style="fill:none;stroke:#dcdcdc;stroke-width:1.0036968;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:none"
+         style="fill:none;stroke:#dcdcdc;stroke-width:1.0036968;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          id="request_current"
          width="112.19817"
          height="38.278008"
@@ -4943,7 +4927,7 @@
            y="83.995667"
            id="tspan3956">REPORT</tspan></text>
       <rect
-         style="fill:none;stroke:#dcdcdc;stroke-width:1.0036968;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:none"
+         style="fill:none;stroke:#dcdcdc;stroke-width:1.0036968;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          id="report_current"
          width="112.19817"
          height="38.278008"
@@ -4965,7 +4949,7 @@
          height="38.278008"
          width="112.19817"
          id="msg_record_current"
-         style="fill:none;stroke:#dcdcdc;stroke-width:1.0036968;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:none" />
+         style="fill:none;stroke:#dcdcdc;stroke-width:1.0036968;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
       <rect
          inkscape:label="#rect3529"
          y="45.479614"
@@ -5063,14 +5047,6 @@
        id="menu_surv"
        inkscape:label="#g4946">
       <rect
-         style="fill:#a0a0a0;fill-opacity:1;stroke:none;display:inline"
-         id="rect4406-6"
-         width="794.85455"
-         height="99.059601"
-         x="1.9488376"
-         y="43.835709"
-         inkscape:label="#rect3529" />
-      <rect
          inkscape:label="#rect3529"
          y="45.474297"
          x="3.9968493"
@@ -5132,25 +5108,12 @@
            id="tspan3797-5">STATUS &amp; SWITCHING</tspan></text>
       <rect
          inkscape:label="#rect3799"
-         style="fill:none;stroke:#dcdcdc;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:none"
+         style="fill:none;stroke:#dcdcdc;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          id="status_current"
          width="245.87325"
          height="37.965023"
          x="178.79422"
          y="56.953796" />
-      <text
-         xml:space="preserve"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#505050;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-         x="13.514671"
-         y="136.73096"
-         id="page_title-3"
-         sodipodi:linespacing="125%"
-         inkscape:label="#text7243"><tspan
-           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:-1px;text-anchor:start;fill:#505050;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
-           sodipodi:role="line"
-           x="13.514671"
-           y="136.73096"
-           id="tspan3897-4">CONTROLS</tspan></text>
     </g>
   </g>
   <g
@@ -5161,14 +5124,6 @@
     <g
        id="menu_fcu_bkup"
        inkscape:label="#g4932">
-      <rect
-         style="fill:#a0a0a0;fill-opacity:1;stroke:none;display:inline"
-         id="rect4406-63"
-         width="794.85455"
-         height="99.059601"
-         x="1.9214412"
-         y="43.788174"
-         inkscape:label="#rect3529" />
       <rect
          inkscape:label="#rect3529"
          y="45.463505"
@@ -5231,25 +5186,12 @@
            id="tspan3797-3">EFIS</tspan></text>
       <rect
          inkscape:label="#rect3799"
-         style="fill:none;stroke:#dcdcdc;stroke-width:0.97160107;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:none"
+         style="fill:none;stroke:#dcdcdc;stroke-width:0.97160107;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          id="efis_current"
          width="165.58176"
          height="38.097805"
          x="201.20988"
          y="56.838985" />
-      <text
-         xml:space="preserve"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#505050;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-         x="13.487252"
-         y="136.68344"
-         id="page_title-34"
-         sodipodi:linespacing="125%"
-         inkscape:label="#text7243"><tspan
-           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:-1px;text-anchor:start;fill:#505050;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
-           sodipodi:role="line"
-           x="13.487252"
-           y="136.68344"
-           id="tspan3897-2">AUTOFLIGHT</tspan></text>
     </g>
   </g>
   <g
