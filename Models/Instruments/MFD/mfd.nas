@@ -61,7 +61,7 @@ var calcFuelLoad = func() {
 	
 			if(final_fuel == nil) {
 				setprop(fuel_tree~"final-fuel", "0.0");
-				final_fuel == 0;
+				final_fuel = 0;
 			}
 	
 			var final_time = getprop(fuel_tree~"final-time");
@@ -73,7 +73,7 @@ var calcFuelLoad = func() {
 			var utc = getprop("/sim/time/utc/hour") + (getprop("/sim/time/utc/minute"))/60;
 	
 			# Get Trip Fuel and Time
-			var trip_fuel = 100;
+			var trip_fuel = fms.fms1.getRouteDistance();
 			setprop("/flight-management/fuel/trip-fuel", trip_fuel);
 			setprop("/flight-management/fuel/trip-time", getTimeString(trip_fuel/11)); # 11t/hr
 	
@@ -81,7 +81,7 @@ var calcFuelLoad = func() {
 			setprop("/flight-management/fuel/rsv-percent", rsv/2.67);
 	
 			# Calculate Alternate Fuel and Time
-			var altn_fuel = 50;
+			var altn_fuel = 0;
 			setprop("/flight-management/fuel/altn-fuel", altn_fuel);
 			setprop("/flight-management/fuel/altn-time", getTimeString(altn_fuel/11)); # 11t/hr
 	
@@ -100,9 +100,9 @@ var calcFuelLoad = func() {
 	
 			# Calculate Landing Weight
 			if(zfw == "---.-") {
-				setprop("/flight-management/fuel/tow", gw - taxi - trip_fuel - final_fuel);
+				setprop("/flight-management/fuel/lw", gw - taxi - trip_fuel - final_fuel);
 			} else {
-				setprop("/flight-management/fuel/tow", zfw + blocks - taxi - trip_fuel - final_fuel);
+				setprop("/flight-management/fuel/lw", zfw + blocks - taxi - trip_fuel - final_fuel);
 			}
 	
 			# Calculate Destination UTC and Fuel
@@ -833,7 +833,7 @@ var mfd = {
 				text_obj: 't_block',
 				active: 0,
 				listener: nil,
-				text: '---.-',
+				text: '',
 				format: "%s",
 				enter: func {
 					calcFuelLoad();
@@ -846,7 +846,7 @@ var mfd = {
 				text_obj: 't_pax',
 				active: 0,
 				listener: nil,
-				text: '---',
+				text: '',
 				format: "%s",
 				enter: func {
 					# calcFuelLoad();
