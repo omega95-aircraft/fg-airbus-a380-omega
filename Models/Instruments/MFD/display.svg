@@ -24,17 +24,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3264177"
-     inkscape:cx="243.52333"
-     inkscape:cy="974.80374"
+     inkscape:zoom="0.66320884"
+     inkscape:cx="420.84621"
+     inkscape:cy="-162.79535"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer6"
      showgrid="true"
-     inkscape:window-width="1855"
-     inkscape:window-height="1056"
-     inkscape:window-x="65"
+     inkscape:window-width="927"
+     inkscape:window-height="1028"
+     inkscape:window-x="992"
      inkscape:window-y="24"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:snap-global="false"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -1576,7 +1576,7 @@
          style="fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline" />
       <rect
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline"
-         id="zfw_box"
+         id="tb_zfw"
          width="166.32957"
          height="40.219242"
          x="199.166"
@@ -1585,7 +1585,7 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="zfw"
+         id="t_zfw"
          y="255.33371"
          x="282.46808"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -1609,14 +1609,14 @@
          x="199.166"
          height="40.219242"
          width="166.32957"
-         id="block_box"
+         id="tb_block"
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline" />
       <text
          xml:space="preserve"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          x="282.46808"
          y="321.33371"
-         id="block"
+         id="t_block"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#00a0ff;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -1634,7 +1634,7 @@
          style="fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline" />
       <rect
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline"
-         id="zfwcg_box"
+         id="tb_zfwcg"
          width="114.50999"
          height="40.219242"
          x="501.16599"
@@ -1643,7 +1643,7 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="zfwcg"
+         id="t_zfwcg"
          y="255.33371"
          x="550.46802"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -1663,7 +1663,7 @@
          style="fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline" />
       <rect
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline"
-         id="taxi_box"
+         id="tb_taxi"
          width="166.32957"
          height="40.219242"
          x="125.16599"
@@ -1672,7 +1672,7 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="taxi"
+         id="t_taxi"
          y="413.33371"
          x="208.46806"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -1696,14 +1696,14 @@
          x="125.16599"
          height="40.219242"
          width="166.32957"
-         id="rte_rsv_box"
+         id="tb_rsv"
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline" />
       <text
          xml:space="preserve"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          x="208.46806"
          y="539.33374"
-         id="rte_rsv"
+         id="t_rsv"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#00a0ff;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -1750,7 +1750,7 @@
          style="fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline" />
       <rect
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline"
-         id="rect3812"
+         id="tb_ci"
          width="79.233902"
          height="40.219242"
          x="627.16602"
@@ -1761,7 +1761,7 @@
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          x="666.46808"
          y="477.33374"
-         id="text3814"
+         id="t_ci"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#00a0ff;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -1783,12 +1783,12 @@
          x="627.16602"
          height="40.219242"
          width="79.233902"
-         id="pax_box"
+         id="tb_pax"
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline" />
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="pax"
+         id="t_pax"
          y="415.33371"
          x="666.46808"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -1824,7 +1824,7 @@
          style="fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline" />
       <rect
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline"
-         id="final_box"
+         id="tb_final_fuel"
          width="166.32957"
          height="40.219242"
          x="125.16599"
@@ -1833,13 +1833,13 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="final"
-         y="665.33374"
+         id="t_final_fuel"
+         y="663.82593"
          x="208.46806"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          xml:space="preserve"><tspan
            id="tspan3840"
-           y="665.33374"
+           y="663.82593"
            x="207.96806"
            sodipodi:role="line"
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#00a0ff;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">0.0</tspan></text>
@@ -1853,7 +1853,7 @@
          style="fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline" />
       <rect
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline"
-         id="rect3844"
+         id="tb_final_time"
          width="114.50999"
          height="40.219242"
          x="309.16602"
@@ -1862,7 +1862,7 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="final_time"
+         id="t_final_time"
          y="665.33374"
          x="366.46808"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -1886,14 +1886,14 @@
          x="563.16602"
          height="40.219242"
          width="166.32957"
-         id="rect3852"
+         id="tb_min"
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline" />
       <text
          xml:space="preserve"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          x="646.46808"
          y="851.33374"
-         id="min_fuel_at_dest"
+         id="t_min"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#00a0ff;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -1943,7 +1943,7 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="trip"
+         id="trip_fuel"
          y="478.44482"
          x="254.47533"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -1997,7 +1997,7 @@
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          x="368.42847"
          y="728.44482"
-         id="text4654"
+         id="extra_time"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#008c00;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -2008,7 +2008,7 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="text4658"
+         id="extra_fuel"
          y="728.44482"
          x="256.47534"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -2021,7 +2021,7 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="text4662"
+         id="tow"
          y="666.34357"
          x="754.36835"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -2036,7 +2036,7 @@
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          x="754.36835"
          y="730.34357"
-         id="text4666"
+         id="lw"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;letter-spacing:-1px;text-anchor:end;fill:#008c00;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -2049,7 +2049,7 @@
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          x="191.64363"
          y="854.15662"
-         id="dest"
+         id="fuel_dest"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;letter-spacing:-1px;text-anchor:end;fill:#008c00;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -2060,14 +2060,14 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="dest_utc-2"
+         id="fuel_dest_utc"
          y="854.15662"
-         x="267.12805"
+         x="285.12805"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          xml:space="preserve"><tspan
            id="tspan4680"
            y="854.15662"
-           x="266.62805"
+           x="284.62805"
            sodipodi:role="line"
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#008c00;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">00:00</tspan></text>
       <text
@@ -2075,7 +2075,7 @@
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          x="461.1749"
          y="854.15662"
-         id="dest_efob"
+         id="fuel_dest_efob"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;letter-spacing:-1px;text-anchor:end;fill:#008c00;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -2086,7 +2086,7 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="altn"
+         id="fuel_altn"
          y="900.15662"
          x="191.64363"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -2099,20 +2099,20 @@
       <text
          xml:space="preserve"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-         x="267.12805"
+         x="285.12805"
          y="900.15662"
-         id="altn_utc"
+         id="fuel_altn_utc"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#008c00;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
            sodipodi:role="line"
-           x="266.62805"
+           x="284.62805"
            y="900.15662"
            id="tspan4692">00:00</tspan></text>
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="altn_efob"
+         id="fuel_altn_efob"
          y="900.15662"
          x="461.1749"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008c00;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -2164,7 +2164,7 @@
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          x="358.37756"
          y="539.25537"
-         id="rte_rsv_percent"
+         id="rsv_percent"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#00a0ff;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -2194,30 +2194,34 @@
          y="918.2887"
          inkscape:label="#rect3529" />
       <g
-         id="g3126"
-         style="display:inline"
-         transform="translate(-1.45553,-15.75881)">
-        <rect
-           style="fill:#505050;fill-opacity:1;stroke:none"
-           id="return_box"
-           width="158.12613"
-           height="41.927258"
-           x="11.019707"
-           y="935.26721"
-           inkscape:label="#rect3529" />
-        <text
-           xml:space="preserve"
-           style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-           x="90.368896"
-           y="965.09253"
-           id="text4716-0"
-           sodipodi:linespacing="125%"
-           inkscape:label="#text7243"><tspan
-             style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#dcdcdc;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
-             sodipodi:role="line"
-             x="89.868896"
+         id="fuel_return"
+         inkscape:label="#g3780">
+        <g
+           transform="translate(-1.45553,-15.75881)"
+           style="display:inline"
+           id="g3126">
+          <rect
+             inkscape:label="#rect3529"
+             y="935.26721"
+             x="11.019707"
+             height="41.927258"
+             width="158.12613"
+             id="return_box"
+             style="fill:#505050;fill-opacity:1;stroke:none" />
+          <text
+             inkscape:label="#text7243"
+             sodipodi:linespacing="125%"
+             id="text4716-0"
              y="965.09253"
-             id="tspan4718-2">RETURN</tspan></text>
+             x="90.368896"
+             style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+             xml:space="preserve"><tspan
+               id="tspan4718-2"
+               y="965.09253"
+               x="89.868896"
+               sodipodi:role="line"
+               style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#dcdcdc;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">RETURN</tspan></text>
+        </g>
       </g>
       <rect
          style="fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline"
@@ -2397,14 +2401,14 @@
       <text
          xml:space="preserve"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-         x="429.94574"
+         x="443.94574"
          y="886.50708"
          id="dest_utc"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;letter-spacing:-1px;text-anchor:start;fill:#dcdcdc;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
            sodipodi:role="line"
-           x="429.94574"
+           x="443.94574"
            y="886.50708"
            id="tspan3503">00:00</tspan></text>
       <text
@@ -4201,7 +4205,7 @@
          inkscape:label="#rect3529" />
       <rect
          inkscape:label="#rect3529"
-         y="169.01242"
+         y="167.01242"
          x="150.92584"
          height="40.219242"
          width="225.11082"
@@ -4313,7 +4317,7 @@
          style="fill:#dcdcdc;fill-opacity:1;stroke:none;display:inline" />
       <rect
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline"
-         id="rect4225"
+         id="textbox_crztemp"
          width="119.87078"
          height="40.219242"
          x="438.92584"
@@ -4333,7 +4337,7 @@
          x="438.92584"
          height="40.219242"
          width="150.49785"
-         id="rect4229"
+         id="textbox_tropo"
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline" />
       <rect
          inkscape:label="#rect3529"
@@ -4365,7 +4369,7 @@
          x="150.92584"
          height="40.219242"
          width="79.233902"
-         id="rect4237"
+         id="textbox_ci"
          style="fill:#000000;fill-opacity:1;stroke:none;display:inline" />
       <text
          xml:space="preserve"
@@ -4476,7 +4480,7 @@
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
          x="502.22797"
          y="507.56824"
-         id="text4271"
+         id="text_tropo"
          sodipodi:linespacing="125%"
          inkscape:label="#text7243"><tspan
            style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#00a0ff;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
@@ -4487,7 +4491,7 @@
       <text
          inkscape:label="#text7243"
          sodipodi:linespacing="125%"
-         id="text4275"
+         id="text_ci"
          y="507.56824"
          x="190.22797"
          style="font-size:43.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a0ff;fill-opacity:1;stroke:none;display:inline;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"

@@ -32,8 +32,14 @@ sd.pages["pdz"] = {
 		
 		me.svg["time"].setText(sprintf("%s GPS", getprop("/sim/time/gmt-string")));
 		
-		me.svg["gw"].setText(sprintf("%6.0f", getprop("/fdm/jsbsim/inertia/weight-lbs")*LB2KG));
-		me.svg["gwcg"].setText(sprintf("%2.1f", (getprop("/fdm/jsbsim/inertia/cg-x-in")-1330)*0.15));
-		me.svg["fob"].setText(sprintf("%6.0f", getprop("/consumables/fuel/total-fuel-kg")));
+		var gw = getprop("/fdm/jsbsim/inertia/weight-lbs")*LB2KG;
+		me.svg["gw"].setText(sprintf("%6.0f", gw));
+		setprop("/flight-management/fuel-and-load/gw", gw/1000); # In Tons
+		var gwcg = (getprop("/fdm/jsbsim/inertia/cg-x-in")-1350)*0.15;
+		me.svg["gwcg"].setText(sprintf("%2.1f", gwcg));
+		setprop("/flight-management/fuel-and-load/cg", gwcg);
+		var fob = getprop("/consumables/fuel/total-fuel-kg");
+		me.svg["fob"].setText(sprintf("%6.0f", fob));
+		setprop("/flight-management/fuel-and-load/fob", fob/1000); # In Tons
 	}
 };

@@ -797,7 +797,6 @@
 <flight-management>
 	<flt_nbr type="string">AIB1174</flt_nbr>
 	<phase type="string">T/O</phase>
-	<crz_fl type="double">050</crz_fl>
 	<ecam>
 		<no-blue type="bool">false</no-blue>
 	</ecam>

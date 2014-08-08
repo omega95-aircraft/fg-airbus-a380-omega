@@ -4,15 +4,6 @@
 # Depends: FG positioned API
 
 var flightplan = {
-	active: 0,
-	currentWptId: 0,
-	wpts: [], # Array of wpt objects
-	flt_nbr: "",
-	depICAO: "",
-	arrICAO: "",
-	alternate: "",
-	crz_FL: 0,
-	cpny_rte: "",
 	set_cpny_rte: func() {
 		#FIXME
 	},
@@ -124,6 +115,16 @@ var flightplan = {
 		}
 	},
 	new: func() {
-		return t = {parents:[flightplan]};
+		var t = {parents:[flightplan]};
+		t.active = 0;
+		t.currentWptId = 0;
+		t.wpts = []; # Array of wpt objects
+		t.flt_nbr = "";
+		t.depICAO = "";
+		t.arrICAO = "";
+		t.alternate = "";
+		t.crz_FL = 0;
+		t.cpny_rte = "";
+		return t;
 	}
 };
