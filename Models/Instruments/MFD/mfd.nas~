@@ -26,6 +26,19 @@ var genUpdateFunc = func(t, widget) {
 	}
 }
 
+var setVisibility = func(t, widget) {
+	return func {
+		var enabled = getprop(widget.enabled);
+		if(enabled != nil) {
+			if(enabled == 1) {
+				t.svgCache[widget.text_obj].show();
+			} else {
+				t.svgCache[widget.text_obj].hide();
+			}
+		}
+	}
+}
+
 var fuel_tree = "/flight-management/fuel/";
 
 var getTimeString = func(hrs) {
@@ -43,6 +56,56 @@ var getTimeString = func(hrs) {
 		return hour ~ ":" ~ min;
 	} else {
 		return "INVALID"
+	}
+}
+
+var updateFpln = func(t) {
+	var first = t.fpln_first;
+	var utc = getprop("/sim/time/utc/hour") + (getprop("/sim/time/utc/minute"))/60;
+	for(var i=1; i<10; i=i+1) {
+		foreach(var listener; t.fpln_listeners) {
+			removelistener(listener);
+		}
+		
+		if(first == 0 and i == 1) {
+			foreach(var element; ["wpt", "utc", "spd", "alt"]) {
+				t.svgCache[element~i].show();
+			}
+			foreach(var element; ["box", "via", "flyto", "trk", "dist"]) {
+				t.svgCache[element~i].hide();
+			}
+			t.svgCache["wpt"~i].setText(sprintf("%s", fms.fms1.depICAO ~ fms.fms1.depRwy));
+			t.svgCache["utc"~i].setText(sprintf("%s", getTimeString(utc)));
+			t.svgCache["spd"~i].setText(sprintf("%3.0f", 150));
+			t.svgCache["alt"~i].setText(sprintf("%5.0f", fms.getArptElev(fms.fms1.depICAO)));
+		} else {
+			var j = i - 1;
+			if(first == 0) {
+				j = i - 2;
+			}
+			if(first + j < size(fms.fms1.wpts)) {
+				var wpt = fms.fms1.wpts[first + j];
+				foreach(var element; ["wpt", "utc", "spd", "alt", "trk", "dist", "flyto"]) {
+					t.svgCache[element~i].show();
+				}
+				t.svgCache["wpt"~i].setText(sprintf("%s", wpt.ident));
+				t.svgCache["utc"~i].setText(sprintf("%s", getTimeString(utc)));
+				if(wpt.speed < 1) {
+					t.svgCache["spd"~i].setText(sprintf("%s", "M."~int(wpt.speed*100)));
+				} else {
+					t.svgCache["spd"~i].setText(sprintf("%3.0f", wpt.speed));
+				}
+				if(wpt.altitude > getprop("/flight-management/transition-altitude-ft")) {
+					t.svgCache["alt"~i].setText(sprintf("%s", "FL"~int(wpt.altitude/100)));
+				} else {
+					t.svgCache["alt"~i].setText(sprintf("%5.0f", wpt.altitude));
+				}
+			} else {
+				foreach(var element; ["box", "wpt", "via", "utc", "spd", "alt", "flyto", "trk", "dist", "active"]) {
+					t.svgCache[element~i].hide();				
+				}
+			}
+		}
 	}
 }
 
@@ -81,7 +144,7 @@ var calcFuelLoad = func() {
 			setprop("/flight-management/fuel/rsv-percent", rsv/2.67);
 	
 			# Calculate Alternate Fuel and Time
-			var altn_fuel = 50;
+			var altn_fuel = 0;
 			setprop("/flight-management/fuel/altn-fuel", altn_fuel);
 			setprop("/flight-management/fuel/altn-time", getTimeString(altn_fuel/11)); # 11t/hr
 	
@@ -188,14 +251,25 @@ var mfd = {
 		
 		t.svgCache = {};
 		
+		t.fpln_first = 0;
+		t.fpln_listeners = [];
+		
 		t.display.addPlacement({"node": placement, "capture-events": 1});
 		t.svgGroup = t.display.createGroup();	# SVG Objects for pages
 		canvas.parsesvg(t.svgGroup, svg_path, {'font-mapper':font_mapper});		
 		
 		foreach(var element; ["dropdown", "fms1_click", "fms2_click", "atc_com_click", "surv_click", "fcu_bkup_click", "fms1_text", "fms2_text", "atc_com_text", "surv_text", "fcu_bkup_text", "fms_mode_text", "fms_mode_box", "fms_mode_static", "active_box", 
-"position_box", "active_dropdown", "position_dropdown", "active_current", "position_current", "active_fpln_box", "active_perf_box", "active_fuel_box", "active_wind_box", "active_init_box", "position_navaids_box", "position_navaids_text", "page_title", "connect_current", "request_current", "report_current", "msg_record_current", "status_current", "controls_current", "autoflight_current", "efis_current", "active_fpln_text", "active_perf_text", "active_fuel_text", "active_wind_text", "active_init_text", "active_text", "position_text", "connect_text", "request_text", "report_text", "msg_record_text", "controls_text", "status_text", "autoflight_text", "efis_text", "textbox_fltnum", "text_fltnum", "textbox_from", "text_from", "textbox_to", "text_to", "textbox_altn", "text_altn", "textbox_crzfl", "text_crzfl", "textbox_ci", "text_ci", "textbox_tropo", "text_tropo", "textbox_crztemp", "text_crztemp", "textbox_cpnyrte", "text_cpnyrte", "textbox_altnrte", "text_altnrte", "flightnum", "fuel_return", "gw", "cg", "fob", "tb_zfw", "t_zfw", "tb_zfwcg", "t_zfwcg", "tb_block", "t_block", "tb_pax", "t_pax", "trip_fuel", "trip_time", "tb_rsv", "t_rsv", "rsv_percent", "tb_ci", "t_ci", "altn_fuel", "altn_time", "tb_final_fuel", "t_final_fuel", "tb_final_time", "t_final_time", "extra_fuel", "extra_time", "tow", "lw", "fuel_dest", "fuel_altn", "fuel_dest_utc", "fuel_altn_utc", "fuel_dest_efob", "fuel_altn_efob", "tb_min", "t_min", "tb_taxi", "t_taxi"]) {
+"position_box", "active_dropdown", "position_dropdown", "active_current", "position_current", "active_fpln_box", "active_perf_box", "active_fuel_box", "active_wind_box", "active_init_box", "position_navaids_box", "position_navaids_text", "page_title", "connect_current", "request_current", "report_current", "msg_record_current", "status_current", "controls_current", "autoflight_current", "efis_current", "active_fpln_text", "active_perf_text", "active_fuel_text", "active_wind_text", "active_init_text", "active_text", "position_text", "connect_text", "request_text", "report_text", "msg_record_text", "controls_text", "status_text", "autoflight_text", "efis_text", "textbox_fltnum", "text_fltnum", "textbox_from", "text_from", "textbox_to", "text_to", "textbox_altn", "text_altn", "textbox_crzfl", "text_crzfl", "textbox_ci", "text_ci", "textbox_tropo", "text_tropo", "textbox_crztemp", "text_crztemp", "textbox_cpnyrte", "text_cpnyrte", "textbox_altnrte", "text_altnrte", "flightnum", "fuel_return", "gw", "cg", "fob", "tb_zfw", "t_zfw", "tb_zfwcg", "t_zfwcg", "tb_block", "t_block", "tb_pax", "t_pax", "trip_fuel", "trip_time", "tb_rsv", "t_rsv", "rsv_percent", "tb_ci", "t_ci", "altn_fuel", "altn_time", "tb_final_fuel", "t_final_fuel", "tb_final_time", "t_final_time", "extra_fuel", "extra_time", "tow", "lw", "fuel_dest", "fuel_altn", "fuel_dest_utc", "fuel_altn_utc", "fuel_dest_efob", "fuel_altn_efob", "tb_min", "t_min", "tb_taxi", "t_taxi", "fpln_menu"]) {
 			t.svgCache[element] = t.svgGroup.getElementById(element);
 		}
+		# ACTIVE / F-PLN Page SVG Elements
+		for(var i=1; i<10; i=i+1) {
+			foreach(var element; ["box", "wpt", "via", "utc", "spd", "alt", "flyto", "trk", "dist", "active"]) {
+				t.svgCache[element~i] = t.svgGroup.getElementById(element~i);
+				t.svgCache[element~i].hide();
+			}
+		}
+		t.svgCache["fpln_menu"].hide();
 		
 		t.activePage = "";
 		t.activeMenu = "";
@@ -217,7 +291,7 @@ var mfd = {
 					},
 					'fms_active_fpln': {
 						load: func() {
-							
+							t.fpln_first = 0;
 						}
 					},
 					'fms_active_fuel': {
@@ -633,6 +707,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'flightnum',
 				listener: nil,
 				text: '',
@@ -659,6 +734,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'gw',
 				listener: nil,
 				text: '',
@@ -667,6 +743,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'cg',
 				listener: nil,
 				text: '',
@@ -675,6 +752,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'fob',
 				listener: nil,
 				text: '',
@@ -683,6 +761,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'trip_fuel',
 				listener: nil,
 				text: '',
@@ -691,6 +770,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'trip_time',
 				listener: nil,
 				text: '',
@@ -699,6 +779,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'rsv_percent',
 				listener: nil,
 				text: '',
@@ -707,6 +788,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'altn_fuel',
 				listener: nil,
 				text: '',
@@ -715,6 +797,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'altn_time',
 				listener: nil,
 				text: '',
@@ -723,6 +806,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'extra_fuel',
 				listener: nil,
 				text: '',
@@ -731,6 +815,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'extra_time',
 				listener: nil,
 				text: '',
@@ -739,6 +824,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'tow',
 				listener: nil,
 				text: '',
@@ -747,6 +833,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'lw',
 				listener: nil,
 				text: '',
@@ -755,6 +842,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'fuel_dest',
 				listener: nil,
 				text: '',
@@ -763,6 +851,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'fuel_dest_utc',
 				listener: nil,
 				text: '',
@@ -771,6 +860,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'fuel_dest_efob',
 				listener: nil,
 				text: '',
@@ -779,6 +869,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'fuel_altn',
 				listener: nil,
 				text: '',
@@ -787,6 +878,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'fuel_altn_utc',
 				listener: nil,
 				text: '',
@@ -795,6 +887,7 @@ var mfd = {
 			},
 			{
 				type: 'label',
+				enabled:1,
 				text_obj: 'fuel_altn_efob',
 				listener: nil,
 				text: '',
@@ -951,6 +1044,9 @@ var mfd = {
 			} elsif(widget.type == 'label') {
 				t.svgCache[widget.text_obj].setText(widget.text);
 				setlistener(widget.property, genUpdateFunc(t, widget));
+				if(widget.enabled != 1) {
+					setlistener(widget.enabled, setVisibility(t, widget));
+				}
 			}
 		}
 		

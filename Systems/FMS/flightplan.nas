@@ -37,6 +37,12 @@ var flightplan = {
 	},
 	appendWpt: func(wpt) {
 		setsize(me.wpts, size(me.wpts) + 1);
+		if(wpt.altitude == 0) {
+			wpt.altitude = getprop("/flight-management/crz_fl")*100;
+		}
+		if(wpt.speed == 0) {
+			wpt.speed = "0.85";
+		}
 		me.wpts[size(me.wpts) - 1] = wpt;
 	},
 	insertWpt: func(id, wpt) {
@@ -48,6 +54,12 @@ var flightplan = {
 			} else {
 				_wpts[i+1] = me.wpts[i];
 			}
+		}
+		if(wpt.altitude == 0) {
+			wpt.altitude = getprop("/flight-management/crz_fl")*100;
+		}
+		if(wpt.speed == 0) {
+			wpt.speed = "0.85";
 		}
 		_wpts[id] = wpt;
 		me.wpts = _wpts;
@@ -122,6 +134,8 @@ var flightplan = {
 		t.flt_nbr = "";
 		t.depICAO = "";
 		t.arrICAO = "";
+		t.depRwy = "";
+		t.arrRwy = "";
 		t.alternate = "";
 		t.crz_FL = 0;
 		t.cpny_rte = "";

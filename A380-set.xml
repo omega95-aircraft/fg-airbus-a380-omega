@@ -1245,6 +1245,7 @@
     </fuel>
     <!-- FMS using custom route management system -->
     <fms>
+    	<file>Aircraft/A380/Systems/FMS/gps.nas</file>
     	<file>Aircraft/A380/Systems/FMS/waypoint.nas</file>
     	<file>Aircraft/A380/Systems/FMS/flightplan.nas</file>
     	<file>Aircraft/A380/Systems/FMS/a380_fms.nas</file>
