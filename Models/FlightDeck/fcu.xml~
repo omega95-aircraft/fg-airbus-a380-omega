@@ -1204,7 +1204,7 @@
 	</animation>
 	<animation>
 		<type>select</type>
-		<object-name>hdg.ind</object-name>
+		<object-name>hdg.ind.001</object-name>
 		<condition>
 			<property>/systems/electric/outputs/avionics</property>
 		</condition>

@@ -1210,6 +1210,7 @@
    		<file>Aircraft/A380/Nasal/reverse-thrust.nas</file>
    	</reversethrust>
     <nd>
+    	<file>Aircraft/A380/Models/Instruments/ND/wxr.nas</file>
     	<file>Aircraft/A380/Models/Instruments/ND/nd.nas</file>
     	<file>Aircraft/A380/Models/Instruments/ND/vsd.nas</file>
     </nd>

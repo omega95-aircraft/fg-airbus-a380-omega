@@ -1,7 +1,7 @@
 ﻿<?xml version = '1.0' encoding = 'UTF-8' ?>
 
  <!-- 
- Model file Copyright Toryx 2014
+ Model file Copyright Tapaninen 2014
  Distributed under the terms of the GNU General Public License v2
  
  XML and Systems Copyright Muraleedharan 2014
@@ -325,45 +325,6 @@
 			<binding>
 				<command>nasal</command>
 				<script>ecam.ewd.showDlg();</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>sd</object-name>
-		<action>
-			<button>0</button>
-			<repeatable>false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>ecam.sd.showDlg();</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>mfd.l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable>false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>mfd.capt_mfd.showDlg();</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>mfd.r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable>false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>mfd.fo_mfd.showDlg();</script>
 			</binding>
 		</action>
 	</animation>

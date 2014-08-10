@@ -9,8 +9,8 @@ sd.pages["fuel"] = {
 		print("[ECAM] Loaded FUEL page on SD");
 		
 		sd.objects.createChild("image")
-				  .setFile("Models/Instruments/SD/fuel/engine_l.png")
-				  .setSize(100, 200)
+				  .setFile("http://api.wunderground.com/api/820c191c5608d4e5/radar/image.png?centerlat=30.50533444811097&centerlon=-81.67021007366227&radius=320&width=1024&height=1024&smooth=1")
+				  .setSize(400, 400)
 				  .setTranslation(68, 68)
 				  .set("z-index", -1);
 				  
@@ -23,7 +23,7 @@ sd.pages["fuel"] = {
 		sd.objects.createChild("image")
 				  .setFile("Models/Instruments/SD/fuel/engine_r.png")
 				  .setSize(100, 200)
-				  .setTranslation(265, 46)
+				  .setTranslation(465, 46)
 				  .set("z-index", -1);
 		
 		sd.objects.createChild("image")

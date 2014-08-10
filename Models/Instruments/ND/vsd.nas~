@@ -337,7 +337,7 @@ var vsd = {
 	},
 	showDlg: func {
 		if(getprop("sim/instrument-options/canvas-popup-enable")) {
-		    var dlg = canvas.Window.new([400, 124], "dialog");
+		    var dlg = canvas.Window.new([400, 128], "dialog");
 		    dlg.setCanvas(me.display);
 		}
 	}

@@ -390,7 +390,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					if(ecam.alerts.mode == 'CHECKLIST') {
+					if(ecam.alerts.mode == 'CHECKLIST_MENU' or ecam.alerts.mode == 'CHECKLIST') {
 						ecam.alerts.mode = 'LIMIT';
 					} else {
 						ecam.alerts.mode = 'CHECKLIST_MENU';

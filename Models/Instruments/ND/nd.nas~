@@ -22,7 +22,7 @@ var nd_display = {};
       var myCockpit_switches = {
     # symbolic alias : relative property (as used in bindings), initial value, type
     'toggle_range':         {path: '/inputs/range-nm', value:40, type:'INT'},
-    'toggle_weather':       {path: '/inputs/wx', value:0, type:'BOOL'},
+    'toggle_weather':       {path: '/inputs/nothing', value:0, type:'BOOL'},
     'toggle_airports':      {path: '/inputs/arpt', value:1, type:'BOOL'},
     'toggle_stations':      {path: '/inputs/vord', value:1, type:'BOOL'},
     'toggle_waypoints':     {path: '/inputs/wpt', value:1, type:'BOOL'},
@@ -113,6 +113,8 @@ var _list = setlistener("sim/signals/fdm-initialized", func() {
     var group = nd_display.cpt.createGroup();
     NDCpt.newMFD(group, nd_display.cpt);
     NDCpt.update();
+    var capt_WXR = wxr.new(0, group, dataProps);
+	capt_WXR.init();
 
     var NDFo = ND.new("instrumentation/efis[1]", myCockpit_switches);
 
@@ -127,6 +129,8 @@ var _list = setlistener("sim/signals/fdm-initialized", func() {
     var group = nd_display.fo.createGroup();
     NDFo.newMFD(group, nd_display.fo);
     NDFo.update();
+    var fo_WXR = wxr.new(1, group, dataProps);
+	fo_WXR.init();
 
     removelistener(_list); # run ONCE
 }); # fdm-initialized listener callback
@@ -136,7 +140,7 @@ var showNd = func(pilot='cpt') {
     if(getprop("sim/instrument-options/canvas-popup-enable"))
     {
         # The optional second arguments enables creating a window decoration
-        var dlg = canvas.Window.new([320, 320], "dialog");
+        var dlg = canvas.Window.new([400, 400], "dialog");
         dlg.setCanvas( nd_display[pilot] );
     }
 }

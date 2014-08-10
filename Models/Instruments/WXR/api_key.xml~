@@ -2,4 +2,5 @@
 
 <PropertyList>
 	<api-key type="string">820c191c5608d4e5</api-key>
+	<!-- api-key type="string"> YOUR API KEY</api-key>
 </PropertyList>
