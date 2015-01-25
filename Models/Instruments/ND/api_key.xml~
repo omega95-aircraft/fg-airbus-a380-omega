@@ -2,5 +2,5 @@
 
 <PropertyList>
 	
-	<api-key type="string"> YOUR API KEY</api-key>
+	<api-key type="string">YOUR API KEY</api-key>
 </PropertyList>

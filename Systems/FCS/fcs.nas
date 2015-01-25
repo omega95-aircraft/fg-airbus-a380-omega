@@ -49,17 +49,17 @@ var fcs = {
 		## Create Control Surfaces
 		# PITCH CONTROL SURFACES
 		me.hstb = control_surface.new("hstb-fbw-output", 0, 0.002, ["yellow", "green", "elec-backup"]);
-		me.elev_lob = control_surface.new("elev-lob-output", 1, 0.1, ["green", "elec-backup"]);
-		me.elev_rob = control_surface.new("elev-rob-output", 1, 0.1, ["yellow", "elec-backup"]);
-		me.elev_lib = control_surface.new("elev-lib-output", 1, 0.1, ["green", "elec-backup"]);
-		me.elev_rib = control_surface.new("elev-rib-output", 1, 0.1, ["yellow", "elec-backup"]);
+		me.elev_lob = control_surface.new("elev-lob-output", 1, 0.35, ["green", "elec-backup"]);
+		me.elev_rob = control_surface.new("elev-rob-output", 1, 0.35, ["yellow", "elec-backup"]);
+		me.elev_lib = control_surface.new("elev-lib-output", 1, 0.35, ["green", "elec-backup"]);
+		me.elev_rib = control_surface.new("elev-rib-output", 1, 0.35, ["yellow", "elec-backup"]);
 		# ROLL CONTROL SURFACES
-		me.alrn_lob = control_surface.new("alrn-lob-fbw-output", 1, 0.1, ["green", "yellow"]);
-		me.alrn_lmd = control_surface.new("alrn-lmd-fbw-output", 1, 0.1, ["yellow", "elec-backup"]);
-		me.alrn_lib = control_surface.new("alrn-lib-fbw-output", 1, 0.1, ["green", "elec-backup"]);
-		me.alrn_rob = control_surface.new("alrn-rob-fbw-output", -1, 0.1, ["green", "yellow"]);
-		me.alrn_rmd = control_surface.new("alrn-rmd-fbw-output", -1, 0.1, ["yellow", "elec-backup"]);
-		me.alrn_rib = control_surface.new("alrn-rib-fbw-output", -1, 0.1, ["green", "elec-backup"]);		
+		me.alrn_lob = control_surface.new("alrn-lob-fbw-output", 1, 0.25, ["green", "yellow"]);
+		me.alrn_lmd = control_surface.new("alrn-lmd-fbw-output", 1, 0.25, ["yellow", "elec-backup"]);
+		me.alrn_lib = control_surface.new("alrn-lib-fbw-output", 1, 0.25, ["green", "elec-backup"]);
+		me.alrn_rob = control_surface.new("alrn-rob-fbw-output", -1, 0.25, ["green", "yellow"]);
+		me.alrn_rmd = control_surface.new("alrn-rmd-fbw-output", -1, 0.25, ["yellow", "elec-backup"]);
+		me.alrn_rib = control_surface.new("alrn-rib-fbw-output", -1, 0.25, ["green", "elec-backup"]);		
 		# SPOILERS
 		me.lsp1 = control_surface.new("lsp1-fbw-output", 0, 0.025, ["yellow"]);
 		me.lsp2 = control_surface.new("lsp2-fbw-output", 0, 0.025, ["green"]);
@@ -215,10 +215,12 @@ var fcs = {
 		me.alrn_lib.move_pos(me.stick_roll);
 		me.alrn_rib.move_pos(me.stick_roll);
 		
-		# Yaw Damper
+		# Yaw Controller - Side-slip Hold
 		setprop("/fbw/cmd-yaw-rate", 3*me.stick_yaw + me.bank/12); # Co-ordinate turns
 		me.rudder.move_pos(getprop("/fbw/outputs/rudder"));
 		# me.rudder.move_pos(-getprop("/controls/flight/rudder"));
+		# setprop("/fbw/cmd-side-slip-deg", 25*me.stick_yaw + me.bank/10); # Co-ordinate turns
+		# me.rudder.move_pos(getprop("/fbw/outputs/rudder"));
 		
 		# Roll control spoilers work the same way they do in DIRECT LAW
 		# Use Spoiler Assist for Hard Banks
@@ -237,7 +239,7 @@ var fcs = {
 			me.rsp7.add(0);
 		}
 		
-		if((abs(me.stick_pitch) <= me.dead_band) and (abs(me.pitch_rate) <= 2)) {
+		if((abs(me.stick_pitch) <= me.dead_band) and (abs(me.pitch_rate) <= 4)) {
 			setprop("/fbw/elev-ob-stable", 1);
 			setprop("/fbw/elev-ob-enable", 0);
 			setprop("/fbw/elev-ib-enable", 0);

@@ -19,7 +19,7 @@ var active_fpln = fms.flightplan.new();
 
 var fmgc_loop = {
        init : func {
-            me.UPDATE_INTERVAL = 0.1;
+            me.UPDATE_INTERVAL = 0.05;
             
             # ALT SELECT MODE
             
@@ -234,7 +234,7 @@ var fmgc_loop = {
     			
     			var agl = getprop("/position/altitude-agl-ft");
     			
-    			var bank = limit(nav1_error, 30);
+    			var bank = limit(nav1_error*2, 20);
     			
     			if (agl < 100) {
     			
@@ -445,40 +445,62 @@ var fmgc_loop = {
     		
 			if (((getprop("/flight-management/hold/wp_id") == getprop("/flight-management/current-wp")) or (getprop("/flight-management/hold/init") == 1)) and (getprop("/flight-management/hold/wp_id") != 0)) {
 			
-				if (getprop("/flight-management/hold/init") != 1) {
+#				if (getprop("/flight-management/hold/init") != 1) {
 					
-					hold_pattern.init();
+#					hold_pattern.init();
 				
-				} else {
+#				} else {
 				
-					if (getprop("/flight-management/hold/phase") == 5) {
+#					if (getprop("/flight-management/hold/phase") == 5) {
 					
-						hold_pattern.entry();
+#						hold_pattern.entry();
 						
-					} else {
+#					} else {
 						
-						hold_pattern.transit();
+#						hold_pattern.transit();
 					
-					}	
+#					}
 					
 					# Now, fly the actual hold
 					
-					var bug = getprop("/flight-management/hold/fly/course");
+					# var bug = getprop("/flight-management/hold/fly/course");
 			
-					var bank = -1 * defl(bug, 30);
+					# var bank = -1 * defl(bug, 30);
 				
-					var deflection = defl(bug, 180);
+					# var deflection = defl(bug, 180);
+				
+					var deflection = getprop("/autopilot/internal/true-heading-error-deg");
+					
+					var bank = 0;
+					
+					if(getprop("/velocities/groundspeed-kt") > 270) {
+						if(deflection < -15) {
+							bank = -15;
+						} elsif(deflection > 15) {
+							bank = 15;
+						} else {
+							bank = deflection;
+						}
+					} else {
+						if(deflection < -10) {
+							bank = -25;
+						} elsif(deflection > 10) {
+							bank = 25;
+						} else {
+							bank = deflection*2.5;
+						}
+					}
 				
 				
 					setprop(servo~  "aileron", 1);
 					setprop(servo~ "aileron-nav1", 0);
 				
-					if (math.abs(deflection) <= 1)
-						setprop(servo~ "target-bank", 0);
-					else
+					# if (math.abs(deflection) <= 0.5)
+					# 	setprop(servo~ "target-bank", 0);
+					# else
 						setprop(servo~ "target-bank", bank);
 				
-				}
+#				}
 			
 			} else {
 			
@@ -676,7 +698,7 @@ var fmgc_loop = {
 				}
 				
 			} else {
-				setprop("/flight-management/phase", "CRZ");
+				setprop("/flight-management/phase", "T/O");
 			}
 		
 		} elsif (phase == "CRZ") {

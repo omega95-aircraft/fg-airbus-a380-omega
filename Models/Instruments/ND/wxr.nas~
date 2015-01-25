@@ -12,6 +12,8 @@ var wxr = {
 		t.props = props;
 		t.id = id;
 		
+		# CONTROLLER STUFF 
+		
 		# Initialize Instrumentation Properties
 		setprop("/instrumentation/wxr["~id~"]/last-request-time", -210); # Just to reload in 30 sec to make sure the image is visible
 		setprop("/instrumentation/wxr["~id~"]/update-interval-sec", 240); # 3 min
@@ -31,9 +33,9 @@ var wxr = {
 		
 		# Grab image from wunderMap
 		if(t.mode == "radar") {
-			t.layer.setFile("http://api.wunderground.com/api/"~t.api_key~"/radar/image.png?centerlat="~t.lat~"&centerlon="~t.lon~"&radius=200&width="~t.res~"&height="~t.res~"&smooth=0");
+			t.layer.setFile("http://api.wunderground.com/api/"~t.api_key~"/radar/image.png?centerlat="~t.lat~"&centerlon="~t.lon~"&radius=200&width="~t.res~"&height="~t.res~"&smooth=1");
 			
-			print("WXR Layer: "~"http://api.wunderground.com/api/"~t.api_key~"/radar/image.png?centerlat="~t.lat~"&centerlon="~t.lon~"&radius=200&width="~t.res~"&height="~t.res~"&smooth=0");
+			print("WXR Layer: "~"http://api.wunderground.com/api/"~t.api_key~"/radar/image.png?centerlat="~t.lat~"&centerlon="~t.lon~"&radius=200&width="~t.res~"&height="~t.res~"&smooth=1");
 		}
 		
 		t.timer = maketimer(0.05, t, t.update);
@@ -56,7 +58,7 @@ var wxr = {
 			var r_scaled = (200*670)/me.range;
 			me.layer.setSize(2*r_scaled, 2*r_scaled);
 			me.layer.setTranslation(512 - r_scaled - ((me.lon-me.clon)*60)*(670/me.range), 824  - r_scaled + ((me.lat-me.clat)*60)*(670/me.range))
-					.setCenter(r_scaled + ((me.lon-me.clon)*60)*(670/me.range), r_scaled + ((me.lat-me.clat)*60)*(670/me.range))
+					.setCenter(r_scaled + ((me.lon-me.clon)*60)*(670/me.range), r_scaled - ((me.lat-me.clat)*60)*(670/me.range))
 					.setRotation(-getprop("/orientation/heading-deg")*D2R);
 			
 			# Update data
@@ -67,9 +69,9 @@ var wxr = {
 				me.res = getprop("/instrumentation/wxr["~me.id~"]/resolution");
 				me.mode = getprop("/instrumentation/wxr["~me.id~"]/mode");
 				
-				me.layer.setFile("http://api.wunderground.com/api/"~me.api_key~"/radar/image.png?centerlat="~me.lat~"&centerlon="~me.lon~"&radius=200&width="~me.res~"&height="~me.res~"&smooth=0");
+				me.layer.setFile("http://api.wunderground.com/api/"~me.api_key~"/radar/image.png?centerlat="~me.lat~"&centerlon="~me.lon~"&radius=200&width="~me.res~"&height="~me.res~"&smooth=1");
 			
-				print("WXR Layer: "~"http://api.wunderground.com/api/"~me.api_key~"/radar/image.png?centerlat="~me.lat~"&centerlon="~me.lon~"&radius=200&width="~me.res~"&height="~me.res~"&smooth=0");
+				print("WXR Layer: "~"http://api.wunderground.com/api/"~me.api_key~"/radar/image.png?centerlat="~me.lat~"&centerlon="~me.lon~"&radius=200&width="~me.res~"&height="~me.res~"&smooth=1");
 				setprop("/instrumentation/wxr["~me.id~"]/last-request-time", getprop("/sim/time/elapsed-sec"));
 			}
 			

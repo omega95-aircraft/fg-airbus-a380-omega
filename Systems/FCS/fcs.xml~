@@ -169,22 +169,22 @@
 	</pid-controller>
 	
 	<pid-controller>
-		<name>FBW Yaw Damper</name>
+		<name>FBW Yaw Controller</name>
 		<debug type="bool">false</debug>
 		<enable>
 			<prop>/fbw/yaw-damper</prop>
 		</enable>
 		<input>
-			<prop>/orientation/yaw-rate-degps</prop>
+			<prop>/orientation/side-slip-deg</prop>
 		</input>
 		<reference>
-			<prop>/fbw/cmd-yaw-rate</prop>
+			<prop>/fbw/cmd-side-slip-deg</prop>
 		</reference>
 		<output>
 			<prop>/fbw/outputs/rudder</prop>
 		</output>
 		<config>
-			<Kp>-0.02</Kp>
+			<Kp>-0.1</Kp>
 			<beta>1</beta>
 			<alpha>0.1</alpha>
 			<gamma>0</gamma>

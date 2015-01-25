@@ -87,6 +87,7 @@ var vsd = {
 	elev_pts: 21,								# Number of elevation data points
 	# Just some variables required by the update() function
 	elev_profile: [],
+	range: 10,
 	lastalt:0,
 	lastaltset:0,
 	alt_ceil: 10000,

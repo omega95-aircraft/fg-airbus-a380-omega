@@ -346,8 +346,8 @@ var vsd = {
 
 ############################### INSTANTIATE VSDs ###############################
 
-var capt_vsd = vsd.new(0, objName_capt, mySwitches, myProps, svg_path);
-var fo_vsd = vsd.new(1, objName_fo, mySwitches, myProps, svg_path);
+var capt_vsd = vsd.new(0, objName_capt, mySwitches, myProps_A380, svg_path);
+var fo_vsd = vsd.new(1, objName_fo, mySwitches, myProps_A380, svg_path);
 
 setlistener("sim/signals/fdm-initialized", func {
 	capt_vsd.init();
