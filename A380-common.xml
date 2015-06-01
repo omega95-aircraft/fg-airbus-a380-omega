@@ -3,38 +3,38 @@
  <PropertyList>
   <sim>
     <startup>
-       <splash-texture>Aircraft/A380/splash2.png</splash-texture>
+       <splash-texture>Aircraft/A380-omega/splash2.png</splash-texture>
     </startup>
 
     <systems>
 		<autopilot>
 			<name>A380 Flight Control System</name>
-			<path>Aircraft/A380/Systems/FCS/fcs.xml</path>
+			<path>Aircraft/A380-omega/Systems/FCS/fcs.xml</path>
 		</autopilot>
 		<autopilot>
 			<name>ecs</name>
-			<path>Aircraft/A380/Systems/CabinPressureSystem.xml</path>
+			<path>Aircraft/A380-omega/Systems/CabinPressureSystem.xml</path>
 		</autopilot>
 		<autopilot>
 			<name>Speed Trend</name>
-			<path>Aircraft/A380/Systems/speedtrend.xml</path>
+			<path>Aircraft/A380-omega/Systems/speedtrend.xml</path>
 		</autopilot>
 		<!-- FMGC -->
 		<autopilot>
 				<name>Autopilot helpers</name>
-				<path>Aircraft/A380/Systems/FMGC/helper.xml</path>
+				<path>Aircraft/A380-omega/Systems/FMGC/helper.xml</path>
 			</autopilot>
 			<autopilot>
 				<name>Auto-throttle</name>
-				<path>Aircraft/A380/Systems/FMGC/auto_throttle.xml</path>
+				<path>Aircraft/A380-omega/Systems/FMGC/auto_throttle.xml</path>
 			</autopilot>
 			<autopilot>
 				<name>Aileron Control</name>
-				<path>Aircraft/A380/Systems/FMGC/roll_axis.xml</path>
+				<path>Aircraft/A380-omega/Systems/FMGC/roll_axis.xml</path>
 			</autopilot>
 			<autopilot>
 				<name>Elevator Control</name>
-				<path>Aircraft/A380/Systems/FMGC/pitch_axis.xml</path>
+				<path>Aircraft/A380-omega/Systems/FMGC/pitch_axis.xml</path>
 			</autopilot>
 		<hydraulics>
 			<green>
@@ -50,7 +50,7 @@
 	</systems>
 
    <sound>
-    <path>Aircraft/A380/Sounds/A380-sound.xml</path>
+    <path>Aircraft/A380-omega/Sounds/A380-sound.xml</path>
     <audible>true</audible>
    </sound>
 
@@ -154,7 +154,7 @@
   <tutorials include="A380-tutorial.xml"/>
 
     <instrumentation>
-        <path>Aircraft/A380/Systems/instrumentation.xml</path>
+        <path>Aircraft/A380-omega/Systems/instrumentation.xml</path>
     </instrumentation>
     
     <instrument-options>
@@ -926,91 +926,91 @@
 
 <nasal>
 	<ecam>
-		<file>Aircraft/A380/Models/Instruments/ECAM/ecam.nas</file>
+		<file>Aircraft/A380-omega/Models/Instruments/ECAM/ecam.nas</file>
 		<!-- ECAM E/WD Display -->
-		<file>Aircraft/A380/Models/Instruments/EWD/ewd.nas</file>
+		<file>Aircraft/A380-omega/Models/Instruments/EWD/ewd.nas</file>
 		<!-- ECAM SD Display -->
-		<file>Aircraft/A380/Models/Instruments/SD/pages.nas</file>
-		<file>Aircraft/A380/Models/Instruments/SD/sd.nas</file>
+		<file>Aircraft/A380-omega/Models/Instruments/SD/pages.nas</file>
+		<file>Aircraft/A380-omega/Models/Instruments/SD/sd.nas</file>
 		<!-- A380 Briefing For Pilots Reference Pages -->
-		<file>Aircraft/A380/Models/Instruments/SD/animation.nas</file>
-		<file>Aircraft/A380/Models/Instruments/SD/pdz/pdz.nas</file> <!-- Permananent Data Zone and ATC Mailbox Area -->
-		<file>Aircraft/A380/Models/Instruments/SD/fctl/fctl.nas</file> 			 <!-- pg 141 -->
-		<file>Aircraft/A380/Models/Instruments/SD/fuel/fuel.nas</file>			 <!-- pg 164 -->
-		<file>Aircraft/A380/Models/Instruments/SD/cond/cond.nas</file>			 <!-- pg 047 -->
-		<file>Aircraft/A380/Models/Instruments/SD/bleed/bleed.nas</file>		 <!-- pg 048 -->
-		<file>Aircraft/A380/Models/Instruments/SD/cruise/cruise.nas</file>		 <!-- pg 057 -->
-		<file>Aircraft/A380/Models/Instruments/SD/cab_press/cab_press.nas</file> <!-- pg 057 -->
-		<file>Aircraft/A380/Models/Instruments/SD/elec_ac/elec_ac.nas</file>	 <!-- pg 108 -->
-		<file>Aircraft/A380/Models/Instruments/SD/elec_dc/elec_dc.nas</file>	 <!-- pg 108 -->
-		<file>Aircraft/A380/Models/Instruments/SD/hyd/hyd.nas</file>			 <!-- pg 169 -->
-		<file>Aircraft/A380/Models/Instruments/SD/wheel/wheel.nas</file>		 <!-- pg 232 -->
-		<file>Aircraft/A380/Models/Instruments/SD/door/door.nas</file>			 <!-- pg 255 -->
-		<file>Aircraft/A380/Models/Instruments/SD/engine/engine.nas</file>		 <!-- pg 294 -->
-		<file>Aircraft/A380/Models/Instruments/SD/apu/apu.nas</file>			 <!-- pg 283 -->
-		<file>Aircraft/A380/Models/Instruments/SD/startup.nas</file>
+		<file>Aircraft/A380-omega/Models/Instruments/SD/animation.nas</file>
+		<file>Aircraft/A380-omega/Models/Instruments/SD/pdz/pdz.nas</file> <!-- Permananent Data Zone and ATC Mailbox Area -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/fctl/fctl.nas</file> 			 <!-- pg 141 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/fuel/fuel.nas</file>			 <!-- pg 164 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/cond/cond.nas</file>			 <!-- pg 047 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/bleed/bleed.nas</file>		 <!-- pg 048 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/cruise/cruise.nas</file>		 <!-- pg 057 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/cab_press/cab_press.nas</file> <!-- pg 057 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/elec_ac/elec_ac.nas</file>	 <!-- pg 108 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/elec_dc/elec_dc.nas</file>	 <!-- pg 108 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/hyd/hyd.nas</file>			 <!-- pg 169 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/wheel/wheel.nas</file>		 <!-- pg 232 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/door/door.nas</file>			 <!-- pg 255 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/engine/engine.nas</file>		 <!-- pg 294 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/apu/apu.nas</file>			 <!-- pg 283 -->
+		<file>Aircraft/A380-omega/Models/Instruments/SD/startup.nas</file>
 	</ecam>
 	<a380>
-    	<file>Aircraft/A380/Nasal/walk.nas</file>
-    	<file>Aircraft/A380/Nasal/listeners.nas</file>
+    	<file>Aircraft/A380-omega/Nasal/walk.nas</file>
+    	<file>Aircraft/A380-omega/Nasal/listeners.nas</file>
     </a380>
    	<reversethrust>
-   		<file>Aircraft/A380/Nasal/reverse-thrust.nas</file>
+   		<file>Aircraft/A380-omega/Nasal/reverse-thrust.nas</file>
    	</reversethrust>
     <nd>
-    	<file>Aircraft/A380/Models/Instruments/ND/nd.nas</file>
-    	<file>Aircraft/A380/Models/Instruments/ND/vsd.nas</file>
+    	<file>Aircraft/A380-omega/Models/Instruments/ND/nd.nas</file>
+    	<file>Aircraft/A380-omega/Models/Instruments/ND/vsd.nas</file>
     </nd>
     <hud>
-    	<file>Aircraft/A380/Models/Instruments/HUD/hud.nas</file>
+    	<file>Aircraft/A380-omega/Models/Instruments/HUD/hud.nas</file>
     </hud>
 	<electrical>
-		<file>Aircraft/A380/Systems/Electrical/empty_vectors.nas</file>
-		<file>Aircraft/A380/Systems/Electrical/supplier.nas</file>
-		<file>Aircraft/A380/Systems/Electrical/bus.nas</file>
-		<file>Aircraft/A380/Systems/Electrical/bustie.nas</file>
-		<file>Aircraft/A380/Systems/Electrical/output.nas</file>
-		<file>Aircraft/A380/Systems/Electrical/electrical.nas</file>
+		<file>Aircraft/A380-omega/Systems/Electrical/empty_vectors.nas</file>
+		<file>Aircraft/A380-omega/Systems/Electrical/supplier.nas</file>
+		<file>Aircraft/A380-omega/Systems/Electrical/bus.nas</file>
+		<file>Aircraft/A380-omega/Systems/Electrical/bustie.nas</file>
+		<file>Aircraft/A380-omega/Systems/Electrical/output.nas</file>
+		<file>Aircraft/A380-omega/Systems/Electrical/electrical.nas</file>
 	</electrical>
 	<hydraulics>
-		<file>Aircraft/A380/Systems/Hydraulics/hydraulics.nas</file>
-		<file>Aircraft/A380/Systems/Hydraulics/green.nas</file>
-		<file>Aircraft/A380/Systems/Hydraulics/yellow.nas</file>
-		<file>Aircraft/A380/Systems/Hydraulics/elec_backup.nas</file>
-		<file>Aircraft/A380/Systems/Hydraulics/hyd_loop.nas</file>
-		<file>Aircraft/A380/Systems/Hydraulics/brakes.nas</file>
-		<file>Aircraft/A380/Systems/Hydraulics/brk_loop.nas</file>
+		<file>Aircraft/A380-omega/Systems/Hydraulics/hydraulics.nas</file>
+		<file>Aircraft/A380-omega/Systems/Hydraulics/green.nas</file>
+		<file>Aircraft/A380-omega/Systems/Hydraulics/yellow.nas</file>
+		<file>Aircraft/A380-omega/Systems/Hydraulics/elec_backup.nas</file>
+		<file>Aircraft/A380-omega/Systems/Hydraulics/hyd_loop.nas</file>
+		<file>Aircraft/A380-omega/Systems/Hydraulics/brakes.nas</file>
+		<file>Aircraft/A380-omega/Systems/Hydraulics/brk_loop.nas</file>
 	</hydraulics>
     <fcs>
-    	<file>Aircraft/A380/Systems/FCS/control_surface.nas</file>
-		<file>Aircraft/A380/Systems/FCS/fcs.nas</file>
+    	<file>Aircraft/A380-omega/Systems/FCS/control_surface.nas</file>
+		<file>Aircraft/A380-omega/Systems/FCS/fcs.nas</file>
     </fcs>
     <fuel>
-    	<file>Aircraft/A380/Systems/Fuel/tank.nas</file>
-    	<file>Aircraft/A380/Systems/Fuel/pump.nas</file>
-    	<file>Aircraft/A380/Systems/Fuel/xfeedline.nas</file>
-    	<file>Aircraft/A380/Systems/Fuel/fuel_system.nas</file>
+    	<file>Aircraft/A380-omega/Systems/Fuel/tank.nas</file>
+    	<file>Aircraft/A380-omega/Systems/Fuel/pump.nas</file>
+    	<file>Aircraft/A380-omega/Systems/Fuel/xfeedline.nas</file>
+    	<file>Aircraft/A380-omega/Systems/Fuel/fuel_system.nas</file>
     </fuel>
     <!-- FMS using custom route management system -->
     <fms>
-    	<file>Aircraft/A380/Systems/FMS/waypoint.nas</file>
-    	<file>Aircraft/A380/Systems/FMS/flightplan.nas</file>
-    	<file>Aircraft/A380/Systems/FMS/a380_fms.nas</file>
+    	<file>Aircraft/A380-omega/Systems/FMS/waypoint.nas</file>
+    	<file>Aircraft/A380-omega/Systems/FMS/flightplan.nas</file>
+    	<file>Aircraft/A380-omega/Systems/FMS/a380_fms.nas</file>
     </fms>
     <!-- FMSes are instantiated by the FMGC -->
     <!-- FMGC derived from A320neo FMGC -->
     <fmgc>
-    	<file>Aircraft/A380/Systems/FMGC/hold-pattern.nas</file>
-		<file>Aircraft/A380/Systems/FMGC/autoland.nas</file>
-		<file>Aircraft/A380/Systems/FMGC/new_flight.nas</file>
-		<file>Aircraft/A380/Systems/FMGC/manage-speeds.nas</file>
-		<file>Aircraft/A380/Systems/FMGC/deflection.nas</file>
-		<file>Aircraft/A380/Systems/FMGC/fmgc_loop.nas</file>
+    	<file>Aircraft/A380-omega/Systems/FMGC/hold-pattern.nas</file>
+		<file>Aircraft/A380-omega/Systems/FMGC/autoland.nas</file>
+		<file>Aircraft/A380-omega/Systems/FMGC/new_flight.nas</file>
+		<file>Aircraft/A380-omega/Systems/FMGC/manage-speeds.nas</file>
+		<file>Aircraft/A380-omega/Systems/FMGC/deflection.nas</file>
+		<file>Aircraft/A380-omega/Systems/FMGC/fmgc_loop.nas</file>
     </fmgc>
     <!-- Multi-Function Display -->
     <mfd>
-    	<file>Aircraft/A380/Models/Instruments/MFD/modes.nas</file>
-    	<file>Aircraft/A380/Models/Instruments/MFD/mfd.nas</file>
+    	<file>Aircraft/A380-omega/Models/Instruments/MFD/modes.nas</file>
+    	<file>Aircraft/A380-omega/Models/Instruments/MFD/mfd.nas</file>
     </mfd>
 </nasal>
 

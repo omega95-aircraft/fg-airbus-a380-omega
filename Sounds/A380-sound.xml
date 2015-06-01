@@ -7,7 +7,7 @@
   <!-- extra Trent whine -->
   <engine>
     <name>Trent0 n2</name>
-    <path>Aircraft/A380/Sounds/a380-trent_04_loop_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/a380-trent_04_loop_mono.wav</path>
     <mode>looped</mode>
     <condition>
       <and>
@@ -43,7 +43,7 @@
   
   <engine>
     <name>Trent1 n2</name>
-    <path>Aircraft/A380/Sounds/a380-trent_04_loop_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/a380-trent_04_loop_mono.wav</path>
     <mode>looped</mode>
     <condition>
       <and>
@@ -79,7 +79,7 @@
   
   <engine>
     <name>Trent2 n2</name>
-    <path>Aircraft/A380/Sounds/a380-trent_04_loop_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/a380-trent_04_loop_mono.wav</path>
     <mode>looped</mode>
     <condition>
       <and>
@@ -115,7 +115,7 @@
   
   <engine>
     <name>Trent3 n2</name>
-    <path>Aircraft/A380/Sounds/a380-trent_04_loop_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/a380-trent_04_loop_mono.wav</path>
     <mode>looped</mode>
     <condition>
       <and>
@@ -437,7 +437,7 @@
 
 <engine>
     <name>Engine0 startup</name>
-    <path>Aircraft/A380/Sounds/trent_starter02_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/trent_starter02_mono.wav</path>
     <mode>looped</mode>
     <condition>
       <and>
@@ -481,7 +481,7 @@
   
   <engine>
     <name>Engine1 startup</name>
-    <path>Aircraft/A380/Sounds/trent_starter02_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/trent_starter02_mono.wav</path>
     <mode>looped</mode>
     <condition>
       <and>
@@ -519,7 +519,7 @@
   
   <engine>
     <name>Engine2 startup</name>
-    <path>Aircraft/A380/Sounds/trent_starter02_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/trent_starter02_mono.wav</path>
     <mode>looped</mode>
     <condition>
       <and>
@@ -557,7 +557,7 @@
   
   <engine>
     <name>Engine3 startup</name>
-    <path>Aircraft/A380/Sounds/trent_starter02_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/trent_starter02_mono.wav</path>
     <mode>looped</mode>
     <condition>
       <and>
@@ -1056,7 +1056,7 @@
 
   <squeal1>
     <name>squeal</name>
-    <path>Aircraft/A380/Sounds/touchdown_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/touchdown_mono.wav</path>
     <property>/gear/gear[0]/wow</property>
     <volume>
       <property>/velocities/speed-down-fps</property>
@@ -1103,7 +1103,7 @@
 
   <squeal2>
     <name>squeal</name>
-    <path>Aircraft/A380/Sounds/touchdown_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/touchdown_mono.wav</path>
     <property>/gear/gear[1]/wow</property>
     <volume>
       <property>/velocities/speed-down-fps</property>
@@ -1150,7 +1150,7 @@
 
   <squeal3>
     <name>squeal</name>
-    <path>Aircraft/A380/Sounds/touchdown_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/touchdown_mono.wav</path>
     <property>/gear/gear[2]/wow</property>
     <volume>
       <property>/velocities/speed-down-fps</property>
@@ -1175,7 +1175,7 @@
   <flap>
     <name>flaps</name>
     <mode>in-transit</mode>
-    <path>Aircraft/A380/Sounds/Flaps_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/Flaps_mono.wav</path>
     <property>/fdm/jsbsim/fcs/flap-pos-deg</property>
     <volume>
       <factor>0.6</factor>
@@ -1219,7 +1219,7 @@
   <!-- stall>
     <name>stall</name>
     <mode>looped</mode>
-    <path>/Aircraft/A380/Sounds/stall_mono.wav</path>
+    <path>/Aircraft/A380-omega/Sounds/stall_mono.wav</path>
     <condition>
       <and>
 	<greater-than>
@@ -1248,7 +1248,7 @@
   <stall>
     <name>stall</name>
     <mode>looped</mode>
-    <path>/Aircraft/A380/Sounds/stall_mono.wav</path>
+    <path>/Aircraft/A380-omega/Sounds/stall_mono.wav</path>
     <condition>
       <and>
 	<greater-than>
@@ -1277,7 +1277,7 @@
     <name>stall</name>
     <mode>looped</mode>
     <type>avionics</type>
-    <path>/Aircraft/A380/Sounds/stall_mono.wav</path>
+    <path>/Aircraft/A380-omega/Sounds/stall_mono.wav</path>
     <condition>
       <and>
 	<greater-than>
@@ -1319,7 +1319,7 @@
   <switch>
    <name>click on</name>
    <mode>once</mode>
-   <path>Aircraft/A380/Sounds/click_mono.wav</path>
+   <path>Aircraft/A380-omega/Sounds/click_mono.wav</path>
    <condition>
      <property>/sim/sound/switch</property>
    </condition>
@@ -1331,7 +1331,7 @@
   <switch>
    <name>click off</name>
    <mode>once</mode>
-   <path>Aircraft/A380/Sounds/click_mono.wav</path>
+   <path>Aircraft/A380-omega/Sounds/click_mono.wav</path>
    <condition>
     <not>
       <property>/sim/sound/switch</property>
@@ -1437,7 +1437,7 @@
   <switch>
    <name>seatbelt on</name>
    <mode>once</mode>
-   <path>Aircraft/A380/Sounds/chime_mono.wav</path>
+   <path>Aircraft/A380-omega/Sounds/chime_mono.wav</path>
    <condition>
      <property>/instrumentation/switches/seatbelt-sign</property>
   </condition>
@@ -1449,7 +1449,7 @@
   <switch>
    <name>seatbelt off</name>
    <mode>once</mode>
-   <path>Aircraft/A380/Sounds/chime_mono.wav</path>
+   <path>Aircraft/A380-omega/Sounds/chime_mono.wav</path>
    <condition>
     <not>
      <property>/instrumentation/switches/seatbelt-sign</property>
@@ -1464,7 +1464,7 @@
     <name>retard</name>
     <mode>looped</mode>
     <type>avionics</type>
-    <path>Aircraft/A380/Sounds/retard_01_mono.wav</path>
+    <path>Aircraft/A380-omega/Sounds/retard_01_mono.wav</path>
     <condition>
       <and>
         <and>
@@ -1504,7 +1504,7 @@
     <name>v1</name>
     <mode>once</mode>
     <type>avionics</type>
-    <path>Aircraft/A380/Sounds/a380-V1.wav</path>
+    <path>Aircraft/A380-omega/Sounds/a380-V1.wav</path>
     <condition>
       <and>
         <less-than>
@@ -1526,7 +1526,7 @@
     <name>mode-reversion</name>
     <mode>once</mode>
     <type>avionics</type>
-    <path>Aircraft/A380/Sounds/triple-click_01.wav</path>
+    <path>Aircraft/A380-omega/Sounds/triple-click_01.wav</path>
     <property>instrumentation/flightdirector/mode-reversion</property>
     <volume>
       <factor>1</factor>

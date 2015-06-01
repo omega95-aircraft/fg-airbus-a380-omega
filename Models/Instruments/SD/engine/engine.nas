@@ -2,7 +2,7 @@
 # Narendran M (c) 2014
 
 sd.pages["engine"] = {
-	path: "/Aircraft/A380/Models/Instruments/SD/engine/engine.svg",
+	path: "/Aircraft/A380-omega/Models/Instruments/SD/engine/engine.svg",
 	svg: {},
 	objects: ["eng1_n2", "eng2_n2", "eng3_n2", "eng4_n2", "eng1_ff", "eng2_ff", "eng3_ff", "eng4_ff", "eng1_oil_temp", "eng2_oil_temp", "eng3_oil_temp", "eng4_oil_temp", "eng1_oil_psi", "eng2_oil_psi", "eng3_oil_psi", "eng4_oil_psi", "eng1_vib_n1", "eng1_vib_n2", "eng2_vib_n1", "eng2_vib_n2", "eng3_vib_n1", "eng3_vib_n2", "eng4_vib_n1", "eng4_vib_n2", "eng1_oil_psi_needle", "eng1_nac", "eng2_oil_psi_needle", "eng2_nac", "eng3_oil_psi_needle", "eng3_nac", "eng4_oil_psi_needle", "eng4_nac"],
 	load: func {
