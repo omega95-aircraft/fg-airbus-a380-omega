@@ -508,7 +508,7 @@ var fmgc_loop = {
 		
 				var bug = 0;
 				
-				if(active_fpl.active == 1) {
+				if(active_fpln.active == 1) {
 					bug = active_fpln.getHdgToFollow();
 				}
 		
