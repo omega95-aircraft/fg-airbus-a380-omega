@@ -4,6 +4,7 @@
   <sim>
     <startup>
        <splash-texture>Aircraft/A380-omega/splash2.png</splash-texture>
+	   <splash-texture>Aircraft/A380-omega/splash1.png</splash-texture>
     </startup>
 
     <systems>

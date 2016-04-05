@@ -1,20 +1,22 @@
-<?xml version = '1.0' encoding = 'UTF-8' ?>
+﻿<?xml version = '1.0' encoding = 'UTF-8' ?>
 
- <!--
+ <!-- 
  Model file Copyright Tapaninen 2014
- Distributed under the terms of the GPL version 2 License for theOmegaHangar version
-
+ Distributed under the terms of the CC-BY-NC License for theOmegaHangar version
+ 
  XML and Systems Copyright Muraleedharan 2014
- Distributed under the terms of the GPL version 2 License for theOmegaHangar version
+ Distributed under the terms of the CC-BY-NC License for theOmegaHangar version
+ 
+ Now GNU GPL
  -->
 
 <PropertyList>
 	<path>fd_ohp.ac</path>
-
+	
 	<!-- Animations -->
-
+	
 	<!-- APU MASTER SW AND START -->
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.apu.master</object-name>
@@ -43,10 +45,11 @@
 		    </binding>
 		    <binding>
 		    	<command>nasal</command>
+		    	<script>ecam.sd.load("apu");</script>
 		    </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.apu.start</object-name>
@@ -77,7 +80,7 @@
 		      </binding>
 		</action>
 	</animation>
-
+    
 	<!-- ENGINE IGNITION -->
 
 	<animation>
@@ -101,6 +104,11 @@
 	      </binding>
 	      <binding>
 		    	<command>nasal</command>
+		    	<script>
+		    		if(ecam.sd.active != "engine") {
+		    			ecam.sd.load("engine");
+		    		}
+		    	</script>
 		    </binding>
 	  </action>
 	  <action>
@@ -140,8 +148,8 @@
 		<z2-m>0.36</z2-m>
 	  </axis>
 	</animation>
-
-
+	
+	
 	<!-- FUEL SYSTEM -->
 	<animation>
 		<type>textranslate</type>
@@ -171,7 +179,7 @@
 		      </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.crossfeed.2</object-name>
@@ -200,7 +208,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.crossfeed.3</object-name>
@@ -229,7 +237,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.crossfeed.4</object-name>
@@ -258,7 +266,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.outer.l.pump</object-name>
@@ -287,7 +295,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.outer.r.pump</object-name>
@@ -316,7 +324,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.mid.l.fwd.pump</object-name>
@@ -345,7 +353,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.mid.r.fwd.pump</object-name>
@@ -374,7 +382,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.mid.l.aft.pump</object-name>
@@ -403,7 +411,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.mid.r.aft.pump</object-name>
@@ -432,7 +440,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.inr.l.fwd.pump</object-name>
@@ -461,7 +469,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.inr.r.fwd.pump</object-name>
@@ -490,7 +498,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.inr.l.aft.pump</object-name>
@@ -519,7 +527,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.inr.r.aft.pump</object-name>
@@ -548,7 +556,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.outer.xfr</object-name>
@@ -577,7 +585,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.mid.xfr</object-name>
@@ -606,7 +614,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.inr.xfr</object-name>
@@ -635,7 +643,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.trim.l</object-name>
@@ -664,7 +672,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.trim.r</object-name>
@@ -693,7 +701,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.feedtk.1.main</object-name>
@@ -722,7 +730,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<!-- animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.feedtk.1.stby</object-name>
@@ -751,7 +759,7 @@
               </binding>
 		</action>
 	</animation -->
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.feedtk.2.main</object-name>
@@ -780,7 +788,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<!-- animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.feedtk.2.stby</object-name>
@@ -809,7 +817,7 @@
               </binding>
 		</action>
 	</animation -->
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.feedtk.3.main</object-name>
@@ -838,7 +846,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<!-- animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.feedtk.3.stby</object-name>
@@ -867,7 +875,7 @@
               </binding>
 		</action>
 	</animation -->
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.feedtk.4.main</object-name>
@@ -896,7 +904,7 @@
 		      </binding>
 		</action>
 	</animation>
-
+	
 	<!-- animation>
 		<type>textranslate</type>
 		<object-name>btn.fuel.feedtk.4.stby</object-name>
@@ -925,7 +933,7 @@
               </binding>
 		</action>
 	</animation -->
-
+	
 	<!-- ELEC System -->
 	<!-- Battery Controls -->
 	<animation>
@@ -956,7 +964,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.bat.ess</object-name>
@@ -985,7 +993,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.bat.2</object-name>
@@ -1014,7 +1022,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.bat.apu</object-name>
@@ -1043,7 +1051,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.elmu</object-name>
@@ -1072,7 +1080,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.acessfeed</object-name>
@@ -1101,7 +1109,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<!-- Shed Loads -->
 	<animation>
 		<type>textranslate</type>
@@ -1131,7 +1139,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.galley</object-name>
@@ -1160,7 +1168,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.commercial</object-name>
@@ -1189,7 +1197,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<!-- External Power Supply -->
 
 	<animation>
@@ -1234,7 +1242,7 @@
 			</axis>
 		</transform>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>btn.elec.ext.2</object-name>
@@ -1277,7 +1285,7 @@
 			</axis>
 		</transform>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>btn.elec.ext.3</object-name>
@@ -1320,7 +1328,7 @@
 			</axis>
 		</transform>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>btn.elec.ext.4</object-name>
@@ -1363,9 +1371,9 @@
 			</axis>
 		</transform>
 	</animation>
-
+	
 	<!-- I'm not exactly sure what the DRIVE GEN switches do -->
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.gen.1</object-name>
@@ -1394,7 +1402,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.gen.2</object-name>
@@ -1423,7 +1431,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.gen.3</object-name>
@@ -1452,7 +1460,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.gen.4</object-name>
@@ -1481,7 +1489,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.gen.apu.a</object-name>
@@ -1510,7 +1518,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.gen.apu.b</object-name>
@@ -1539,7 +1547,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.elec.bustie</object-name>
@@ -1568,9 +1576,9 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<!-- AIR COND System -->
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.pack.1</object-name>
@@ -1599,7 +1607,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hotair.1</object-name>
@@ -1628,7 +1636,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.pack.2</object-name>
@@ -1657,7 +1665,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hotair.2</object-name>
@@ -1686,9 +1694,9 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<!-- Engine and APU Bleed -->
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.engbleed.1</object-name>
@@ -1717,7 +1725,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.engbleed.2</object-name>
@@ -1746,7 +1754,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.engbleed.3</object-name>
@@ -1775,7 +1783,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.engbleed.4</object-name>
@@ -1804,7 +1812,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.apubleed</object-name>
@@ -1833,9 +1841,9 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<!-- HYD System -->
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.1.a</object-name>
@@ -1864,7 +1872,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.1.b</object-name>
@@ -1893,7 +1901,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.2.a</object-name>
@@ -1922,7 +1930,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.2.b</object-name>
@@ -1951,7 +1959,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.3.a</object-name>
@@ -1980,7 +1988,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.3.b</object-name>
@@ -2009,7 +2017,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.4.a</object-name>
@@ -2038,7 +2046,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.4.b</object-name>
@@ -2067,7 +2075,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.1.ab</object-name>
@@ -2090,10 +2098,10 @@
 				<command>nasal</command>
 				<script>
 					var engine = 0;
-
+				
 					var prot_open = getprop("/controls/hydraulics/engine["~engine~"]/prot-ab");
 					var value = getprop("/controls/hydraulics/engine["~engine~"]/pump-ab");
-
+					
 					if(prot_open) {
 						if(value) {
 							setprop("/controls/hydraulics/engine["~engine~"]/pump-ab", 0);
@@ -2115,7 +2123,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.2.ab</object-name>
@@ -2138,10 +2146,10 @@
 				<command>nasal</command>
 				<script>
 					var engine = 1;
-
+				
 					var prot_open = getprop("/controls/hydraulics/engine["~engine~"]/prot-ab");
 					var value = getprop("/controls/hydraulics/engine["~engine~"]/pump-ab");
-
+					
 					if(prot_open) {
 						if(value) {
 							setprop("/controls/hydraulics/engine["~engine~"]/pump-ab", 0);
@@ -2163,7 +2171,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.3.ab</object-name>
@@ -2186,10 +2194,10 @@
 				<command>nasal</command>
 				<script>
 					var engine = 2;
-
+				
 					var prot_open = getprop("/controls/hydraulics/engine["~engine~"]/prot-ab");
 					var value = getprop("/controls/hydraulics/engine["~engine~"]/pump-ab");
-
+					
 					if(prot_open) {
 						if(value) {
 							setprop("/controls/hydraulics/engine["~engine~"]/pump-ab", 0);
@@ -2211,7 +2219,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.hyd.eng.4.ab</object-name>
@@ -2234,10 +2242,10 @@
 				<command>nasal</command>
 				<script>
 					var engine = 3;
-
+				
 					var prot_open = getprop("/controls/hydraulics/engine["~engine~"]/prot-ab");
 					var value = getprop("/controls/hydraulics/engine["~engine~"]/pump-ab");
-
+					
 					if(prot_open) {
 						if(value) {
 							setprop("/controls/hydraulics/engine["~engine~"]/pump-ab", 0);
@@ -2259,7 +2267,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 	  <type>rotate</type>
 	  <object-name>prot.hyd.eng.1.ab</object-name>
@@ -2303,7 +2311,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 	  <type>rotate</type>
 	  <object-name>prot.hyd.eng.2.ab</object-name>
@@ -2347,7 +2355,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 	  <type>rotate</type>
 	  <object-name>prot.hyd.eng.3.ab</object-name>
@@ -2391,7 +2399,7 @@
             </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 	  <type>rotate</type>
 	  <object-name>prot.hyd.eng.4.ab</object-name>
@@ -2435,7 +2443,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<!-- Anti-ice -->
 	<animation>
 		<type>pick</type>
@@ -2463,7 +2471,7 @@
 			<y>0</y>
 		</axis>
 	</animation>
-
+	
 	<!-- Engines Anti-ice -->
 	<animation>
 		<type>pick</type>
@@ -2491,7 +2499,7 @@
 			<y>0</y>
 		</axis>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>btn.antiice.eng.2</object-name>
@@ -2518,7 +2526,7 @@
 			<y>0</y>
 		</axis>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>btn.antiice.eng.3</object-name>
@@ -2545,7 +2553,7 @@
 			<y>0</y>
 		</axis>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>btn.antiice.eng.4</object-name>
@@ -2572,7 +2580,7 @@
 			<y>0</y>
 		</axis>
 	</animation>
-
+	
 	<!-- External Lighting -->
 	<animation>
 		<type>pick</type>
@@ -2606,7 +2614,7 @@
 			<z-m>0.3672</z-m>
 		</center>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.beacon</object-name>
@@ -2639,7 +2647,7 @@
 			<z-m>0.3672</z-m>
 		</center>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.nav</object-name>
@@ -2672,7 +2680,7 @@
 			<z-m>0.3672</z-m>
 		</center>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.logo</object-name>
@@ -2705,7 +2713,7 @@
 			<z-m>0.3672</z-m>
 		</center>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.wing</object-name>
@@ -2714,7 +2722,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>controls/lighting/wing</property>
+				<property>controls/lighting/wing-lights</property>
 			</binding>
 			<binding>
             	<command>property-toggle</command>
@@ -2725,7 +2733,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>sw.wing</object-name>
-		<property>controls/lighting/wing</property>
+		<property>controls/lighting/wing-lights</property>
 		<factor>-60</factor>
 		<axis>
 			<x>0</x>
@@ -2738,7 +2746,7 @@
 			<z-m>0.3511</z-m>
 		</center>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.rwy</object-name>
@@ -2771,7 +2779,7 @@
 			<z-m>0.3511</z-m>
 		</center>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.land</object-name>
@@ -2780,7 +2788,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>controls/lighting/land</property>
+				<property>controls/lighting/landing-lights[0]</property>
 			</binding>
 			<binding>
             	<command>property-toggle</command>
@@ -2791,7 +2799,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>sw.land</object-name>
-		<property>controls/lighting/land</property>
+		<property>controls/lighting/landing-lights[0]</property>
 		<factor>-60</factor>
 		<axis>
 			<x>0</x>
@@ -2804,7 +2812,7 @@
 			<z-m>0.3511</z-m>
 		</center>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.nose</object-name>
@@ -2837,9 +2845,9 @@
 			<z-m>0.3511</z-m>
 		</center>
 	</animation>
-
+	
 	<!-- Internal Lighting -->
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.stbycompass</object-name>
@@ -2872,7 +2880,7 @@
 			<z-m>0.3672</z-m>
 		</center>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.storm</object-name>
@@ -2905,7 +2913,7 @@
 			<z-m>0.3672</z-m>
 		</center>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.annlt</object-name>
@@ -2938,9 +2946,9 @@
 			<z-m>0.3672</z-m>
 		</center>
 	</animation>
-
+	
 	<!-- Signs -->
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.seatbelt</object-name>
@@ -2977,7 +2985,7 @@
 			<z-m>0.3511</z-m>
 		</center>
 	</animation>
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>sw.nosmoking</object-name>
@@ -3014,9 +3022,9 @@
 			<z-m>0.3511</z-m>
 		</center>
 	</animation>
-
+	
 	<!-- Jettison -->
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fueljettison.arm</object-name>
@@ -3040,7 +3048,7 @@
 				<script>
 					var prot_open = getprop("/controls/fuel/jettison/arm-prot");
 					var value = getprop("/controls/fuel/jettison/arm");
-
+					
 					if(prot_open) {
 						if(value) {
 							setprop("/controls/fuel/jettison/arm", 0);
@@ -3058,7 +3066,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 	  <type>rotate</type>
 	  <object-name>prot.fueljettison.arm</object-name>
@@ -3102,7 +3110,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>btn.fueljettison.active</object-name>
@@ -3126,7 +3134,7 @@
 				<script>
 					var prot_open = getprop("/controls/fuel/jettison/active-prot");
 					var value = getprop("/controls/fuel/jettison/active");
-
+					
 					if(prot_open) {
 						if(value) {
 							setprop("/controls/fuel/jettison/active", 0);
@@ -3144,7 +3152,7 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 	  <type>rotate</type>
 	  <object-name>prot.fueljettison.active</object-name>
@@ -3188,9 +3196,9 @@
               </binding>
 		</action>
 	</animation>
-
+	
 	<!-- Manual Engine Start Switches -->
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>eng.manstart.1</object-name>
@@ -3223,7 +3231,7 @@
 		    </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>eng.manstart.2</object-name>
@@ -3256,7 +3264,7 @@
 		    </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>eng.manstart.3</object-name>
@@ -3289,7 +3297,7 @@
 		    </binding>
 		</action>
 	</animation>
-
+	
 	<animation>
 		<type>textranslate</type>
 		<object-name>eng.manstart.4</object-name>
@@ -3322,5 +3330,5 @@
 		    </binding>
 		</action>
 	</animation>
-
+	
 </PropertyList>
