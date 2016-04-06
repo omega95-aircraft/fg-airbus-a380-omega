@@ -4,7 +4,7 @@
 	
 	<nasal>
 		<load>
-			var livery_update = aircraft.livery_update.new("Aircraft/A380/Models/Liveries");
+			var livery_update = aircraft.livery_update.new("Aircraft/A380-omega/Models/Liveries");
 		</load>
 
 		<unload>
@@ -45,11 +45,11 @@
  
 	<!-- Engines -->
 	<model>
-   		<path>Aircraft/A380/Models/trent900.xml</path>
+   		<path>Aircraft/A380-omega/Models/trent900.xml</path>
   	</model>
   
   	<model>
-   		<path>Aircraft/A380/Models/FlightDeck/flightdeck.xml</path>
+   		<path>Aircraft/A380-omega/Models/FlightDeck/flightdeck.xml</path>
    		<offsets>
     			<x-m>10.48</x-m>
     			<y-m>-0.02</y-m>
@@ -59,7 +59,7 @@
 
 		<model>
 			<name>landinglight</name>
-			<path>Aircraft/A380/Models/Lights/landinglight.xml</path>
+			<path>Aircraft/A380-omega/Models/Lights/landinglight.xml</path>
 			<offsets>
 				<x-m>11.03</x-m>
 				<y-m>0</y-m>
@@ -3474,7 +3474,7 @@
 
 <model>
 	<name>nav.l</name>
-	<path>Aircraft/A380/Models/Lights/rednav.xml</path>
+	<path>Aircraft/A380-omega/Models/Lights/rednav.xml</path>
 	<offsets>
 			<x-m>55.8669</x-m>
 			<y-m>-39.5900</y-m>
@@ -3484,7 +3484,7 @@
 
 <model>
 	<name>nav.r</name>
-	<path>Aircraft/A380/Models/Lights/greennav.xml</path>
+	<path>Aircraft/A380-omega/Models/Lights/greennav.xml</path>
 	<offsets>
 			<x-m>55.8669</x-m>
 			<y-m>39.5900</y-m>
@@ -3494,7 +3494,7 @@
 
 <model>
 	<name>strobe.l</name>
-	<path>Aircraft/A380/Models/Lights/strobe.xml</path>
+	<path>Aircraft/A380-omega/Models/Lights/strobe.xml</path>
 	<offsets>
 			<x-m>55.8669</x-m>
 			<y-m>-39.5900</y-m>
@@ -3504,7 +3504,7 @@
 
 <model>
 	<name>strobe.r</name>
-	<path>Aircraft/A380/Models/Lights/strobe.xml</path>
+	<path>Aircraft/A380-omega/Models/Lights/strobe.xml</path>
 	<offsets>
 			<x-m>55.8669</x-m>
 			<y-m>39.5900</y-m>
@@ -3514,7 +3514,7 @@
 
 <model>
 	<name>beacon.1</name>
-	<path>Aircraft/A380/Models/Lights/beacon.xml</path>
+	<path>Aircraft/A380-omega/Models/Lights/beacon.xml</path>
 	<offsets>
 			<x-m>43.2853</x-m>
 			<y-m>0</y-m>
@@ -3524,7 +3524,7 @@
 
 <model>
 	<name>beacon.2</name>
-	<path>Aircraft/A380/Models/Lights/beacon.xml</path>
+	<path>Aircraft/A380-omega/Models/Lights/beacon.xml</path>
 	<offsets>
 			<x-m>31.0555</x-m>
 			<y-m>0</y-m>
@@ -3535,7 +3535,7 @@
 <!-- Fuel Jettison -->
 
 <model>
-	<path>Aircraft/A380/Models/Effects/fuel-dump.xml</path>
+	<path>Aircraft/A380-omega/Models/Effects/fuel-dump.xml</path>
 	<name>fueldump.l</name>  
 	<condition>
 		<equals>
@@ -3551,7 +3551,7 @@
 </model>
 
 <model>
-	<path>Aircraft/A380/Models/Effects/fuel-dump.xml</path>
+	<path>Aircraft/A380-omega/Models/Effects/fuel-dump.xml</path>
 	<name>fueldump.r</name>  
 	<condition>
 		<equals>
@@ -3571,7 +3571,7 @@
 			<inherits-from>Effects/lightmap</inherits-from>
 			<parameters>
 				<texture n="1">
-					<image>Aircraft/A380/Models/Effects/rudder_lightmap.png</image>
+					<image>Aircraft/A380-omega/Models/Effects/rudder_lightmap.png</image>
 				</texture>
 				<condition>
 					<use>controls/lighting/logo</use>
@@ -3587,7 +3587,7 @@
 			<inherits-from>Effects/lightmap</inherits-from>
 			<parameters>
 				<texture n="1">
-					<image>Aircraft/A380/Models/Effects/fuselage_lightmap.png</image>
+					<image>Aircraft/A380-omega/Models/Effects/fuselage_lightmap.png</image>
 				</texture>
 				<condition>
 					<use>controls/lighting/landing-lights[0]</use>
@@ -3601,7 +3601,7 @@
 			<inherits-from>Effects/lightmap</inherits-from>
 			<parameters>
 				<texture n="1">
-					<image>Aircraft/A380/Models/Effects/wings_lightmap.png</image>
+					<image>Aircraft/A380-omega/Models/Effects/wings_lightmap.png</image>
 				</texture>
 				<condition>
 					<use>controls/lighting/wing-lights</use>
