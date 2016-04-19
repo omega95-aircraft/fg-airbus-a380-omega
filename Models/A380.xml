@@ -3642,5 +3642,96 @@
 				</equals>
 			</condition>
 		</animation>
+		
+		<!-- Contrails -->
+  <model>
+    <path>Aircraft/A380-omega/Models/Effects/contrail-eng1.xml</path>
+    <offsets>
+      <x-m>60</x-m>
+      <y-m>-15.9365</y-m>
+      <z-m>2.55</z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/A380-omega/Models/Effects/contrail-eng2.xml</path>
+    <offsets>
+      <x-m>60</x-m>
+      <y-m>15.9365</y-m>
+      <z-m>2.55</z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/A380-omega/Models/Effects/contrail-eng3.xml</path>
+    <offsets>
+      <x-m>60</x-m>
+      <y-m>-26.2467 </y-m>
+      <z-m>3.4</z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/A380-omega/Models/Effects/contrail-eng4.xml</path>
+    <offsets>
+      <x-m>60</x-m>
+      <y-m>26.2467</y-m>
+      <z-m>3.4</z-m>
+    </offsets>
+  </model>
+  
+  <!--Tyre smoke -->
+    <model>
+    <path>Aircraft/A380-omega/Models/Effects/tyresmoke-nose.xml</path>
+    <offsets>
+      <x-m>12.40</x-m>
+      <y-m>0</y-m>
+      <z-m>-1</z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/A380-omega/Models/Effects/tyresmoke-left.xml</path>
+    <offsets>
+      <x-m>43.02</x-m>
+      <y-m>-6.23</y-m>
+      <z-m>-1</z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/A380-omega/Models/Effects/tyresmoke-right.xml</path>
+    <offsets>
+      <x-m>43.02</x-m>
+      <y-m>6.23</y-m>
+      <z-m>-1</z-m>
+    </offsets>
+  </model>
+  
+  <!-- Wet runway -->
+<model>
+ <path>Aircraft/A380-omega/Models/Effects/wet-runway-nose.xml</path>
+ <name>tyre-smoke-n</name>
+ <offsets>  
+  <x-m>12.40</x-m>
+  <y-m>0</y-m>
+  <z-m>-1</z-m>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/A380-omega/Models/Effects/wet-runway-left.xml</path>
+ <name>tyre-smoke-l</name>
+ <offsets>
+  <x-m>43.02</x-m>
+  <y-m>-6.23</y-m>
+  <z-m>-1</z-m>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/A380-omega/Models/Effects/wet-runway-right.xml</path>
+ <name>tyre-smoke-r</name>
+ <offsets>
+  <x-m>43.02</x-m>
+  <y-m>6.23</y-m>
+  <z-m>-1</z-m>
+ </offsets>
+</model>
 
 </PropertyList>
