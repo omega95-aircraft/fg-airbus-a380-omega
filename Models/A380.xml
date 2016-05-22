@@ -57,6 +57,7 @@
    		</offsets>
   	</model>
 
+             <!-- Temporarily disable. Model landinglight.xml is currently missing. IAHM-COL MAY 2016
 		<model>
 			<name>landinglight</name>
 			<path>Aircraft/A380-omega/Models/Lights/landinglight.xml</path>
@@ -66,7 +67,8 @@
 				<z-m>0</z-m>
 			</offsets>
 		</model>
-  
+-->  
+
   	<!-- Ailerons -->
   	
   	<animation>
