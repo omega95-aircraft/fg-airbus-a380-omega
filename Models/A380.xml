@@ -3603,7 +3603,7 @@
 			<inherits-from>Effects/lightmap</inherits-from>
 			<parameters>
 				<texture n="1">
-					<image>Aircraft/A380-omega/Models/Effects/wings_lightmap.png</image>
+					<image>Aircraft/A380-omega/Models/Effects/wings-lightmap.png</image>
 				</texture>
 				<condition>
 					<use>controls/lighting/wing-lights</use>
@@ -3634,7 +3634,7 @@
 			<object-name>slat06</object-name>
 		</effect>
 
-		<animation>
+		<!--<animation>
 			<type>select</type>
 			<object-name>winglts</object-name>
 			<condition>
@@ -3643,7 +3643,7 @@
 					<value>1</value>
 				</equals>
 			</condition>
-		</animation>
+		</animation>-->
 		
 		<!-- Contrails -->
   <model>
