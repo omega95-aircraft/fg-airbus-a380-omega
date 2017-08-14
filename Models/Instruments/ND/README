@@ -14,7 +14,7 @@ The WXR instrument has been designed to make only 1 call per 15 minutes as the w
 
 You can acquire a free subscription to the API here - http://www.wunderground.com/weather/api/
 
-Once you sign up to the service, you will receive a key ID formed with various alphanumberic characters - copy that key ID and paste it into the api-key field in the /A380/Models/Instruments/WXR/api_key.xml file
+Once you sign up to the service, you will receive a key ID formed with various alphanumberic characters - copy that key ID and paste it into the api-key field in the /A380-omega/Models/Instruments/WXR/api_key.xml file
 
 ============================== !IMPORTANT NOTE! ================================
 

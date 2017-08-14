@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0"?><!-- minor changes by ph-cor jan2016 -->
 <aerodynamics>
         <axis name="DRAG">
             <function name="aero/coefficient/CD0">
@@ -52,11 +52,11 @@
                     <table>
                       <independentVar>fcs/flap-pos-norm</independentVar>
                       <tableData>
-                      0.00	0.00
-                      0.25	0.010
-                      0.53	0.025
-                      0.79	0.040
-                      1.00	0.075
+                      0.00	0.00   <!-- 0.00 -->
+                      0.25	0.010 <!-- 0.010 -->
+                      0.53	0.025 <!-- 0.025 -->
+                      0.79	0.040 <!-- 0.040 -->
+                      1.00	0.075 <!-- 0.075 --> 
                       </tableData>
                     </table>
                 </product>
@@ -76,7 +76,7 @@
                     <property>aero/qbar-psf</property>
                     <property>metrics/Sw-sqft</property>
 		    <property>gear/unit[2]/pos-norm</property><!-- FIXME -->
-                    <value>0.0110</value>
+                    <value>0.0110</value><!-- 0.0110 -->
                 </product>
             </function>
             <!-- To reduce the number of functions requires, I've combined the spoilers that work together - this is determined by the functions and hydraulic systems they're connected to -->
@@ -254,12 +254,12 @@
                     <property>metrics/Sw-sqft</property>
                       <table>
                           <independentVar>aero/alpha-rad</independentVar>
-                          <tableData>
-                              -0.2000	-0.6800
-                              0.0000	0.4500
-                              0.0400	0.9500
-                              0.2300	1.4500
-                              0.6000	0.7400
+                          <tableData><!-- lower values to achieve speedvector circle more in line with the line of sight circle at full speed -->
+                              -0.2000	-0.6800 <!-- -0.6800 -->
+                              0.0000	0.3500 <!-- 0.4500 -->
+                              0.0400	0.8500 <!-- 0.9500 -->
+                              0.2300	1.3000 <!-- 1.4500 -->
+                              0.6000	0.7000 <!-- 0.7400 -->
                           </tableData>
                       </table>
                 </product>
@@ -268,18 +268,18 @@
             <!-- orig property>fcs/flap-pos-norm</property -->
             <!-- orig value>1.5000</value -->
             <function name="aero/coefficient/dCLflap">
-                <description>Delta_Lift_due_to_flaps</description>
+                <description>Delta_Lift_due_to_flaps</description> <!-- adapted to achieve flaps1 190, flaps2 170, flaps3 155,  flaps4 140 kts at startup fuel and load , data were 0.000 0.16 0.29  0.35 and 0.52-->
                 <product>
                     <property>aero/qbar-psf</property>
                     <property>metrics/Sw-sqft</property>
                     <table>
                       <independentVar>fcs/flap-pos-deg</independentVar>
                       <tableData>
-                      00.00	0.000
-                      07.23	0.160
-                      15.46	0.290
-                      23.64	0.350
-                      30.00	0.520
+                      00.00	0.000 <!-- 000 -->
+                      07.23	0.180 <!-- 160 -->
+                      15.46	0.410 <!-- 290 -->
+                      23.64	0.660 <!-- 350 -->
+                      30.00	0.890 <!-- 520 -->
                       </tableData>
                     </table>
                 </product>
@@ -367,7 +367,7 @@
                     <property>aero/qbar-psf</property>
                     <property>metrics/Sw-sqft</property>
                     <property>fcs/elevator-pos-rad</property>
-                    <value>0.2000</value>
+                    <value>0.025</value><!-- 0.2000 halved three times for preciser pitch steering -->
                 </product>
             </function>
             
@@ -408,7 +408,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/bw-ft</property>
                     <property>aero/beta-rad</property>
-                    <value>-0.1000</value>
+                    <value>-0.2000</value><!-- -1000 -->
                 </product>
             </function>
             <function name="aero/coefficient/Clp">
@@ -419,7 +419,7 @@
                     <property>metrics/bw-ft</property>
                     <property>aero/bi2vel</property>
                     <property>velocities/p-aero-rad_sec</property>
-                    <value>-0.4000</value>
+                    <value>-0.8000</value><!-- -0.4000 -->
                 </product>
             </function>
             <function name="aero/coefficient/Clr">
@@ -430,7 +430,7 @@
                     <property>metrics/bw-ft</property>
                     <property>aero/bi2vel</property>
                     <property>velocities/r-aero-rad_sec</property>
-                    <value>0.1500</value>
+                    <value>0.1000</value><!-- 0.1500 -->
                 </product>
             </function>
             <!-- Outboard Ailerons Differential Roll -->
@@ -550,7 +550,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/cbarw-ft</property>
                     <property>aero/alpha-rad</property>
-                    <value>-0.7000</value>
+                    <value>-0.1750</value><!--  -0.7000 2 times halved for preciser pitch under a/p -->
                 </product>
             </function>
             <function name="aero/coefficient/Cmde_hstab">
@@ -641,7 +641,7 @@
                     <property>metrics/cbarw-ft</property>
                     <property>aero/ci2vel</property>
                     <property>velocities/q-aero-rad_sec</property>
-                    <value>-21.0000</value>
+                    <value>-21.00000</value><!--  -21.00000  -->
                 </product>
             </function>
             <function name="aero/coefficient/Cmadot">
@@ -652,7 +652,7 @@
                     <property>metrics/cbarw-ft</property>
                     <property>aero/ci2vel</property>
                     <property>aero/alphadot-rad_sec</property>
-                    <value>-4.0000</value>
+                    <value>-16.0000</value><!--  -4.0000 doubled 2 times for better pitch response -->
                 </product>
             </function>
         </axis>
@@ -665,7 +665,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/bw-ft</property>
                     <property>aero/beta-rad</property>
-                    <value>0.1200</value>
+                    <value>0.1200</value><!-- 1200 -->
                 </product>
             </function>
             <function name="aero/coefficient/Cnr">
@@ -676,7 +676,7 @@
                     <property>metrics/bw-ft</property>
                     <property>aero/bi2vel</property>
                     <property>velocities/r-aero-rad_sec</property>
-                    <value>-0.1500</value>
+                    <value>-0.3000</value><!-- -1500 -->
                 </product>
             </function>
             <function name="aero/coefficient/Cndr">

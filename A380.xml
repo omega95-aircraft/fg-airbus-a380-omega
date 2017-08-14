@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0"?><!-- minor changes by ph-cor jan2016 -->
 <?xml-stylesheet href="http://jsbsim.sourceforge.net/JSBSim.xsl" type="text/xsl"?>
 <fdm_config name="A380" version="2.0" release="BETA"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -135,72 +135,72 @@
                 <z> -9.19 </z>
             </location>
             <static_friction> 0.95 </static_friction>
-            <dynamic_friction> 0.76 </dynamic_friction>
+            <dynamic_friction> 0.86 </dynamic_friction><!-- 0.76 -->
             <rolling_friction> 0.02 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 44000 </spring_coeff>
-      		<damping_coeff unit="LBS/FT/SEC"> 8000 </damping_coeff>
+            <spring_coeff unit="LBS/FT"> 140000 </spring_coeff><!-- 44000 -->
+      		<damping_coeff unit="LBS/FT/SEC"> 60000 </damping_coeff><!-- 8000 -->
             <max_steer unit="DEG"> 50 </max_steer>
             <brake_group> NONE </brake_group>
             <retractable>1</retractable>
-        </contact>
+        </contact><!-- All main wheels 2 meters back -->
         <contact type="BOGEY" name="Left Fwd Main gear REAR WHEELS">
             <location unit="M">
-                <x> 41.02 </x>
+                <x> 43.02 </x>
                 <y> -6.23</y>
                 <z> -9.44 </z>
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 120000 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC"> 7000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>   <!-- was 0.0 -->
+            <spring_coeff unit="LBS/FT"> 130000 </spring_coeff><!-- 120000 -->
+      <damping_coeff unit="LBS/FT/SEC"> 10000 </damping_coeff><!-- 7000 -->
+            <max_steer unit="DEG"> 0.0 </max_steer> 
             <brake_group> LEFT </brake_group>
             <retractable>1</retractable>
         </contact>
         <contact type="BOGEY" name="Right Fwd Main Gear REAR WHEELS">
             <location unit="M">
-                <x> 41.02 </x>
+                <x> 43.02 </x>
                 <y>  6.23</y>
-                <z> -9.44 </z>
+                <z> -9.44 </z><!-- -9.44 -->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 120000 </spring_coeff>
-      		<damping_coeff unit="LBS/FT/SEC"> 7000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>   <!-- was 0.0 -->
+            <spring_coeff unit="LBS/FT"> 130000 </spring_coeff><!-- 120000 -->
+      		<damping_coeff unit="LBS/FT/SEC"> 10000 </damping_coeff><!-- 7000 -->
+            <max_steer unit="DEG"> 0.0 </max_steer>
             <brake_group> RIGHT </brake_group>
             <retractable>1</retractable>
         </contact>
         
         <contact type="BOGEY" name="Left Aft Main gear FWD WHEELS">
             <location unit="M">
-                <x> 41.95 </x>
+                <x> 43.95 </x>
                 <y> -3.45</y>
-                <z> -8.9152 </z>
+                <z> -10.44 </z><!--  -8.9152 -->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 120000 </spring_coeff>
-      		<damping_coeff unit="LBS/FT/SEC"> 7000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>   <!-- was 0.0 -->
+            <spring_coeff unit="LBS/FT"> 130000 </spring_coeff><!-- 120000 -->
+      		<damping_coeff unit="LBS/FT/SEC"> 10000 </damping_coeff><!-- 7000 -->
+            <max_steer unit="DEG"> 0.0 </max_steer>
             <brake_group> LEFT </brake_group>
             <retractable>1</retractable>
         </contact>
         <contact type="BOGEY" name="Right Fwd Main Gear FWD WHEELS">
             <location unit="M">
-                <x> 41.95 </x>
+                <x> 43.95 </x>
                 <y>  3.45</y>
-                <z> -8.9152 </z>
+                <z> -10.44 </z><!--  -8.9152 -->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 120000 </spring_coeff>
-      		<damping_coeff unit="LBS/FT/SEC"> 7000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>   <!-- was 0.0 -->
+            <spring_coeff unit="LBS/FT"> 130000 </spring_coeff><!-- 120000 -->
+      		<damping_coeff unit="LBS/FT/SEC"> 10000 </damping_coeff><!-- 7000 -->
+            <max_steer unit="DEG"> 0.0 </max_steer>
             <brake_group> RIGHT </brake_group>
             <retractable>1</retractable>
         </contact>
@@ -209,62 +209,62 @@
         
         <contact type="BOGEY" name="Left Fwd Main gear FWD WHEELS">
             <location unit="M">
-                <x> 39.60 </x>
+                <x> 41.60 </x>
                 <y> -6.23</y>
-                <z> -9.44 </z>
+                <z> -9.44 </z><!-- -9.44 -->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 120000 </spring_coeff>
-      		<damping_coeff unit="LBS/FT/SEC"> 7000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>   <!-- was 0.0 -->
+            <spring_coeff unit="LBS/FT"> 130000 </spring_coeff><!-- 120000 -->
+      		<damping_coeff unit="LBS/FT/SEC"> 10000 </damping_coeff><!-- 7000 -->
+            <max_steer unit="DEG"> 0.0 </max_steer>
             <brake_group> LEFT </brake_group>
             <retractable>1</retractable>
         </contact>
         <contact type="BOGEY" name="Right Fwd Main Gear FWD WHEELS">
             <location unit="M">
-                <x> 39.60 </x>
+                <x> 41.60 </x>
                 <y>  6.23</y>
-                <z> -9.44 </z>
+                <z> -9.44 </z><!-- -9.44 -->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 120000 </spring_coeff>
-      		<damping_coeff unit="LBS/FT/SEC"> 7000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>   <!-- was 0.0 -->
+            <spring_coeff unit="LBS/FT"> 130000 </spring_coeff><!-- 120000 -->
+      		<damping_coeff unit="LBS/FT/SEC"> 10000 </damping_coeff><!-- 7000 -->
+            <max_steer unit="DEG"> 0.0 </max_steer>
             <brake_group> RIGHT </brake_group>
             <retractable>1</retractable>
         </contact>
         
         <contact type="BOGEY" name="Left Aft Main gear REAR WHEELS">
             <location unit="M">
-                <x> 44.95 </x>
+                <x> 46.95 </x>
                 <y> -3.45</y>
-                <z> -8.9152 </z>
+                <z> -10.44 </z><!--  -8.9152 -->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 120000 </spring_coeff>
-      		<damping_coeff unit="LBS/FT/SEC"> 7000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>   <!-- was 0.0 -->
+            <spring_coeff unit="LBS/FT"> 130000 </spring_coeff><!-- 120000 -->
+      		<damping_coeff unit="LBS/FT/SEC"> 10000 </damping_coeff><!-- 7000 -->
+            <max_steer unit="DEG"> 0.0 </max_steer>
             <brake_group> LEFT </brake_group>
             <retractable>1</retractable>
         </contact>
-        <contact type="BOGEY" name="Right Fwd Main Gear REAR WHEELS">
+        <contact type="BOGEY" name="Right Fwd Main Gear REAR WHEELS"><!-- Fwd altered in Aft -->
             <location unit="M">
-                <x> 44.95 </x>
+                <x> 46.95 </x>
                 <y>  3.45</y>
-                <z> -8.9152 </z>
+                <z> -10.44 </z><!--  -8.9152 -->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
             <rolling_friction> 0.02 </rolling_friction>
-            <spring_coeff unit="LBS/FT"> 120000 </spring_coeff>
-      		<damping_coeff unit="LBS/FT/SEC"> 7000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>   <!-- was 0.0 -->
+            <spring_coeff unit="LBS/FT"> 130000 </spring_coeff><!-- 120000 -->
+      		<damping_coeff unit="LBS/FT/SEC"> 10000 </damping_coeff><!-- 7000 -->
+            <max_steer unit="DEG"> 0.0 </max_steer>
             <brake_group> RIGHT </brake_group>
             <retractable>1</retractable>
         </contact>

@@ -1,11 +1,11 @@
-﻿<?xml version = '1.0' encoding = 'UTF-8' ?>
+<?xml version = '1.0' encoding = 'UTF-8' ?>
 
  <!-- 
  Model file Copyright Tapaninen 2014
- Distributed under the terms of the CC-BY-NC License for theOmegaHangar version
+ Distributed under the terms of the GPL version 2 License for theOmegaHangar version
  
  XML and Systems Copyright Muraleedharan 2014
- Distributed under the terms of the CC-BY-NC License for theOmegaHangar version
+ Distributed under the terms of the GPL version 2 License for theOmegaHangar version
  -->
 <PropertyList>
 	<path>fd_inner.ac</path>

@@ -1,6 +1,6 @@
 # A380 Flight Management and Guidance Computer
-# Based on the A320neo/A330s FMGC
-# Copyright Narendran Muraleedharan 2014
+# Based on the A320neo/A330s FMGC minor change by ph-cor jan2016
+# Copyright Narendran Muraleedharan 2014 
 
 var fmgc = "/flight-management/control/";
 var settings = "/flight-management/settings/";
@@ -340,7 +340,7 @@ var fmgc_loop = {
     			
     			# Using 1000 ft for the early descent scenario
     			
-    			if (agl > 1000) {
+    			if (agl > 100) {
     			
     				setprop(servo~ "elevator-gs", 1);
     				
@@ -508,7 +508,7 @@ var fmgc_loop = {
 		
 				var bug = 0;
 				
-				if(active_fpl.active == 1) {
+				if(active_fpln.active == 1) {
 					bug = active_fpln.getHdgToFollow();
 				}
 		

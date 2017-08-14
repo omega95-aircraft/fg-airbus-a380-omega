@@ -4,7 +4,7 @@
 var INHG2PSI = 0.49109778;
 
 sd.pages["apu"] = {
-	path: "/Aircraft/A380/Models/Instruments/SD/apu/apu.svg",
+	path: "/Aircraft/A380-omega/Models/Instruments/SD/apu/apu.svg",
 	svg: {},
 	objects: ["apu_gena_percent", "apu_genb_percent", "apu_gena_v", "apu_genb_v", "apu_gena_hz", "apu_genb_hz", "apu_bleed_switch", "bleed_psi", "apu_avail", "apu_fused", "apu_n1", "apu_n2", "apu_egt", "apu_n1_needle", "apu_egt_needle", "apu_flap_open", "apu_oil_lvl_lo"],
 	load: func {

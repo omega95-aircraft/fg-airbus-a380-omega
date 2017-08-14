@@ -2,7 +2,7 @@
 # Narendran M (c) 2014
 
 sd.pages["fctl"] = {
-	path: "/Aircraft/A380/Models/Instruments/SD/fctl/fctl.svg",
+	path: "/Aircraft/A380-omega/Models/Instruments/SD/fctl/fctl.svg",
 	svg: {},
 	objects: ["pitch_trim", "pitch_trim_text", "hyd_green", "hyd_yellow", "hyd_elec_backup"],
 	load: func {

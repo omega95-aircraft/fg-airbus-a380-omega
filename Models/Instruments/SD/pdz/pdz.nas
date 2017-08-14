@@ -2,7 +2,7 @@
 # Narendran M (c) 2014
 
 sd.pages["pdz"] = {
-	path: "/Aircraft/A380/Models/Instruments/SD/pdz/pdz.svg",
+	path: "/Aircraft/A380-omega/Models/Instruments/SD/pdz/pdz.svg",
 	svg: {},
 	objects: ["tat", "sat", "time", "gw", "gwcg", "fob"],
 	load: func {

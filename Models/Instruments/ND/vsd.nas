@@ -6,7 +6,7 @@
 # If you just want a quick and dirty edit/port to your aircraft, just edit the model object names, svg path, switches and props
 var objName_capt = 'vsd.l';		# Model object name for captain's side VSD
 var objName_fo = 'vsd.r';		# Model object name for first officer's side VSD
-var svg_path = '/Aircraft/A380/Models/Instruments/ND/vsd.svg'; # VSG File Path
+var svg_path = '/Aircraft/A380-omega/Models/Instruments/ND/vsd.svg'; # VSG File Path
 
 # It is very important to note that the below switches and props defines will ONLY work on the A380 by theOmegaHangar (http://theomegahangar.flymerlion.org) and other derived aircraft. If you would like to add this to your aircraft, please change the switches and interface properties to connect it to your aircraft!
 

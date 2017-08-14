@@ -2,7 +2,7 @@
 # Narendran M (c) 2014
 
 sd.pages["hyd"] = {
-	path: "/Aircraft/A380/Models/Instruments/SD/hyd/hyd.svg",
+	path: "/Aircraft/A380-omega/Models/Instruments/SD/hyd/hyd.svg",
 	svg: {},
 	objects: ["hyd_green_psi", "hyd_yellow_psi", "eng1_hyd_pump_a", "eng1_hyd_pump_b", "eng2_hyd_pump_a", "eng2_hyd_pump_b", "eng3_hyd_pump_a", "eng3_hyd_pump_b", "eng4_hyd_pump_a", "eng4_hyd_pump_b"],
 	green: [0, 0.86, 0],

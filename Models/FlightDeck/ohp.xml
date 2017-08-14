@@ -6,6 +6,8 @@
  
  XML and Systems Copyright Muraleedharan 2014
  Distributed under the terms of the CC-BY-NC License for theOmegaHangar version
+ 
+ Now GNU GPL
  -->
 
 <PropertyList>
@@ -2720,7 +2722,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>controls/lighting/wing</property>
+				<property>controls/lighting/wing-lights</property>
 			</binding>
 			<binding>
             	<command>property-toggle</command>
@@ -2731,7 +2733,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>sw.wing</object-name>
-		<property>controls/lighting/wing</property>
+		<property>controls/lighting/wing-lights</property>
 		<factor>-60</factor>
 		<axis>
 			<x>0</x>
@@ -2786,7 +2788,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>controls/lighting/land</property>
+				<property>controls/lighting/landing-lights[0]</property>
 			</binding>
 			<binding>
             	<command>property-toggle</command>
@@ -2797,7 +2799,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>sw.land</object-name>
-		<property>controls/lighting/land</property>
+		<property>controls/lighting/landing-lights[0]</property>
 		<factor>-60</factor>
 		<axis>
 			<x>0</x>
