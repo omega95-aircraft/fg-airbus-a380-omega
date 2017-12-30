@@ -2,7 +2,7 @@
 # Narendran M (c) 2014
 
 sd.pages["fuel"] = {
-	path: "/Aircraft/A380/Models/Instruments/SD/fuel/fuel.svg",
+	path: "/Aircraft/A380-omega/Models/Instruments/SD/fuel/fuel.svg",
 	svg: {},
 	objects: ["lvl_feed_tk_1", "lvl_feed_tk_2", "lvl_feed_tk_3", "lvl_feed_tk_4", "lvl_l_outer_tk", "lvl_l_mid_tk", "lvl_l_inner_tk", "lvl_r_outer_tk", "lvl_r_mid_tk", "lvl_r_inner_tk", "lvl_trim_tk", "feed_tk_1", "feed_tk_2", "feed_tk_3", "feed_tk_4", "eng1_master", "eng2_master", "eng3_master", "eng4_master", "eng1_crossfeed", "eng2_crossfeed", "eng3_crossfeed", "eng4_crossfeed", "eng1_crossfeed", "l_outer_tk", "l_mid_tk", "l_inner_tk", "r_outer_tk", "r_mid_tk", "r_inner_tk", "fu_eng1", "fu_eng2", "fu_eng3", "fu_eng4", "fu_total", "fuel_rate", "trim_l", "trim_r"],
 	load: func {

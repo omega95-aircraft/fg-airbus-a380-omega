@@ -2,7 +2,7 @@
 # Narendran M (c) 2014
 
 sd.pages["cab_press"] = {
-	path: "/Aircraft/A380/Models/Instruments/SD/fctl/fctl.svg", #FIXME
+	path: "/Aircraft/A380-omega/Models/Instruments/SD/fctl/fctl.svg", #FIXME
 	svg: {},
 	objects: [],
 	load: func {
