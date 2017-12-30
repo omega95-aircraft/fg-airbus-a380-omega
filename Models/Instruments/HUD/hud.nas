@@ -2,7 +2,7 @@
 # Narendran M (c) 2014
 
 var placement = "hud.l";
-var svgPath = "/Aircraft/A380/Models/Instruments/HUD/hud.svg";
+var svgPath = "/Aircraft/A380-omega/Models/Instruments/HUD/hud.svg";
 
 # Define properties for interface
 var myProps = [

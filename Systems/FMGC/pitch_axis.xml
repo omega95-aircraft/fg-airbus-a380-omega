@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?><!-- minor changes by ph-cor jan2016 -->
 
 <!-- Airbus A320neo Elevator Control -->
 
@@ -20,14 +20,14 @@
 			<prop>/controls/flight/elevator</prop> <!-- This is basically the fbw input prop -->
 		</output>
 		<config>
-			<Kp>-0.01</Kp>
-			<beta>1</beta>
-			<alpha>0.1</alpha>
-			<gamma>0</gamma>
-			<Ti>10</Ti>
+			<Kp>-0.01</Kp><!-- -0.01 controller gain -->
+			<beta>0.5</beta><!-- 1 error gain -->
+			<alpha>1</alpha><!-- 0.1 rate of change damper -->
+			<gamma>0</gamma><!-- 0 rate of change kicker -->
+			<Ti>10</Ti><!-- 10 -->
 			<Td>0.00001</Td>
-			<u_min>-0.15</u_min>
-			<u_max>0.1</u_max>
+			<u_min>-0.15</u_min><!-- -0.15 -->
+			<u_max>0.1</u_max><!-- 0.1 -->
 		</config>
 	</pid-controller>
 	
@@ -47,10 +47,10 @@
 			<prop>/controls/flight/elevator</prop> <!-- This is basically the fbw input prop -->
 		</output>
 		<config>
-			<Kp>-0.0075</Kp>
-			<beta>1</beta>
-			<alpha>0.1</alpha>
-			<gamma>0</gamma>
+			<Kp>-0.0075</Kp><!-- -0.0075 controller gain -->
+			<beta>0.3</beta><!-- 1 error gain -->
+			<alpha>0.4</alpha><!-- 0.1 rate of change damper -->
+			<gamma>0</gamma> <!-- 0 rate of change kicker -->
 			<Ti>10</Ti>
 			<Td>0.00001</Td>
 			<u_min>-0.15</u_min>
@@ -74,10 +74,10 @@
 			<prop>/controls/flight/elevator</prop> <!-- This is basically the fbw input prop -->
 		</output>
 		<config>
-			<Kp>-0.05</Kp>
-			<beta>1</beta>
-			<alpha>0.1</alpha>
-			<gamma>0</gamma>
+			<Kp>-0.06</Kp><!-- -0.05 controller gain -->
+			<beta>0.4</beta><!-- 1 error gain -->
+			<alpha>0.4</alpha><!-- 0.1 rate of change damper -->
+			<gamma>0</gamma><!-- 0 rate of change kicker -->
 			<Ti>10</Ti>
 			<Td>0.000001</Td>
 			<u_min>-0.15</u_min>
