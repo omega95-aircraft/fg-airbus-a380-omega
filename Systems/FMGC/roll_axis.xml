@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?><!-- minor changes by ph-cor jan2016 -->
 
 <!-- Airbus A320neo Aileron Control -->
 
@@ -20,10 +20,10 @@
 			<prop>/controls/flight/aileron</prop> <!-- This is basically the fbw input prop -->
 		</output>
 		<config>
-			<Kp>0.06</Kp>
-			<beta>1</beta>
-			<alpha>0.1</alpha>
-			<gamma>0</gamma>
+			<Kp>0.06</Kp><!-- 0.06 controller gain -->
+			<beta>0.3</beta><!-- 1 error gain -->
+			<alpha>0.4</alpha><!-- 0.1 rate of change damper -->
+			<gamma>0</gamma><!-- 0 rate of change kicker -->
 			<Ti>10</Ti>
 			<Td>0.00005</Td>
 			<u_min>-0.8</u_min>
@@ -47,10 +47,10 @@
 			<prop>/controls/flight/aileron</prop> <!-- This is basically the fbw input prop -->
 		</output>
 		<config>
-			<Kp>0.04</Kp>
-			<beta>1</beta>
-			<alpha>0.1</alpha>
-			<gamma>0</gamma>
+			<Kp>0.06</Kp><!-- 0.04 controller gain -->
+			<beta>0.5</beta><!-- 1  error gain -->
+			<alpha>0.8</alpha><!-- 0.1 rate of change damper -->
+			<gamma>0</gamma><!-- 0 rate of change kicker -->
 			<Ti>10</Ti>
 			<Td>0.00005</Td>
 			<u_min>-0.8</u_min>

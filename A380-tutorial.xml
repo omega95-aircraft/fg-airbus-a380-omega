@@ -32,7 +32,7 @@ When one of the flight guidance parameters is in "managed" mode, you can use the
 
 To the left and right of the AFS CP, there is a Captain and First Officer Electronic Flight Instrument System (EFIS), this has a dial for the current altitude (either in inHg or kPa) and controls the display of information on the Navigation Display (ND) and Primary Flight Display (PFD).
     </description>
-    <audio-dir>Aircraft/A380/tutorial</audio-dir>
+    <audio-dir>Aircraft/A380-omega/tutorial</audio-dir>
     <timeofday>afternoon</timeofday>
     <presets>
       <airport-id>YSSY</airport-id>
